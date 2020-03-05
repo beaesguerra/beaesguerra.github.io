@@ -1,7 +1,9 @@
 import React from 'react';
+import { Banner } from '../sections/Banner/Banner';
 
 export const App = () => (
   <div>
-    Hello
+    hello
+    <Banner />
   </div>
 );
