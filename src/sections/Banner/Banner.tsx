@@ -10,12 +10,14 @@ export const Banner = () => {
   return (
     <div className={classes.background}>
       <Bubbles />
-      <Typography variant="h1">
-        {title}
-      </Typography>
-      <Typography>
-        {subtitle}
-      </Typography>
+      <div className={classes.content}>
+        <Typography variant="h1">
+          {title}
+        </Typography>
+        <Typography>
+          {subtitle}
+        </Typography>
+      </div>
     </div>
   );
 }
@@ -24,5 +26,18 @@ export const useStyles = makeStyles(theme => ({
   background: {
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.primary.contrastText,
+
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
+  content: {
+    position: 'absolute',
+    textAlign: 'center',
+    width: '60%',
+    [theme.breakpoints.down('sm')]: {
+      width: '90%',
+    }
+  }
 }));

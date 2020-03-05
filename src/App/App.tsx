@@ -5,8 +5,6 @@ import { theme } from './theme';
 
 export const App = () => (
   <ThemeProvider theme={theme}>
-    <div>
-      <Banner />
-    </div>
+    <Banner />
   </ThemeProvider>
 );

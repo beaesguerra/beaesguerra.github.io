@@ -13,6 +13,9 @@ export const theme: Theme = createMuiTheme({
   typography: {
     h1: {
       fontFamily: 'Dancing Script, cursive',
+    },
+    body1: {
+      fontFamily: 'Fira Sans, sans-serif'
     }
   }
 });

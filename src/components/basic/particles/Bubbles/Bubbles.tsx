@@ -117,6 +117,8 @@ const params: IParticlesParams = {
 
 export const Bubbles = (props: IProps) => (
   <Particles
+    height="80vh"
+    width="100vw"
     params={params}
   />
 );
