@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Particles, { IParticlesParams } from 'react-particles-js';
-import { makeStyles } from '@material-ui/core';
 
 interface IProps {
 
@@ -116,19 +115,8 @@ const params: IParticlesParams = {
   retina_detect: true
 };
 
-export const Bubbles = (props: IProps) => {
-  const classes = useStyles();
-  return (
-    <div className={classes.background}>
-      <Particles
-        params={params}
-      />
-    </div>
-  );
-}
-
-export const useStyles = makeStyles({
-  background: {
-    backgroundColor: '#beabea',
-  },
-})
+export const Bubbles = (props: IProps) => (
+  <Particles
+    params={params}
+  />
+);
