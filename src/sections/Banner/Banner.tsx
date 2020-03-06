@@ -21,7 +21,9 @@ export const Banner = () => {
         <Typography>
           {subtitle}
         </Typography>
-        <ContactInformation />
+        <div className={classes.contact}>
+          <ContactInformation />
+        </div>
       </div>
     </div>
   );
@@ -44,5 +46,8 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('sm')]: {
       width: '90%',
     },
+  },
+  contact: {
+    padding: '20px',
   },
 }));
