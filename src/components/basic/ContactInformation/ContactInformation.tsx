@@ -35,6 +35,7 @@ export const ContactInformation = () => {
           className={classes.detail}
           target="_blank"
           rel="noopener noreferrer"
+          key={detail.href}
         >
           <FontAwesomeIcon icon={detail.icon} size="2x" />
         </a>

@@ -10,7 +10,7 @@ export const ExpandedNavigation = (props: IBaseNavigationProps) => {
       <Logo />
       <div>
         {props.links.map((link) => (
-          <Button>
+          <Button key={link.label}>
             <Typography className={classes.text}>
               {link.label}
             </Typography>
