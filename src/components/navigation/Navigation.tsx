@@ -1,5 +1,7 @@
 import * as React from 'react';
+import { Hidden } from '@material-ui/core';
 import { ExpandedNavigation } from './ExpandedNavigation/ExpandedNavigation';
+import { CollapsedNavigation } from './CollapsedNavigation/CollapsedNavigation';
 
 
 const links: { label: string; route: string }[] = [
@@ -26,5 +28,12 @@ const links: { label: string; route: string }[] = [
 ];
 
 export const Navigation = () => (
-  <ExpandedNavigation links={links} />
+  <>
+    <Hidden smDown={true}>
+      <ExpandedNavigation links={links} />
+    </Hidden>
+    <Hidden smUp={true}>
+      <CollapsedNavigation links={links} />
+    </Hidden>
+  </>
 );

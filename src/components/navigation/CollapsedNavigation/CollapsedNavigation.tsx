@@ -1,22 +1,18 @@
 import * as React from 'react';
-import { Typography, Button, makeStyles } from '@material-ui/core';
+import { makeStyles, IconButton } from '@material-ui/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { IBaseNavigationProps } from '../types';
 import { Logo } from '../../basic/Logo/logo';
 
-export const ExpandedNavigation = (props: IBaseNavigationProps) => {
+export const CollapsedNavigation = (props: IBaseNavigationProps) => {
   const classes = useStyles();
   return (
     <div className={classes.header}>
       <Logo />
-      <div>
-        {props.links.map((link) => (
-          <Button>
-            <Typography className={classes.text}>
-              {link.label}
-            </Typography>
-          </Button>
-        ))}
-      </div>
+      <IconButton>
+        <FontAwesomeIcon icon={faBars} color="#ffffff" />
+      </IconButton>
     </div>
   );
 };
@@ -27,7 +23,7 @@ const useStyles = makeStyles({
     textTransform: 'capitalize',
   },
   header: {
-    height: '100px',
+    height: '80px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-around',
