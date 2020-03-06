@@ -1,37 +1,37 @@
 import * as React from 'react';
-import { Typography, Button } from '@material-ui/core';
+import { Typography, Button, makeStyles } from '@material-ui/core';
+import { IBaseNavigationProps } from '../types';
 
-const links: { label: string; route: string }[] = [
-  {
-    label: 'Education',
-    route: '',
-  },
-  {
-    label: 'Skills',
-    route: '',
-  },
-  {
-    label: 'Work',
-    route: '',
-  },
-  {
-    label: 'Projects',
-    route: '',
-  },
-  {
-    label: 'Extra Curricular',
-    route: '',
-  },
-];
+export const ExpandedNavigation = (props: IBaseNavigationProps) => {
+  const classes = useStyles();
+  return (
+    <div className={classes.header}>
+      <Typography variant="h4">
+        Bea Esguerra
+      </Typography>
+      <div>
+        {props.links.map((link) => (
+          <Button>
+            <Typography className={classes.text}>
+              {link.label}
+            </Typography>
+          </Button>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export const ExpandedNavigation = () => (
-  <div>
-    {links.map((link) => (
-      <Button>
-        <Typography>
-          {link.label}
-        </Typography>
-      </Button>
-    ))}
-  </div>
-);
+const useStyles = makeStyles({
+  text: {
+    color: 'white',
+    textTransform: 'capitalize',
+  },
+  header: {
+    height: '100px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    width: '100%',
+  },
+});

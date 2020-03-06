@@ -15,8 +15,10 @@ export const Banner = () => {
   return (
     <div className={classes.background}>
       <Bubbles />
-      <div className={classes.content}>
+      <div className={classes.navigation}>
         <Navigation />
+      </div>
+      <div className={classes.content}>
         <Typography variant="h1">
           {title}
         </Typography>
@@ -51,5 +53,11 @@ export const useStyles = makeStyles(theme => ({
   },
   contact: {
     padding: '20px',
+  },
+  navigation: {
+    alignSelf: 'flex-end',
+    top: 0,
+    position: 'absolute',
+    width: '100%',
   },
 }));
