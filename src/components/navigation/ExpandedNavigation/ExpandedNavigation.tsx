@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Typography, Button, makeStyles } from '@material-ui/core';
+import { HashLink as Link } from 'react-router-hash-link';
 import { IBaseNavigationProps } from '../types';
 import { Logo } from '../../basic/Logo/logo';
 
@@ -10,11 +11,13 @@ export const ExpandedNavigation = (props: IBaseNavigationProps) => {
       <Logo />
       <div>
         {props.links.map((link) => (
-          <Button key={link.label}>
-            <Typography className={classes.text}>
-              {link.label}
-            </Typography>
-          </Button>
+          <Link key={link.label} smooth={true} to={`#${link.route}`}>
+            <Button>
+              <Typography className={classes.text}>
+                {link.label}
+              </Typography>
+            </Button>
+          </Link>
         ))}
       </div>
     </div>
