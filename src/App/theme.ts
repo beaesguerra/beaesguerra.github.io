@@ -15,7 +15,7 @@ export const theme: Theme = createMuiTheme({
       fontFamily: 'Dancing Script, cursive',
     },
     body1: {
-      fontFamily: 'Fira Sans, sans-serif'
-    }
-  }
+      fontFamily: 'Fira Sans, sans-serif',
+    },
+  },
 });

@@ -18,13 +18,119 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "EXTEND_ESLINT=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": [
+            "./src"
+          ],
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ]
+        }
+      }
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "react-app",
+      "airbnb",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "react/prop-types": [
+        "off"
+      ],
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": true,
+          "optionalDependencies": false,
+          "peerDependencies": false
+        }
+      ],
+      "import/extensions": "off",
+      "max-len": [
+        "error",
+        {
+          "code": 100
+        }
+      ],
+      "import/prefer-default-export": "off",
+      "react/jsx-fragments": "off",
+      "react/jsx-boolean-value": [
+        "error",
+        "always"
+      ],
+      "no-console": [
+        "warn",
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "lines-between-class-members": [
+        "error",
+        "always",
+        {
+          "exceptAfterSingleLine": true
+        }
+      ],
+      "@typescript-eslint/indent": [
+        "error",
+        2
+      ],
+      "react/jsx-filename-extension": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "react/jsx-props-no-spreading": "off",
+      "operator-linebreak": "off",
+      "implicit-arrow-linebreak": "off",
+      "no-plusplus": "off",
+      "object-curly-newline": "off",
+      "react/prefer-stateless-function": "off",
+      "react/destructuring-assignment": "off",
+      "arrow-parens": "off",
+      "consistent-return": "off",
+      "operator-assignment": "off",
+      "no-await-in-loop": "off",
+      "arrow-body-style": "off",
+      "react/sort-comp": "off",
+      "prefer-destructuring": "off",
+      "@typescript-eslint/array-type": "off",
+      "@typescript-eslint/no-inferrable-types": "off",
+      "indent": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.ts?(x)"
+        ],
+        "rules": {
+          "@typescript-eslint/no-unused-vars": "error",
+          "@typescript-eslint/interface-name-prefix": [
+            "error",
+            "always"
+          ],
+          "@typescript-eslint/explicit-function-return-type": "off",
+          "@typescript-eslint/no-empty-interface": "off",
+          "@typescript-eslint/explicit-member-accessibility": "off",
+          "@typescript-eslint/no-explicit-any": "error"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
@@ -37,5 +143,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.0.1"
   }
 }

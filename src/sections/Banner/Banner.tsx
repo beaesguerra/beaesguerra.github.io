@@ -1,9 +1,12 @@
 import * as React from 'react';
-import { Bubbles } from '../../components/basic/particles/Bubbles/Bubbles';
 import { makeStyles, Typography } from '@material-ui/core';
+import { Bubbles } from '../../components/basic/particles/Bubbles/Bubbles';
 
 const title = 'Welcome';
-const subtitle = 'My name is Bea and I am a software developer. I am passionate about learning and I enjoy using technology to create innovative solutions that help people.';
+const subtitle = `
+My name is Bea and I am a software developer. 
+I am passionate about learning and I enjoy 
+using technology to create innovative solutions that help people.`;
 
 export const Banner = () => {
   const classes = useStyles();
@@ -20,7 +23,7 @@ export const Banner = () => {
       </div>
     </div>
   );
-}
+};
 
 export const useStyles = makeStyles(theme => ({
   background: {
@@ -38,6 +41,6 @@ export const useStyles = makeStyles(theme => ({
     width: '60%',
     [theme.breakpoints.down('sm')]: {
       width: '90%',
-    }
-  }
+    },
+  },
 }));
