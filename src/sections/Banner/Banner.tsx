@@ -2,6 +2,7 @@ import * as React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 import { Bubbles } from '../../components/basic/particles/Bubbles/Bubbles';
 import { ContactInformation } from '../../components/basic/ContactInformation/ContactInformation';
+import { Navigation } from '../../components/navigation/Navigation';
 
 const title = 'Welcome';
 const subtitle = `
@@ -15,6 +16,7 @@ export const Banner = () => {
     <div className={classes.background}>
       <Bubbles />
       <div className={classes.content}>
+        <Navigation />
         <Typography variant="h1">
           {title}
         </Typography>
