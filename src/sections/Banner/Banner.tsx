@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 import { Bubbles } from '../../components/basic/particles/Bubbles/Bubbles';
+import { ContactInformation } from '../../components/basic/ContactInformation/ContactInformation';
 
 const title = 'Welcome';
 const subtitle = `
@@ -20,6 +21,9 @@ export const Banner = () => {
         <Typography>
           {subtitle}
         </Typography>
+        <div className={classes.contact}>
+          <ContactInformation />
+        </div>
       </div>
     </div>
   );
@@ -42,5 +46,8 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('sm')]: {
       width: '90%',
     },
+  },
+  contact: {
+    padding: '20px',
   },
 }));
