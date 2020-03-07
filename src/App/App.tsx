@@ -3,6 +3,7 @@ import { ThemeProvider } from '@material-ui/core';
 import { Banner } from '../sections/Banner/Banner';
 import { theme } from './theme';
 import { hashRoutes } from './routes';
+import { Footer } from '../sections/Footer/Footer';
 
 export const App = () => (
   <ThemeProvider theme={theme}>
@@ -37,5 +38,6 @@ export const App = () => (
     >
       extra-curricular
     </div>
+    <Footer />
   </ThemeProvider>
 );
