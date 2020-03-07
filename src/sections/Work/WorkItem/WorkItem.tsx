@@ -14,7 +14,7 @@ export const WorkItem = (props: IProps) => {
         {props.logo}
       </div>
       <div className={classes.content}>
-        <Typography gutterBottom={true}>
+        <Typography gutterBottom={true} variant="h5" color="secondary">
           {props.title}
         </Typography>
         <Typography className={classes.description}>
@@ -29,16 +29,24 @@ const useStyles = makeStyles(theme => ({
   logo: {
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
+    [theme.breakpoints.up('sm')]: {
+      width: '40%',
+    },
   },
   workItem: {
     display: 'flex',
     justifyContent: 'space-between',
+    alignItems: 'center',
     padding: '20px',
-    flexWrap: 'wrap',
     width: '100%',
+    [theme.breakpoints.down('sm')]: {
+      flexWrap: 'wrap',
+    },
   },
   content: {
+    [theme.breakpoints.up('sm')]: {
+      width: '60%',
+    },
   },
   description: {
     padding: '20px 0',

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { makeStyles, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import pasonLogo from '../../assets/pason_logo.jpg';
 import openhouseLogo from '../../assets/openhouse-ai-logo.png';
 import { WorkItem } from './WorkItem/WorkItem';
@@ -28,14 +28,6 @@ export const Work = () => {
   ];
   return (
     <div className={classes.container}>
-      <Typography
-        variant="h5"
-        color="secondary"
-        align="center"
-        gutterBottom={true}
-      >
-        Work
-      </Typography>
       <div className={classes.workItems}>
         {workItems.map(item => (
           <WorkItem
@@ -63,7 +55,10 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',
-    width: '60%',
+    width: '70%',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+    },
   },
   pasonLogo: {
     height: '80px',

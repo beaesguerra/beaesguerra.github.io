@@ -2,8 +2,9 @@ import * as React from 'react';
 import { Typography, makeStyles } from '@material-ui/core';
 import uOfCLogo from '../../assets/uofc_logo.jpg';
 
+const title = 'Bachelor of Science in Software Engineering';
+
 const points: string[] = [
-  'Bachelor of Science in Software Engineering',
   'Schulich School of Engineering, University of Calgary',
   'Completed the Engineering Internship Program',
   'Graduated with distinction',
@@ -17,10 +18,9 @@ export const Education = () => {
       <Typography
         variant="h5"
         color="secondary"
-        align="center"
         gutterBottom={true}
       >
-        Education
+        {title}
       </Typography>
       <div className={classes.content}>
         <div>
