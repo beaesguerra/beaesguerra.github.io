@@ -2,9 +2,30 @@ import * as React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 import pasonLogo from '../../assets/pason_logo.jpg';
 import openhouseLogo from '../../assets/openhouse-ai-logo.png';
+import { WorkItem } from './WorkItem/WorkItem';
 
 export const Work = () => {
   const classes = useStyles();
+  const workItems = [
+    {
+      logo: <img src={openhouseLogo} alt="openhouse-ai-logo" className={classes.openhouseLogo} />,
+      title: 'Full Stack Software Developer',
+      description: `
+        Established frontend architecture for web applications &
+        an internal component library, implemented microservices with REST APIs,
+        integrated continuous integration workflows, and led scrum for a team of 6.
+      `,
+    },
+    {
+      logo: <img src={pasonLogo} alt="pason-logo" className={classes.pasonLogo} />,
+      title: 'DataHub Software Developer Intern',
+      description: `
+        Worked closely with UX to implement features for a drilling data web application,
+        implemented a backend service for running scheduled tasks for customers,
+        and integrated tools to improve the quality of microservices.
+      `,
+    },
+  ];
   return (
     <div className={classes.container}>
       <Typography
@@ -16,18 +37,14 @@ export const Work = () => {
         Work
       </Typography>
       <div className={classes.workItems}>
-        <div className={classes.workItem}>
-          <img src={openhouseLogo} alt="openhouse-ai-logo" className={classes.openhouseLogo} />
-          <Typography>
-            Full Stack Software Developer
-          </Typography>
-        </div>
-        <div className={classes.workItem}>
-          <img src={pasonLogo} alt="pason-logo" className={classes.pasonLogo} />
-          <Typography>
-            DataHub Software Developer Intern
-          </Typography>
-        </div>
+        {workItems.map(item => (
+          <WorkItem
+            key={item.title}
+            title={item.title}
+            logo={item.logo}
+            description={item.description}
+          />
+        ))}
       </div>
     </div>
   );
@@ -38,11 +55,14 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
     flexDirection: 'column',
+    padding: '10px',
   },
   workItems: {
     display: 'flex',
-    justifyContent: 'space-between',
+    flexDirection: 'column',
+    justifyContent: 'space-around',
     width: '60%',
   },
   pasonLogo: {
