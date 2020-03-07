@@ -11,9 +11,8 @@ const useStyles = makeStyles(muiTheme => ({
       backgroundColor: 'white',
     },
   },
-  spacer: {
-    height: '15vh',
-    backgroundColor: 'white',
+  section: {
+    padding: '15vh 10px',
   },
 }));
 
@@ -23,12 +22,10 @@ export const App = () => {
     <>
       <Banner />
       <div
-        style={{ backgroundColor: 'white' }}
+        className={classes.section}
         id={hashRoutes.EDUCATION}
       >
-        <div className={classes.spacer} />
         <Education />
-        <div className={classes.spacer} />
       </div>
       <div
         style={{ height: '100vh', backgroundColor: '#baebae' }}

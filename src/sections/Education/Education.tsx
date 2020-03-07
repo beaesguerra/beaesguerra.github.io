@@ -2,6 +2,14 @@ import * as React from 'react';
 import { Typography, makeStyles } from '@material-ui/core';
 import uOfCLogo from '../../assets/uofc_logo.jpg';
 
+const points: string[] = [
+  'Bachelor of Science in Software Engineering',
+  'Schulich School of Engineering, University of Calgary',
+  'Completed the Engineering Internship Program',
+  'Graduated with distinction',
+  'Cumulative GPA: 3.40',
+];
+
 export const Education = () => {
   const classes = useStyles();
   return (
@@ -16,21 +24,9 @@ export const Education = () => {
       </Typography>
       <div className={classes.content}>
         <div>
-          <Typography>
-            Bachelor of Science in Software Engineering
-          </Typography>
-          <Typography>
-            Schulich School of Engineering, University of Calgary
-          </Typography>
-          <Typography>
-            Completed the Engineering Internship Program
-          </Typography>
-          <Typography>
-            Graduated with distinction
-          </Typography>
-          <Typography>
-            Cumulative GPA: 3.40
-          </Typography>
+          {points.map((point) => (
+            <Typography key={point}>{point}</Typography>
+          ))}
         </div>
         <img
           src={uOfCLogo}
