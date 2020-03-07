@@ -3,25 +3,32 @@ import { makeStyles } from '@material-ui/core';
 import { Banner } from '../sections/Banner/Banner';
 import { hashRoutes } from './routes';
 import { Footer } from '../sections/Footer/Footer';
+import { Education } from '../sections/Education/Education';
 
 const useStyles = makeStyles(muiTheme => ({
   '@global': {
     body: {
-      backgroundColor: muiTheme.palette.primary.main,
+      backgroundColor: 'white',
     },
+  },
+  spacer: {
+    height: '15vh',
+    backgroundColor: 'white',
   },
 }));
 
 export const App = () => {
-  useStyles();
+  const classes = useStyles();
   return (
     <>
       <Banner />
       <div
-        style={{ height: '100vh', backgroundColor: '#beabea' }}
+        style={{ backgroundColor: 'white' }}
         id={hashRoutes.EDUCATION}
       >
-        education
+        <div className={classes.spacer} />
+        <Education />
+        <div className={classes.spacer} />
       </div>
       <div
         style={{ height: '100vh', backgroundColor: '#baebae' }}
