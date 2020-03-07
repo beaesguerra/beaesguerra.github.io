@@ -24,7 +24,7 @@ export const App = () => {
       <Banner />
       <div
         className={classes.section}
-        id={hashRoutes.EDUCATION}
+        id={hashRoutes.ABOUT}
       >
         <Education />
       </div>

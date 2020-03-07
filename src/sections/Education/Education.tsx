@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
   content: {
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     flexWrap: 'wrap',
     width: '60%',
     [theme.breakpoints.down('sm')]: {

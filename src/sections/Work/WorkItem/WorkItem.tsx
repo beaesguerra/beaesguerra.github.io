@@ -17,7 +17,7 @@ export const WorkItem = (props: IProps) => {
         <Typography gutterBottom={true}>
           {props.title}
         </Typography>
-        <Typography>
+        <Typography className={classes.description}>
           {props.description}
         </Typography>
       </div>
@@ -34,9 +34,13 @@ const useStyles = makeStyles(theme => ({
   workItem: {
     display: 'flex',
     justifyContent: 'space-between',
-    padding: '10px',
+    padding: '20px',
+    flexWrap: 'wrap',
+    width: '100%',
   },
   content: {
-    width: '50%',
+  },
+  description: {
+    padding: '20px 0',
   },
 }));
