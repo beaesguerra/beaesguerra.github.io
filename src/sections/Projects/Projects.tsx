@@ -30,6 +30,7 @@ const projects: IProjectProps[] = [
       'Express',
       'REST API',
     ],
+    bgColor: '#959fc9',
   },
 ];
 
@@ -45,17 +46,12 @@ export const Projects = () => {
           {description}
         </Typography>
         <GithubContactInfo color="#000000" />
-        {projects.map((project) => (
-          <Project
-            caption={project.caption}
-            title={project.title}
-            subtitle={project.subtitle}
-            img={project.img}
-            description={project.description}
-            keywords={project.keywords}
-          />
-        ))}
       </div>
+      {projects.map((project) => (
+        <Project
+          {...project}
+        />
+      ))}
     </div>
   );
 };

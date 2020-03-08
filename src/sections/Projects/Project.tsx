@@ -9,12 +9,13 @@ export interface IProps {
   img: string;
   description: string;
   keywords: string[];
+  bgColor: string;
 }
 
 export const Project = (props: IProps) => {
   const classes = useStyles();
   return (
-    <div className={classes.project}>
+    <div className={classes.project} style={{ backgroundColor: props.bgColor }}>
       <Typography variant="caption">
         {props.caption}
       </Typography>
@@ -25,7 +26,7 @@ export const Project = (props: IProps) => {
       <Typography className={classes.description} align="center">
         {props.description}
       </Typography>
-      <Keywords keywords={props.keywords} />
+      <Keywords keywords={props.keywords} color="#ffffff" />
     </div>
   );
 };
@@ -47,6 +48,8 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+    color: 'white',
+    padding: '10vh 0',
   },
   description: {
     width: '70%',
