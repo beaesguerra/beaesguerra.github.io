@@ -65,6 +65,9 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'space-between',
     flexWrap: 'wrap',
     width: '60%',
+    [theme.breakpoints.down('md')]: {
+      width: '70%',
+    },
     [theme.breakpoints.down('sm')]: {
       width: '90%',
       justifyContent: 'center',
