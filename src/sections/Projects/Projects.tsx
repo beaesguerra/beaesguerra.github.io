@@ -35,6 +35,7 @@ const projects: IProjectProps[] = [
       'REST API',
     ],
     bgColor: '#08adad',
+    link: 'https://github.com/agriculture-capstone',
   },
   {
     caption: '2017 Tikkun Olam Makers Makeathon',
@@ -48,6 +49,7 @@ const projects: IProjectProps[] = [
     `,
     keywords: ['JavaScript', 'React Native'],
     bgColor: '#959fc9',
+    link: 'https://github.com/beaesguerra/Aut2Talk',
   },
   {
     caption: '2016 CSUS Coding Hackathon - 2nd Place',
@@ -62,6 +64,7 @@ const projects: IProjectProps[] = [
     `,
     keywords: ['C++', 'Qt Creator'],
     bgColor: '#ca668e',
+    link: 'https://github.com/beaesguerra/dressr',
   },
   {
     caption: 'Human Computer Interaction Final Project',

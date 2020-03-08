@@ -64,3 +64,11 @@ export const LinkedInContactInfo = (props: IExternalProps) => (
     {...props}
   />
 );
+
+export const GithubProjectInfo = (props: IExternalProps & { link: string }) => (
+  <ContactIcon
+    icon={faGithub}
+    href={props.link}
+    {...props}
+  />
+);
