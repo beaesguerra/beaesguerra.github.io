@@ -24,8 +24,18 @@ export const theme: Theme = createMuiTheme({
       fontWeight: 'bold',
       textTransform: 'uppercase',
     },
+    h6: {
+      fontFamily: 'Poiret One, cursive',
+      letterSpacing: '2px',
+      fontWeight: 'bold',
+    },
     body1: {
       fontFamily: 'Fira Sans, sans-serif',
+    },
+    caption: {
+      fontFamily: 'Fira Sans, sans-serif',
+      letterSpacing: '2px',
+      textTransform: 'uppercase',
     },
   },
 });

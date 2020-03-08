@@ -5,6 +5,7 @@ import { hashRoutes } from './routes';
 import { Footer } from '../sections/Footer/Footer';
 import { Education } from '../sections/Education/Education';
 import { Work } from '../sections/Work/Work';
+import { Projects } from '../sections/Projects/Projects';
 
 const useStyles = makeStyles(muiTheme => ({
   '@global': {
@@ -45,10 +46,9 @@ export const App = () => {
         <Work />
       </div>
       <div
-        style={{ height: '100vh', backgroundColor: '#aebaeb' }}
         id={hashRoutes.PROJECTS}
       >
-        projects
+        <Projects />
       </div>
       <div
         style={{ height: '100vh', backgroundColor: '#aeeeeb' }}
