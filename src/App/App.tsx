@@ -52,7 +52,7 @@ export const App = () => {
       </div>
       <div
         style={{ height: '100vh', backgroundColor: '#aeeeeb' }}
-        id={hashRoutes.EXTRA_CURRICULAR}
+        id={hashRoutes.VOLUNTEERING}
       >
         extra-curricular
       </div>

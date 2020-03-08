@@ -20,7 +20,7 @@ const links: { label: string; route: string }[] = [
   },
   {
     label: 'Volunteering',
-    route: hashRoutes.EXTRA_CURRICULAR,
+    route: hashRoutes.VOLUNTEERING,
   },
 ];
 
