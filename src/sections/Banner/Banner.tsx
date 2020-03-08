@@ -47,7 +47,7 @@ export const useStyles = makeStyles(theme => ({
     position: 'absolute',
     textAlign: 'center',
     width: '50%',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       width: '90%',
     },
   },

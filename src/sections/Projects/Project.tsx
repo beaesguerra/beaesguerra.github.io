@@ -53,7 +53,7 @@ const useStyles = makeStyles(theme => ({
   description: {
     width: '50%',
     padding: '20px 0',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       width: '100%',
       flexGrow: 1,
     },
@@ -62,7 +62,7 @@ const useStyles = makeStyles(theme => ({
     height: '50vh',
     width: 'auto',
     padding: '20px 0',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       height: 'auto',
       width: '100%',
     },

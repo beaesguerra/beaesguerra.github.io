@@ -67,6 +67,7 @@ const useStyles = makeStyles(theme => ({
     width: '60%',
     [theme.breakpoints.down('sm')]: {
       width: '90%',
+      justifyContent: 'center',
     },
   },
   schulich: {
@@ -87,7 +88,7 @@ const useStyles = makeStyles(theme => ({
     padding: '20px 0',
   },
   title: {
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       textAlign: 'center',
     },
   },
