@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e3743dd7.chunk.css",
+    "main.js": "/static/js/main.70dc3c01.chunk.js",
+    "main.js.map": "/static/js/main.70dc3c01.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c70048c8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c70048c8.js.map",
+    "static/js/2.25f6461c.chunk.js": "/static/js/2.25f6461c.chunk.js",
+    "static/js/2.25f6461c.chunk.js.map": "/static/js/2.25f6461c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3f95b94c828d4fcacaa1c919514d2cab.js": "/precache-manifest.3f95b94c828d4fcacaa1c919514d2cab.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e3743dd7.chunk.css.map": "/static/css/main.e3743dd7.chunk.css.map",
+    "static/js/2.25f6461c.chunk.js.LICENSE.txt": "/static/js/2.25f6461c.chunk.js.LICENSE.txt",
+    "static/media/Aut2Talk.png": "/static/media/Aut2Talk.51bb42cd.png",
+    "static/media/TerminalFighter.png": "/static/media/TerminalFighter.76a6ddcc.png",
+    "static/media/capstone.png": "/static/media/capstone.3ab917d8.png",
+    "static/media/dressr.png": "/static/media/dressr.98336ac3.png",
+    "static/media/spreadthelove.jpg": "/static/media/spreadthelove.26a54e82.jpg",
+    "static/media/spreadthelove2.jpg": "/static/media/spreadthelove2.3364c39b.jpg",
+    "static/media/spreadthelove3.jpg": "/static/media/spreadthelove3.696ba4a5.jpg",
+    "static/media/uCook.png": "/static/media/uCook.bd8b3eb0.png",
+    "static/media/ucra.png": "/static/media/ucra.2b6730bb.png",
+    "static/media/ucra1.png": "/static/media/ucra1.b6d2ae74.png",
+    "static/media/ucra2.png": "/static/media/ucra2.68ee69d5.png",
+    "static/media/uofc_logo.jpg": "/static/media/uofc_logo.afdce687.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c70048c8.js",
+    "static/js/2.25f6461c.chunk.js",
+    "static/css/main.e3743dd7.chunk.css",
+    "static/js/main.70dc3c01.chunk.js"
+  ]
+}

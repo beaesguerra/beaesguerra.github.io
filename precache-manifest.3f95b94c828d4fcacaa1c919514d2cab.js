@@ -1,0 +1,74 @@
+self.__precacheManifest = (self.__precacheManifest || []).concat([
+  {
+    "revision": "aa45d6032603f876dfe6f5e8dfd05656",
+    "url": "/index.html"
+  },
+  {
+    "revision": "55a40a52179374825fb4",
+    "url": "/static/css/main.e3743dd7.chunk.css"
+  },
+  {
+    "revision": "496ea70ec29ee5653e09",
+    "url": "/static/js/2.25f6461c.chunk.js"
+  },
+  {
+    "revision": "ac9fac6c8e755a8efecd01981adb88e6",
+    "url": "/static/js/2.25f6461c.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "55a40a52179374825fb4",
+    "url": "/static/js/main.70dc3c01.chunk.js"
+  },
+  {
+    "revision": "a27870e5f03a3425f6aa",
+    "url": "/static/js/runtime-main.c70048c8.js"
+  },
+  {
+    "revision": "51bb42cd502094fe9482cd908a3e4a25",
+    "url": "/static/media/Aut2Talk.51bb42cd.png"
+  },
+  {
+    "revision": "76a6ddcceadb763eb31fb42fee56ebcc",
+    "url": "/static/media/TerminalFighter.76a6ddcc.png"
+  },
+  {
+    "revision": "3ab917d81b447cf1230717a0e61a987d",
+    "url": "/static/media/capstone.3ab917d8.png"
+  },
+  {
+    "revision": "98336ac3fb1344522c9ccbf75bfb1a8b",
+    "url": "/static/media/dressr.98336ac3.png"
+  },
+  {
+    "revision": "26a54e8228b971497cb45422c9876d04",
+    "url": "/static/media/spreadthelove.26a54e82.jpg"
+  },
+  {
+    "revision": "3364c39bf9ad3e5107315b78f43f87a0",
+    "url": "/static/media/spreadthelove2.3364c39b.jpg"
+  },
+  {
+    "revision": "696ba4a593c98a1a1169d8a0bb1985c3",
+    "url": "/static/media/spreadthelove3.696ba4a5.jpg"
+  },
+  {
+    "revision": "bd8b3eb00056ebeaf8c3c1eefb5b7c42",
+    "url": "/static/media/uCook.bd8b3eb0.png"
+  },
+  {
+    "revision": "2b6730bbb389c653ff5a9c8c03021b08",
+    "url": "/static/media/ucra.2b6730bb.png"
+  },
+  {
+    "revision": "b6d2ae74efe7255fc4bc9b5f327767d1",
+    "url": "/static/media/ucra1.b6d2ae74.png"
+  },
+  {
+    "revision": "68ee69d5756cf0387bdb7ae0853c63de",
+    "url": "/static/media/ucra2.68ee69d5.png"
+  },
+  {
+    "revision": "afdce6876161fc4cdd2036aa83bae3b5",
+    "url": "/static/media/uofc_logo.afdce687.jpg"
+  }
+]);
