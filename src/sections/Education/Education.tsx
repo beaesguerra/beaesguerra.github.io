@@ -2,7 +2,8 @@ import * as React from 'react';
 import { Typography, makeStyles } from '@material-ui/core';
 import uOfCLogo from '../../assets/uofc_logo.jpg';
 
-const title = 'Bachelor of Science in Software Engineering';
+const title = 'Bachelor of Science';
+const subtitle = 'in Software Engineering';
 
 const points: string[] = [
   'Schulich School of Engineering, University of Calgary',
@@ -15,15 +16,21 @@ export const Education = () => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <Typography
-        variant="h5"
-        color="secondary"
-        gutterBottom={true}
-      >
-        {title}
-      </Typography>
       <div className={classes.content}>
         <div>
+          <Typography
+            variant="h5"
+            color="secondary"
+          >
+            {title}
+          </Typography>
+          <Typography
+            variant="h5"
+            color="secondary"
+            gutterBottom={true}
+          >
+            {subtitle}
+          </Typography>
           {points.map((point) => (
             <Typography key={point}>{point}</Typography>
           ))}
