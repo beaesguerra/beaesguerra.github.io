@@ -50,7 +50,6 @@ const useStyles = makeStyles({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    // width: '100%',
     padding: '0 20px',
   },
 });

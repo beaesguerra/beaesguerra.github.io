@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 import { Keywords } from '../../components/basic/Keywords/Keywords';
+import {
+  GithubProjectInfo,
+} from '../../components/basic/ContactInformation/ContactInformationIcons';
 
 export interface IProps {
   caption?: string;
@@ -10,6 +13,7 @@ export interface IProps {
   description: string;
   keywords: string[];
   bgColor: string;
+  link?: string;
 }
 
 export const Project = (props: IProps) => {
@@ -21,8 +25,9 @@ export const Project = (props: IProps) => {
           {props.caption}
         </Typography>
       )}
-      <Typography variant="h5" align="center">
+      <Typography variant="h5" align="center" className={classes.title}>
         {props.title}
+        {props.link && <GithubProjectInfo link={props.link} />}
       </Typography>
       <Typography variant="h6" align="center">
         {props.subtitle}
@@ -61,5 +66,9 @@ const useStyles = makeStyles(theme => ({
       height: 'auto',
       width: '100%',
     },
+  },
+  title: {
+    display: 'flex',
+    alignItems: 'center',
   },
 }));
