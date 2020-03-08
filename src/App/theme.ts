@@ -13,9 +13,11 @@ export const theme: Theme = createMuiTheme({
   typography: {
     h1: {
       fontFamily: 'Dancing Script, cursive',
+      fontSize: '7rem',
+      fontWeight: 'bold',
     },
     h4: {
-      fontFamily: 'Fira Sans, sans-serif',
+      fontFamily: '"Baloo Chettan 2", cursive',
       fontWeight: 'bold',
     },
     h5: {
@@ -30,10 +32,13 @@ export const theme: Theme = createMuiTheme({
       fontWeight: 'bold',
     },
     body1: {
-      fontFamily: 'Fira Sans, sans-serif',
+      fontFamily: '"Baloo Chettan 2", cursive',
+    },
+    body2: {
+      fontFamily: '"Baloo Chettan 2", cursive',
     },
     caption: {
-      fontFamily: 'Fira Sans, sans-serif',
+      fontFamily: '"Baloo Chettan 2", cursive',
       letterSpacing: '2px',
       textTransform: 'uppercase',
     },

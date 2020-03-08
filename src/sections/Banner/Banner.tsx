@@ -22,7 +22,7 @@ export const Banner = () => {
         <Typography variant="h1">
           {title}
         </Typography>
-        <Typography>
+        <Typography className={classes.subtitle}>
           {subtitle}
         </Typography>
         <div className={classes.contact}>
@@ -59,5 +59,8 @@ export const useStyles = makeStyles(theme => ({
     top: 0,
     position: 'absolute',
     width: '100%',
+  },
+  subtitle: {
+    padding: '20px',
   },
 }));
