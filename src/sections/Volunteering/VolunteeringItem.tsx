@@ -18,12 +18,12 @@ export const VolunteeringItem = (props: IProps) => {
       <Typography variant="h6" align="center" color="primary">
         {props.subtitle}
       </Typography>
-      <div className={classes.images}>
-        {props.imgJsx}
-      </div>
       <Typography className={classes.description}>
         {props.description}
       </Typography>
+      <div className={classes.images}>
+        {props.imgJsx}
+      </div>
     </div>
   );
 };
@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
     padding: '10vh 10px',
   },
   description: {
-    width: '50%',
+    width: '60%',
     padding: '20px 0',
     [theme.breakpoints.down('sm')]: {
       width: '100%',
@@ -48,7 +48,8 @@ const useStyles = makeStyles(theme => ({
     height: '25vh',
     display: 'flex',
     justifyContent: 'space-between',
-    width: '50%',
+    width: '60%',
+    flexWrap: 'wrap',
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       flexGrow: 1,
