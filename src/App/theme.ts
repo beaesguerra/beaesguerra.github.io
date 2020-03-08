@@ -27,5 +27,10 @@ export const theme: Theme = createMuiTheme({
     body1: {
       fontFamily: 'Fira Sans, sans-serif',
     },
+    caption: {
+      fontFamily: 'Fira Sans, sans-serif',
+      letterSpacing: '2px',
+      textTransform: 'uppercase',
+    },
   },
 });
