@@ -27,6 +27,7 @@ export const theme: Theme = createMuiTheme({
     h6: {
       fontFamily: 'Poiret One, cursive',
       letterSpacing: '2px',
+      fontWeight: 'bold',
     },
     body1: {
       fontFamily: 'Fira Sans, sans-serif',

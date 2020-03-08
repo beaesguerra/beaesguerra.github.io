@@ -5,6 +5,7 @@ import {
 } from '../../components/basic/ContactInformation/ContactInformationIcons';
 import { IProps as IProjectProps, Project } from './Project';
 import capstoneImg from '../../assets/capstone.png';
+import aut2Talk from '../../assets/Aut2Talk.png';
 
 const title = 'Browse My Projects';
 const description = `
@@ -31,6 +32,19 @@ const projects: IProjectProps[] = [
       'REST API',
     ],
     bgColor: '#959fc9',
+  },
+  {
+    caption: '2017 Tikkun Olam Makers Makeathon',
+    title: 'Aut2Talk',
+    subtitle: 'Mobile Development (iOS & Android)',
+    img: aut2Talk,
+    description: `
+      Participated in a 72-hour makeathon to create a mobile 
+      application that would help people with autism 
+      communicate their needs and feelings with others.
+    `,
+    keywords: ['JavaScript', 'React Native'],
+    bgColor: '#beabea',
   },
 ];
 
