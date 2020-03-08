@@ -45,14 +45,13 @@ const useStyles = makeStyles(theme => ({
     },
   },
   images: {
-    height: '25vh',
     display: 'flex',
     justifyContent: 'space-between',
-    width: '60%',
-    flexWrap: 'wrap',
+    alignItems: 'center',
     [theme.breakpoints.down('sm')]: {
+      flexWrap: 'wrap',
       width: '100%',
-      flexGrow: 1,
+      flexDirection: 'column',
     },
   },
 }));

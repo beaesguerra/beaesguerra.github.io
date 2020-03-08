@@ -7,7 +7,7 @@ import spreadTheLove1 from '../../assets/spreadthelove.jpg';
 import spreadTheLove2 from '../../assets/spreadthelove2.jpg';
 import spreadTheLove3 from '../../assets/spreadthelove3.jpg';
 
-const imgStyle = { width: 'auto', height: '100%' };
+const imgStyle = { width: 'auto', height: '25vh', padding: '10px' };
 
 export const volunteeringItems: IVolunteeringItemProps[] = [
   {
