@@ -13,7 +13,7 @@ export const Work = () => {
       description: `
         Established frontend architecture for web applications &
         an internal component library, implemented microservices with REST APIs,
-        integrated continuous integration workflows, and led scrum for a team of 6.
+        integrated continuous integration workflows, and led scrum for a team of six.
       `,
     },
     {
