@@ -13,7 +13,10 @@ const useStyles = makeStyles(muiTheme => ({
     },
   },
   section: {
-    padding: '15vh 10px',
+    padding: '10vh 10px',
+  },
+  spacer: {
+    height: '15vh',
   },
 }));
 
@@ -22,6 +25,7 @@ export const App = () => {
   return (
     <>
       <Banner />
+      <div className={classes.spacer} />
       <div
         className={classes.section}
         id={hashRoutes.ABOUT}

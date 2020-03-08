@@ -36,6 +36,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     width: '40%',
+    padding: '10px',
     [theme.breakpoints.down('sm')]: {
       flexGrow: 1,
     },
@@ -59,6 +60,6 @@ const useStyles = makeStyles(theme => ({
     padding: '20px 0',
   },
   title: {
-    padding: '10px',
+    padding: '10px 0px',
   },
 }));

@@ -31,9 +31,11 @@ export const Education = () => {
           >
             {subtitle}
           </Typography>
-          {points.map((point) => (
-            <Typography key={point}>{point}</Typography>
-          ))}
+          <div className={classes.points}>
+            {points.map((point) => (
+              <Typography key={point}>{point}</Typography>
+            ))}
+          </div>
         </div>
         <div className={classes.logo}>
           <img
@@ -78,5 +80,8 @@ const useStyles = makeStyles(theme => ({
       width: '100%',
       padding: '10px',
     },
+  },
+  points: {
+    padding: '20px 0',
   },
 }));
