@@ -3,7 +3,7 @@ import { makeStyles, Typography } from '@material-ui/core';
 import { Keywords } from '../../components/basic/Keywords/Keywords';
 
 export interface IProps {
-  caption: string;
+  caption?: string;
   title: string;
   subtitle: string;
   img: string;
@@ -16,9 +16,11 @@ export const Project = (props: IProps) => {
   const classes = useStyles();
   return (
     <div className={classes.project} style={{ backgroundColor: props.bgColor }}>
-      <Typography variant="caption" align="center">
-        {props.caption}
-      </Typography>
+      {props.caption && (
+        <Typography variant="caption" align="center">
+          {props.caption}
+        </Typography>
+      )}
       <Typography variant="h5" align="center">
         {props.title}
       </Typography>

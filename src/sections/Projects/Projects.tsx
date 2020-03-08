@@ -6,6 +6,9 @@ import {
 import { IProps as IProjectProps, Project } from './Project';
 import capstoneImg from '../../assets/capstone.png';
 import aut2Talk from '../../assets/Aut2Talk.png';
+import dressr from '../../assets/dressr.png';
+import uCook from '../../assets/uCook.png';
+import terminalFighter from '../../assets/TerminalFighter.png';
 
 const title = 'Browse My Projects';
 const description = `
@@ -45,6 +48,43 @@ const projects: IProjectProps[] = [
     `,
     keywords: ['JavaScript', 'React Native'],
     bgColor: '#beabea',
+  },
+  {
+    caption: '2016 CSUS Coding Hackathon - 2nd Place',
+    title: 'Dressr',
+    subtitle: 'Mobile Development (Android)',
+    img: dressr,
+    description: `
+      Won second place in a hackathon to create a solution
+      for an existing 'First World Problem'. Designed and
+      implemented the front end of the application to ensure a
+      user friendly interface.
+    `,
+    keywords: ['C++', 'Qt Creator'],
+    bgColor: '#bf5680',
+  },
+  {
+    caption: 'Human Computer Interaction Final Project',
+    title: 'uCook',
+    subtitle: 'UX Design, Implementation, and Usability Testing',
+    img: uCook,
+    description: `
+      Followed a task centered system design methodology to
+      design and implement a vertical prototype for a cooking
+      application that managed the instructions and timing of multiple recipes concurrently.
+    `,
+    keywords: ['prototyping', 'UX', 'design', 'WPF', 'C#'],
+    bgColor: '#bf5680',
+  },
+  {
+    title: 'Terminal Fighter',
+    subtitle: 'Game Development',
+    img: terminalFighter,
+    description: `
+      Implemented features for a functional prototype of a typing game.
+    `,
+    keywords: ['Python'],
+    bgColor: '#bf5680',
   },
 ];
 
