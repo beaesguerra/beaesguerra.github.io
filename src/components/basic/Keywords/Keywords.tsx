@@ -19,7 +19,7 @@ export const Keywords = (props: IProps) => {
   );
 };
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   container: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -29,8 +29,8 @@ const useStyles = makeStyles({
   },
   keyword: {
     padding: '5px 10px',
-    margin: '10px',
+    margin: '5px',
     border: '1px solid',
     borderRadius: '10px',
   },
-});
+}));

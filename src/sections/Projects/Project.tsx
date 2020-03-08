@@ -16,11 +16,14 @@ export const Project = (props: IProps) => {
   const classes = useStyles();
   return (
     <div className={classes.project} style={{ backgroundColor: props.bgColor }}>
-      <Typography variant="caption">
+      <Typography variant="caption" align="center">
         {props.caption}
       </Typography>
-      <Typography variant="h5" className={classes.title}>
+      <Typography variant="h5" align="center">
         {props.title}
+      </Typography>
+      <Typography variant="h6" align="center">
+        {props.subtitle}
       </Typography>
       <img src={props.img} alt={props.title} className={classes.img} />
       <Typography className={classes.description} align="center">
@@ -40,7 +43,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     padding: '15vh 0',
   },
-  title: {
+  subtitle: {
     padding: '20px 0',
   },
   project: {
@@ -49,14 +52,20 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     color: 'white',
-    padding: '10vh 0',
+    padding: '10vh 10px',
   },
   description: {
-    width: '70%',
+    width: '50%',
+    padding: '20px 0',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+      flexGrow: 1,
+    },
   },
   img: {
-    height: '40vh',
+    height: '50vh',
     width: 'auto',
+    padding: '20px 0',
     [theme.breakpoints.down('sm')]: {
       height: 'auto',
       width: '100%',
