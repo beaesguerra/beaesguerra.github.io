@@ -113,12 +113,12 @@ export const Projects = () => {
 
 const useStyles = makeStyles({
   intro: {
-    width: '100%',
+    // width: '100%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '15vh 0',
+    padding: '15vh 10px',
   },
   title: {
     padding: '20px 0',
