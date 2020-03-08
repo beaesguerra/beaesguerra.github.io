@@ -34,7 +34,7 @@ const projects: IProjectProps[] = [
       'Express',
       'REST API',
     ],
-    bgColor: '#959fc9',
+    bgColor: '#08adad',
   },
   {
     caption: '2017 Tikkun Olam Makers Makeathon',
@@ -47,7 +47,7 @@ const projects: IProjectProps[] = [
       communicate their needs and feelings with others.
     `,
     keywords: ['JavaScript', 'React Native'],
-    bgColor: '#beabea',
+    bgColor: '#959fc9',
   },
   {
     caption: '2016 CSUS Coding Hackathon - 2nd Place',
@@ -61,7 +61,7 @@ const projects: IProjectProps[] = [
       user friendly interface.
     `,
     keywords: ['C++', 'Qt Creator'],
-    bgColor: '#bf5680',
+    bgColor: '#ca668e',
   },
   {
     caption: 'Human Computer Interaction Final Project',
@@ -74,7 +74,7 @@ const projects: IProjectProps[] = [
       application that managed the instructions and timing of multiple recipes concurrently.
     `,
     keywords: ['prototyping', 'UX', 'design', 'WPF', 'C#'],
-    bgColor: '#bf5680',
+    bgColor: '#f58377',
   },
   {
     title: 'Terminal Fighter',
@@ -84,7 +84,7 @@ const projects: IProjectProps[] = [
       Implemented features for a functional prototype of a typing game.
     `,
     keywords: ['Python'],
-    bgColor: '#bf5680',
+    bgColor: '#7c68ab',
   },
 ];
 
