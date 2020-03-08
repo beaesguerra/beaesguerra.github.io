@@ -6,6 +6,7 @@ import { Footer } from '../sections/Footer/Footer';
 import { Education } from '../sections/Education/Education';
 import { Work } from '../sections/Work/Work';
 import { Projects } from '../sections/Projects/Projects';
+import { Volunteering } from '../sections/Volunteering/Volunteering';
 
 const useStyles = makeStyles(muiTheme => ({
   '@global': {
@@ -51,10 +52,9 @@ export const App = () => {
         <Projects />
       </div>
       <div
-        style={{ height: '100vh', backgroundColor: '#aeeeeb' }}
         id={hashRoutes.VOLUNTEERING}
       >
-        extra-curricular
+        <Volunteering />
       </div>
       <Footer />
     </>

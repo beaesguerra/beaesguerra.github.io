@@ -37,17 +37,6 @@ export const Project = (props: IProps) => {
 };
 
 const useStyles = makeStyles(theme => ({
-  intro: {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '15vh 0',
-  },
-  subtitle: {
-    padding: '20px 0',
-  },
   project: {
     display: 'flex',
     flexDirection: 'column',
