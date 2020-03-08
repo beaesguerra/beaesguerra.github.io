@@ -21,6 +21,7 @@ export const Education = () => {
           <Typography
             variant="h5"
             color="secondary"
+            className={classes.title}
           >
             {title}
           </Typography>
@@ -28,6 +29,7 @@ export const Education = () => {
             variant="h5"
             color="secondary"
             gutterBottom={true}
+            className={classes.title}
           >
             {subtitle}
           </Typography>
@@ -83,5 +85,10 @@ const useStyles = makeStyles(theme => ({
   },
   points: {
     padding: '20px 0',
+  },
+  title: {
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+    },
   },
 }));
