@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '10vh 10px',
+    padding: '5vh 10px',
   },
   description: {
     width: '60%',
