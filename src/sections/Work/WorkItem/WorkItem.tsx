@@ -45,10 +45,11 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    margin: '20px',
+    margin: '40px 0px',
     flexGrow: 1,
     [theme.breakpoints.down('sm')]: {
       flexWrap: 'wrap',
+      margin: '20px 0px',
     },
   },
   content: {
