@@ -1,13 +1,17 @@
 import * as React from 'react';
-import { makeStyles, Typography, Divider, Hidden } from '@material-ui/core';
+import { makeStyles, Typography, Divider, Hidden, useTheme } from '@material-ui/core';
+import { Keywords } from '../../../components/basic/Keywords/Keywords';
 
 interface IProps {
   logo: JSX.Element;
   title: string;
   description: string;
+  keywords: string[];
 }
+
 export const WorkItem = (props: IProps) => {
   const classes = useStyles();
+  const theme = useTheme();
   return (
     <>
       <div className={classes.workItem}>
@@ -21,6 +25,7 @@ export const WorkItem = (props: IProps) => {
           <Typography className={classes.description}>
             {props.description}
           </Typography>
+          <Keywords keywords={props.keywords} color={theme.palette.primary.main} />
         </div>
       </div>
       <Hidden smUp={true}>

@@ -9,9 +9,20 @@ interface IProps {
 export const Keywords = (props: IProps) => {
   const classes = useStyles();
   return (
-    <div className={classes.container} style={{ color: props.color }}>
+    <div
+      className={classes.container}
+      style={{
+        color: props.color,
+      }}
+    >
       {props.keywords.map((keyword) => (
-        <Typography className={classes.keyword} style={{ borderColor: props.color }}>
+        <Typography
+          key={keyword}
+          className={classes.keyword}
+          style={{
+            borderColor: props.color,
+          }}
+        >
           {keyword}
         </Typography>
       ))}

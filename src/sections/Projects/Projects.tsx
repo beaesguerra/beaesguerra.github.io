@@ -103,6 +103,7 @@ export const Projects = () => {
       </div>
       {projects.map((project) => (
         <Project
+          key={project.title}
           {...project}
         />
       ))}

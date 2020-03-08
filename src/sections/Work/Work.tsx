@@ -15,6 +15,16 @@ export const Work = () => {
         an internal component library, implemented microservices with REST APIs,
         integrated continuous integration workflows, and led scrum for a team of six.
       `,
+      keywords: [
+        'TypeScript',
+        'React',
+        'Redux',
+        'Storybook',
+        'Kotlin',
+        'Spring Boot',
+        'Pub/Sub',
+        'CircleCI',
+      ],
     },
     {
       logo: <img src={pasonLogo} alt="pason-logo" className={classes.pasonLogo} />,
@@ -24,6 +34,13 @@ export const Work = () => {
         implemented a backend service for running scheduled tasks for customers,
         and integrated tools to improve the quality of microservices.
       `,
+      keywords: [
+        'JavaScript',
+        'React',
+        'Redux',
+        'Java',
+        'JMeter',
+      ],
     },
   ];
   return (
@@ -35,6 +52,7 @@ export const Work = () => {
             title={item.title}
             logo={item.logo}
             description={item.description}
+            keywords={item.keywords}
           />
         ))}
       </div>
