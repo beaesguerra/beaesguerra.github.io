@@ -4,6 +4,7 @@ import { Banner } from '../sections/Banner/Banner';
 import { hashRoutes } from './routes';
 import { Footer } from '../sections/Footer/Footer';
 import { Education } from '../sections/Education/Education';
+import { Work } from '../sections/Work/Work';
 
 const useStyles = makeStyles(muiTheme => ({
   '@global': {
@@ -12,7 +13,10 @@ const useStyles = makeStyles(muiTheme => ({
     },
   },
   section: {
-    padding: '15vh 10px',
+    padding: '10vh 10px',
+  },
+  spacer: {
+    height: '15vh',
   },
 }));
 
@@ -21,23 +25,24 @@ export const App = () => {
   return (
     <>
       <Banner />
+      <div className={classes.spacer} />
       <div
         className={classes.section}
-        id={hashRoutes.EDUCATION}
+        id={hashRoutes.ABOUT}
       >
         <Education />
       </div>
-      <div
-        style={{ height: '100vh', backgroundColor: '#baebae' }}
+      {/* <div
+        className={classes.section}
         id={hashRoutes.SKILLS}
       >
         skills
-      </div>
+      </div> */}
       <div
-        style={{ height: '100vh', backgroundColor: '#beeeea' }}
+        className={classes.section}
         id={hashRoutes.WORK}
       >
-        work
+        <Work />
       </div>
       <div
         style={{ height: '100vh', backgroundColor: '#aebaeb' }}
@@ -47,7 +52,7 @@ export const App = () => {
       </div>
       <div
         style={{ height: '100vh', backgroundColor: '#aeeeeb' }}
-        id={hashRoutes.EXTRA_CURRICULAR}
+        id={hashRoutes.VOLUNTEERING}
       >
         extra-curricular
       </div>

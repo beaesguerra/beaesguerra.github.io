@@ -7,12 +7,8 @@ import { hashRoutes } from '../../App/routes';
 
 const links: { label: string; route: string }[] = [
   {
-    label: 'Education',
-    route: hashRoutes.EDUCATION,
-  },
-  {
-    label: 'Skills',
-    route: hashRoutes.SKILLS,
+    label: 'About',
+    route: hashRoutes.ABOUT,
   },
   {
     label: 'Work',
@@ -23,8 +19,8 @@ const links: { label: string; route: string }[] = [
     route: hashRoutes.PROJECTS,
   },
   {
-    label: 'Extra Curricular',
-    route: hashRoutes.EXTRA_CURRICULAR,
+    label: 'Volunteering',
+    route: hashRoutes.VOLUNTEERING,
   },
 ];
 

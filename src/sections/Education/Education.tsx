@@ -2,8 +2,10 @@ import * as React from 'react';
 import { Typography, makeStyles } from '@material-ui/core';
 import uOfCLogo from '../../assets/uofc_logo.jpg';
 
+const title = 'Bachelor of Science';
+const subtitle = 'in Software Engineering';
+
 const points: string[] = [
-  'Bachelor of Science in Software Engineering',
   'Schulich School of Engineering, University of Calgary',
   'Completed the Engineering Internship Program',
   'Graduated with distinction',
@@ -14,24 +16,33 @@ export const Education = () => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <Typography
-        variant="h5"
-        color="secondary"
-        align="center"
-        gutterBottom={true}
-      >
-        Education
-      </Typography>
       <div className={classes.content}>
         <div>
-          {points.map((point) => (
-            <Typography key={point}>{point}</Typography>
-          ))}
+          <Typography
+            variant="h5"
+            color="secondary"
+          >
+            {title}
+          </Typography>
+          <Typography
+            variant="h5"
+            color="secondary"
+            gutterBottom={true}
+          >
+            {subtitle}
+          </Typography>
+          <div className={classes.points}>
+            {points.map((point) => (
+              <Typography key={point}>{point}</Typography>
+            ))}
+          </div>
         </div>
-        <img
-          src={uOfCLogo}
-          alt="university-of-calgary-logo"
-        />
+        <div className={classes.logo}>
+          <img
+            src={uOfCLogo}
+            alt="university-of-calgary-logo"
+          />
+        </div>
       </div>
     </div>
   );
@@ -45,12 +56,11 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '10px',
   },
   content: {
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     flexWrap: 'wrap',
     width: '60%',
     [theme.breakpoints.down('sm')]: {
@@ -61,5 +71,17 @@ const useStyles = makeStyles(theme => ({
     height: '180px',
     padding: '10px',
     width: 'auto',
+  },
+  logo: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '100%',
+      padding: '10px',
+    },
+  },
+  points: {
+    padding: '20px 0',
   },
 }));
