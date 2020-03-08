@@ -28,7 +28,7 @@ export const WorkItem = (props: IProps) => {
           <Keywords keywords={props.keywords} color={theme.palette.primary.main} />
         </div>
       </div>
-      <Hidden smUp={true}>
+      <Hidden mdUp={true}>
         <Divider />
       </Hidden>
     </>
@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     width: '40%',
     padding: '10px',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       flexGrow: 1,
     },
   },
@@ -52,14 +52,19 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     margin: '40px 0px',
     flexGrow: 1,
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       flexWrap: 'wrap',
       margin: '20px 0px',
+      justifyContent: 'center',
     },
   },
   content: {
-    [theme.breakpoints.up('sm')]: {
-      width: '60%',
+    width: '60%',
+    [theme.breakpoints.down('md')]: {
+      width: '70%',
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: '90%',
     },
   },
   description: {

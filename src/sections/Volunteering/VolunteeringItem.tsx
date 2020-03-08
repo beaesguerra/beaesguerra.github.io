@@ -39,8 +39,8 @@ const useStyles = makeStyles(theme => ({
   description: {
     width: '60%',
     padding: '20px 0',
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
+    [theme.breakpoints.down('md')]: {
+      width: '90%',
       flexGrow: 1,
     },
   },
@@ -48,7 +48,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       flexWrap: 'wrap',
       width: '100%',
       flexDirection: 'column',

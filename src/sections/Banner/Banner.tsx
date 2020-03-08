@@ -42,12 +42,13 @@ export const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+    width: '100vw',
   },
   content: {
     position: 'absolute',
     textAlign: 'center',
     width: '50%',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       width: '90%',
     },
   },

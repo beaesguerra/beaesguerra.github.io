@@ -48,13 +48,14 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     color: 'white',
-    padding: '10vh 10px',
+    padding: '10vh 0px',
+    width: '100vw',
   },
   description: {
     width: '50%',
     padding: '20px 0',
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
+    [theme.breakpoints.down('md')]: {
+      width: '90%',
       flexGrow: 1,
     },
   },
@@ -62,13 +63,15 @@ const useStyles = makeStyles(theme => ({
     height: '50vh',
     width: 'auto',
     padding: '20px 0',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       height: 'auto',
-      width: '100%',
+      width: '90%',
     },
   },
   title: {
     display: 'flex',
     alignItems: 'center',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
   },
 }));
