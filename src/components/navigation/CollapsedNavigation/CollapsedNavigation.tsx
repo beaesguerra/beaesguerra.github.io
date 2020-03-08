@@ -49,7 +49,8 @@ const useStyles = makeStyles({
     height: '80px',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-around',
-    width: '100%',
+    justifyContent: 'space-between',
+    // width: '100%',
+    padding: '0 20px',
   },
 });
