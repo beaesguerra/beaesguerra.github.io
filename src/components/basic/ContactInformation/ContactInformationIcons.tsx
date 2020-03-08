@@ -8,7 +8,7 @@ import {
 import {
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, IconButton } from '@material-ui/core';
 
 interface IProps extends IExternalProps {
   href: string;
@@ -22,15 +22,16 @@ interface IExternalProps {
 const ContactIcon = (props: IProps) => {
   const classes = useStyles();
   return (
-    <a
+    <IconButton
+      component="a"
       href={props.href}
       className={classes.link}
       target="_blank"
       rel="noopener noreferrer"
       key={props.href}
     >
-      <FontAwesomeIcon icon={props.icon} size="2x" color={props.color || '#ffffff'} />
-    </a>
+      <FontAwesomeIcon icon={props.icon} size="1x" color={props.color || '#ffffff'} />
+    </IconButton>
   );
 };
 
