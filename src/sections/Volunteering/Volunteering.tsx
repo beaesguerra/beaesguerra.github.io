@@ -51,7 +51,7 @@ export const Volunteering = () => {
   return (
     <div className={classes.container}>
       {volunteeringItems.map(item => (
-        <VolunteeringItem {...item} />
+        <VolunteeringItem {...item} key={item.title} />
       ))}
     </div>
   );
