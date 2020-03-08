@@ -42,6 +42,7 @@ export const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+    width: '100vw',
   },
   content: {
     position: 'absolute',

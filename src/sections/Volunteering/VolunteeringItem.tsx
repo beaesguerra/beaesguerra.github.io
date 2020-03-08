@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
     width: '60%',
     padding: '20px 0',
     [theme.breakpoints.down('md')]: {
-      width: '100%',
+      width: '90%',
       flexGrow: 1,
     },
   },

@@ -94,7 +94,7 @@ const projects: IProjectProps[] = [
 export const Projects = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.container}>
       <div className={classes.intro}>
         <Typography variant="h5" color="secondary" className={classes.title}>
           {title}
@@ -114,15 +114,23 @@ export const Projects = () => {
   );
 };
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
   intro: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     padding: '15vh 10px',
+    [theme.breakpoints.down('md')]: {
+      width: '80%',
+    },
   },
   title: {
     padding: '20px 0',
   },
-});
+}));
