@@ -35,10 +35,12 @@ export const Education = () => {
             <Typography key={point}>{point}</Typography>
           ))}
         </div>
-        <img
-          src={uOfCLogo}
-          alt="university-of-calgary-logo"
-        />
+        <div className={classes.logo}>
+          <img
+            src={uOfCLogo}
+            alt="university-of-calgary-logo"
+          />
+        </div>
       </div>
     </div>
   );
@@ -52,7 +54,6 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '10px',
   },
   content: {
     display: 'flex',
@@ -68,5 +69,14 @@ const useStyles = makeStyles(theme => ({
     height: '180px',
     padding: '10px',
     width: 'auto',
+  },
+  logo: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '100%',
+      padding: '10px',
+    },
   },
 }));

@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.secondary.main,
     display: 'flex',
     alignItems: 'center',
-    width: '100%',
+    flexGrow: 1,
     justifyContent: 'center',
     padding: '10px',
   },

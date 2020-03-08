@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { makeStyles, Typography } from '@material-ui/core';
+import { makeStyles, Typography, Divider, Hidden } from '@material-ui/core';
 
 interface IProps {
   logo: JSX.Element;
@@ -9,19 +9,24 @@ interface IProps {
 export const WorkItem = (props: IProps) => {
   const classes = useStyles();
   return (
-    <div className={classes.workItem}>
-      <div className={classes.logo}>
-        {props.logo}
+    <>
+      <div className={classes.workItem}>
+        <div className={classes.logo}>
+          {props.logo}
+        </div>
+        <div className={classes.content}>
+          <Typography className={classes.title} variant="h5" color="secondary">
+            {props.title}
+          </Typography>
+          <Typography className={classes.description}>
+            {props.description}
+          </Typography>
+        </div>
       </div>
-      <div className={classes.content}>
-        <Typography gutterBottom={true} variant="h5" color="secondary">
-          {props.title}
-        </Typography>
-        <Typography className={classes.description}>
-          {props.description}
-        </Typography>
-      </div>
-    </div>
+      <Hidden smUp={true}>
+        <Divider />
+      </Hidden>
+    </>
   );
 };
 
@@ -29,16 +34,18 @@ const useStyles = makeStyles(theme => ({
   logo: {
     display: 'flex',
     alignItems: 'center',
-    [theme.breakpoints.up('sm')]: {
-      width: '40%',
+    justifyContent: 'center',
+    width: '40%',
+    [theme.breakpoints.down('sm')]: {
+      flexGrow: 1,
     },
   },
   workItem: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '20px',
-    width: '100%',
+    margin: '20px',
+    flexGrow: 1,
     [theme.breakpoints.down('sm')]: {
       flexWrap: 'wrap',
     },
@@ -50,5 +57,8 @@ const useStyles = makeStyles(theme => ({
   },
   description: {
     padding: '20px 0',
+  },
+  title: {
+    padding: '10px',
   },
 }));

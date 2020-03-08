@@ -49,7 +49,6 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    padding: '10px',
   },
   workItems: {
     display: 'flex',
