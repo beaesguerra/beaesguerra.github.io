@@ -1,6 +1,6 @@
-import { Theme, createMuiTheme } from '@material-ui/core';
+import { Theme, createMuiTheme, responsiveFontSizes } from '@material-ui/core';
 
-export const theme: Theme = createMuiTheme({
+export const theme: Theme = responsiveFontSizes(createMuiTheme({
   palette: {
     primary: {
       main: '#7ebbbb',
@@ -13,7 +13,6 @@ export const theme: Theme = createMuiTheme({
   typography: {
     h1: {
       fontFamily: 'Dancing Script, cursive',
-      fontSize: '7rem',
       fontWeight: 'bold',
     },
     h4: {
@@ -43,4 +42,4 @@ export const theme: Theme = createMuiTheme({
       textTransform: 'uppercase',
     },
   },
-});
+}));

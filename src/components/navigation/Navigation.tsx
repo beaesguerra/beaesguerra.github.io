@@ -26,7 +26,7 @@ const links: { label: string; route: string }[] = [
 
 export const Navigation = () => (
   <>
-    <Hidden smDown={true}>
+    <Hidden xsDown={true}>
       <ExpandedNavigation links={links} />
     </Hidden>
     <Hidden smUp={true}>

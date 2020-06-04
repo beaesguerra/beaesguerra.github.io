@@ -4,7 +4,7 @@ import { Bubbles } from '../../components/basic/particles/Bubbles/Bubbles';
 import { ContactInformation } from '../../components/basic/ContactInformation/ContactInformation';
 import { Navigation } from '../../components/navigation/Navigation';
 
-const title = 'Welcome!';
+const title = 'hello, world !';
 const subtitle = `
 My name is Bea and I am a software developer. 
 I am passionate about learning and I enjoy 
@@ -48,8 +48,10 @@ export const useStyles = makeStyles(theme => ({
     position: 'absolute',
     textAlign: 'center',
     width: '50%',
-    [theme.breakpoints.down('md')]: {
-      width: '90%',
+    marginTop: '50px',
+    [theme.breakpoints.down('sm')]: {
+      width: '80%',
+      marginTop: '40px',
     },
   },
   contact: {
