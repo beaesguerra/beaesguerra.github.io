@@ -96,7 +96,7 @@ export const Projects = () => {
   return (
     <div className={classes.container}>
       <div className={classes.intro}>
-        <Typography variant="h5" color="secondary" className={classes.title}>
+        <Typography variant="h5" color="secondary" className={classes.title} align="center">
           {title}
         </Typography>
         <Typography>
