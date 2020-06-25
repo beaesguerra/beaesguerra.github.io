@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     color: 'white',
     padding: '10vh 0px',
-    width: '100vw',
+    width: '100%',
   },
   description: {
     width: '50%',

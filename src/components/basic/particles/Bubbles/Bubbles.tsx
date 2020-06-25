@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Particles, { IParticlesParams } from 'react-particles-js';
+import { makeStyles } from '@material-ui/core';
 
 interface IProps {
 
@@ -116,10 +117,20 @@ const params: IParticlesParams = {
 };
 /* eslint-enable @typescript-eslint/camelcase */
 
-export const Bubbles = (props: IProps) => (
-  <Particles
-    height="85vh"
-    width="100vw"
-    params={params}
-  />
-);
+export const Bubbles = (props: IProps) => {
+  const classes = useStyles();
+  return (
+    <Particles
+      height="85vh"
+      width="100%"
+      params={params}
+      className={classes.container}
+    />
+  );
+};
+
+const useStyles = makeStyles({
+  container: {
+    width: '100%',
+  },
+});
