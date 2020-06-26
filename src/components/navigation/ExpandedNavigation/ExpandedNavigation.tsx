@@ -30,7 +30,7 @@ const useStyles = makeStyles({
     textTransform: 'capitalize',
   },
   header: {
-    height: '100px',
+    height: '70px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-around',

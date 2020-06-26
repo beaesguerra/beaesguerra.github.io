@@ -121,7 +121,7 @@ export const Bubbles = (props: IProps) => {
   const classes = useStyles();
   return (
     <Particles
-      height="85vh"
+      height="100%"
       width="100%"
       params={params}
       className={classes.container}
@@ -132,5 +132,6 @@ export const Bubbles = (props: IProps) => {
 const useStyles = makeStyles({
   container: {
     width: '100%',
+    height: '100%',
   },
 });
