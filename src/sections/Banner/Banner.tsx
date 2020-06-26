@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { Bubbles } from '../../components/basic/particles/Bubbles/Bubbles';
 import { ContactInformation } from '../../components/basic/ContactInformation/ContactInformation';
 import { Navigation } from '../../components/navigation/Navigation';
@@ -19,15 +20,21 @@ export const Banner = () => {
       </div>
       <Bubbles />
       <div className={classes.content}>
-        <Typography variant="h1">
-          {title}
-        </Typography>
-        <Typography className={classes.subtitle}>
-          {subtitle}
-        </Typography>
-        <div className={classes.contact}>
-          <ContactInformation />
-        </div>
+        <ScrollAnimation animateIn="fadeIn" duration={3} animateOnce={true}>
+          <Typography variant="h1">
+            {title}
+          </Typography>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" duration={1} delay={1500} animateOnce={true}>
+          <Typography className={classes.subtitle}>
+            {subtitle}
+          </Typography>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="bounce" duration={1} delay={3500} animateOnce={true}>
+          <div className={classes.contact}>
+            <ContactInformation />
+          </div>
+        </ScrollAnimation>
       </div>
     </div>
   );
