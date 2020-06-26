@@ -14,10 +14,10 @@ export const Banner = () => {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <Bubbles />
       <div className={classes.navigation}>
         <Navigation />
       </div>
+      <Bubbles />
       <div className={classes.content}>
         <Typography variant="h1">
           {title}
@@ -43,6 +43,7 @@ export const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
+    height: '85vh',
   },
   content: {
     position: 'absolute',
@@ -58,10 +59,12 @@ export const useStyles = makeStyles(theme => ({
     padding: '20px',
   },
   navigation: {
+    backgroundColor: theme.palette.primary.main,
     alignSelf: 'flex-end',
     top: 0,
-    position: 'absolute',
+    position: 'fixed',
     width: '100%',
+    zIndex: 1,
   },
   subtitle: {
     padding: '20px',
