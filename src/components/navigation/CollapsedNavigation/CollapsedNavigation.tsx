@@ -46,7 +46,7 @@ const useStyles = makeStyles({
     textTransform: 'capitalize',
   },
   header: {
-    height: '80px',
+    height: '60px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
