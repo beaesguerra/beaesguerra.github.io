@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { makeStyles, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import { IProps as IVolunteeringItemProps, VolunteeringItem } from './VolunteeringItem';
 import ucraRobot from '../../assets/ucra.png';
 import ucraUnity1 from '../../assets/ucra1.png';
@@ -7,6 +7,9 @@ import ucraUnity2 from '../../assets/ucra2.png';
 import spreadTheLove1 from '../../assets/spreadthelove.jpg';
 import spreadTheLove2 from '../../assets/spreadthelove2.jpg';
 import spreadTheLove3 from '../../assets/spreadthelove3.jpg';
+import { SectionHeader } from '../../components/basic/text/SectionHeader/SectionHeader';
+
+const sectionHeading = 'Volunteering';
 
 export const Volunteering = () => {
   const classes = useStyles();
@@ -50,7 +53,7 @@ export const Volunteering = () => {
   ];
   return (
     <div className={classes.container}>
-      <Typography variant="h1" color="secondary">volunteering</Typography>
+      <SectionHeader text={sectionHeading} />
       {volunteeringItems.map(item => (
         <VolunteeringItem {...item} key={item.title} />
       ))}

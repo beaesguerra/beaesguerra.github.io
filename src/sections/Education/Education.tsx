@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { Typography, makeStyles } from '@material-ui/core';
 import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
+import { SectionHeader } from '../../components/basic/text/SectionHeader/SectionHeader';
 import uOfCLogo from '../../assets/uofc_logo.jpg';
 
+const sectionHeading = 'About';
 const title = 'Bachelor of Science';
 const subtitle = 'in Software Engineering';
 
@@ -17,7 +19,7 @@ export const Education = () => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <Typography variant="h1" color="secondary">about</Typography>
+      <SectionHeader text={sectionHeading} />
       <div className={classes.content}>
         <ScrollAnimation animateIn="fadeInLeft" duration={2}>
           <div>

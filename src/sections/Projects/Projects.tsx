@@ -9,8 +9,9 @@ import aut2Talk from '../../assets/Aut2Talk.png';
 import dressr from '../../assets/dressr.png';
 import uCook from '../../assets/uCook.png';
 import terminalFighter from '../../assets/TerminalFighter.png';
-import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
+import { SectionHeader } from '../../components/basic/text/SectionHeader/SectionHeader';
 
+const sectionHeading = 'Projects';
 const description = `
   Here are some of the projects that I've worked on.
   Feel free to check out my GitHub profile to view them!
@@ -95,13 +96,13 @@ export const Projects = () => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <Typography variant="h1" color="secondary">projects</Typography>
-      <ScrollAnimation animateIn="fadeIn" className={classes.intro}>
+      <SectionHeader text={sectionHeading} />
+      <div className={classes.intro}>
         <Typography>
           {description}
         </Typography>
         <GithubContactInfo color="#000000" />
-      </ScrollAnimation>
+      </div>
       {projects.map((project) => (
         <Project
           key={project.title}
@@ -117,13 +118,14 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    padding: '5vh 0',
   },
   intro: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '15vh 10px',
+    padding: '10vh 10px',
     [theme.breakpoints.down('md')]: {
       width: '80%',
     },
