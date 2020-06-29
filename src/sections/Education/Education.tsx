@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Typography, makeStyles } from '@material-ui/core';
+import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
 import uOfCLogo from '../../assets/uofc_logo.jpg';
 
 const title = 'Bachelor of Science';
@@ -17,34 +18,38 @@ export const Education = () => {
   return (
     <div className={classes.container}>
       <div className={classes.content}>
-        <div>
-          <Typography
-            variant="h5"
-            color="secondary"
-            className={classes.title}
-          >
-            {title}
-          </Typography>
-          <Typography
-            variant="h5"
-            color="secondary"
-            gutterBottom={true}
-            className={classes.title}
-          >
-            {subtitle}
-          </Typography>
-          <div className={classes.points}>
-            {points.map((point) => (
-              <Typography key={point}>{point}</Typography>
-            ))}
+        <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+          <div>
+            <Typography
+              variant="h5"
+              color="secondary"
+              className={classes.title}
+            >
+              {title}
+            </Typography>
+            <Typography
+              variant="h5"
+              color="secondary"
+              gutterBottom={true}
+              className={classes.title}
+            >
+              {subtitle}
+            </Typography>
+            <div className={classes.points}>
+              {points.map((point) => (
+                <Typography key={point}>{point}</Typography>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className={classes.logo}>
-          <img
-            src={uOfCLogo}
-            alt="university-of-calgary-logo"
-          />
-        </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInRight" duration={2}>
+          <div className={classes.logo}>
+            <img
+              src={uOfCLogo}
+              alt="university-of-calgary-logo"
+            />
+          </div>
+        </ScrollAnimation>
       </div>
     </div>
   );
