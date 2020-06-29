@@ -11,7 +11,6 @@ import uCook from '../../assets/uCook.png';
 import terminalFighter from '../../assets/TerminalFighter.png';
 import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
 
-const title = 'Browse My Projects';
 const description = `
   Here are some of the projects that I've worked on.
   Feel free to check out my GitHub profile to view them!
@@ -96,16 +95,12 @@ export const Projects = () => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <ScrollAnimation animateIn="fadeIn">
-        <div className={classes.intro}>
-          <Typography variant="h5" color="secondary" className={classes.title} align="center">
-            {title}
-          </Typography>
-          <Typography>
-            {description}
-          </Typography>
-          <GithubContactInfo color="#000000" />
-        </div>
+      <Typography variant="h1" color="secondary">projects</Typography>
+      <ScrollAnimation animateIn="fadeIn" className={classes.intro}>
+        <Typography>
+          {description}
+        </Typography>
+        <GithubContactInfo color="#000000" />
       </ScrollAnimation>
       {projects.map((project) => (
         <Project

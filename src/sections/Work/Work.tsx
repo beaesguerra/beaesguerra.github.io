@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 import pasonLogo from '../../assets/pason_logo.jpg';
 import openhouseLogo from '../../assets/openhouse-ai-logo.png';
 import { WorkItem } from './WorkItem/WorkItem';
@@ -45,6 +45,7 @@ export const Work = () => {
   ];
   return (
     <div className={classes.container}>
+      <Typography variant="h1" color="secondary">work experience</Typography>
       <div className={classes.workItems}>
         {workItems.map(item => (
           <WorkItem

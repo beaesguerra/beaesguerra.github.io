@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 import { IProps as IVolunteeringItemProps, VolunteeringItem } from './VolunteeringItem';
 import ucraRobot from '../../assets/ucra.png';
 import ucraUnity1 from '../../assets/ucra1.png';
@@ -50,6 +50,7 @@ export const Volunteering = () => {
   ];
   return (
     <div className={classes.container}>
+      <Typography variant="h1" color="secondary">volunteering</Typography>
       {volunteeringItems.map(item => (
         <VolunteeringItem {...item} key={item.title} />
       ))}
@@ -70,5 +71,9 @@ const useStyles = makeStyles(theme => ({
   },
   container: {
     padding: '5vh 0',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
   },
 }));

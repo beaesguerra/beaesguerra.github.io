@@ -17,6 +17,7 @@ export const Education = () => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
+      <Typography variant="h1" color="secondary">education</Typography>
       <div className={classes.content}>
         <ScrollAnimation animateIn="fadeInLeft" duration={2}>
           <div>
@@ -70,6 +71,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'space-between',
     flexWrap: 'wrap',
     width: '60%',
+    padding: '10vh 0',
     [theme.breakpoints.down('md')]: {
       width: '70%',
     },
