@@ -3,8 +3,9 @@ import { makeStyles, Typography } from '@material-ui/core';
 import { Bubbles } from '../../components/basic/particles/Bubbles/Bubbles';
 import { ContactInformation } from '../../components/basic/ContactInformation/ContactInformation';
 import { Navigation } from '../../components/navigation/Navigation';
+import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
 
-const title = 'hello, world !';
+const title = 'hello world !';
 const subtitle = `
 My name is Bea and I am a software developer. 
 I am passionate about learning and I enjoy 
@@ -19,15 +20,27 @@ export const Banner = () => {
       </div>
       <Bubbles />
       <div className={classes.content}>
-        <Typography variant="h1">
-          {title}
-        </Typography>
-        <Typography className={classes.subtitle}>
-          {subtitle}
-        </Typography>
-        <div className={classes.contact}>
-          <ContactInformation />
-        </div>
+        <ScrollAnimation animateIn="fadeIn" duration={3} animateOnce={true} offset={undefined}>
+          <Typography variant="h1">
+            {title}
+          </Typography>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" duration={1} delay={1500} animateOnce={true}>
+          <Typography className={classes.subtitle}>
+            {subtitle}
+          </Typography>
+        </ScrollAnimation>
+        <ScrollAnimation
+          animateIn="bounce"
+          duration={1}
+          delay={3500}
+          animateOnce={true}
+          offset={undefined}
+        >
+          <div className={classes.contact}>
+            <ContactInformation />
+          </div>
+        </ScrollAnimation>
       </div>
     </div>
   );

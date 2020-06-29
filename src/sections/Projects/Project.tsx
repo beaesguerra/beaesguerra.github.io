@@ -4,6 +4,7 @@ import { Keywords } from '../../components/basic/Keywords/Keywords';
 import {
   GithubProjectInfo,
 } from '../../components/basic/ContactInformation/ContactInformationIcons';
+import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
 
 export interface IProps {
   caption?: string;
@@ -20,23 +21,27 @@ export const Project = (props: IProps) => {
   const classes = useStyles();
   return (
     <div className={classes.project} style={{ backgroundColor: props.bgColor }}>
-      {props.caption && (
-        <Typography variant="caption" align="center">
-          {props.caption}
+      <ScrollAnimation animateIn="fadeIn" className={classes.project}>
+        {props.caption && (
+          <Typography variant="caption" align="center">
+            {props.caption}
+          </Typography>
+        )}
+        <Typography variant="h5" align="center" className={classes.title}>
+          {props.title}
+          {props.link && <GithubProjectInfo link={props.link} />}
         </Typography>
-      )}
-      <Typography variant="h5" align="center" className={classes.title}>
-        {props.title}
-        {props.link && <GithubProjectInfo link={props.link} />}
-      </Typography>
-      <Typography variant="h6" align="center">
-        {props.subtitle}
-      </Typography>
-      <img src={props.img} alt={props.title} className={classes.img} />
-      <Typography className={classes.description} align="center">
-        {props.description}
-      </Typography>
-      <Keywords keywords={props.keywords} color="#ffffff" />
+        <Typography variant="h6" align="center">
+          {props.subtitle}
+        </Typography>
+        <ScrollAnimation animateIn="fadeIn" delay={500}>
+          <img src={props.img} alt={props.title} className={classes.img} />
+        </ScrollAnimation>
+        <Typography className={classes.description} align="center">
+          {props.description}
+        </Typography>
+        <Keywords keywords={props.keywords} color="#ffffff" />
+      </ScrollAnimation>
     </div>
   );
 };

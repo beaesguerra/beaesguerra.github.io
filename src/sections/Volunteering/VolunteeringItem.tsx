@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
+import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
 
 export interface IProps {
   title: string;
@@ -11,20 +12,25 @@ export interface IProps {
 export const VolunteeringItem = (props: IProps) => {
   const classes = useStyles();
   return (
-    <div className={classes.container}>
-      <Typography variant="h5" align="center" color="secondary">
-        {props.title}
-      </Typography>
-      <Typography variant="h6" align="center" color="primary">
-        {props.subtitle}
-      </Typography>
-      <Typography className={classes.description}>
-        {props.description}
-      </Typography>
-      <div className={classes.images}>
-        {props.imgJsx}
+    <ScrollAnimation animateIn="fadeIn">
+      <div className={classes.container}>
+        <Typography variant="h5" align="center" color="secondary">
+          {props.title}
+        </Typography>
+        <Typography variant="h6" align="center" color="primary">
+          {props.subtitle}
+        </Typography>
+        <Typography className={classes.description}>
+          {props.description}
+        </Typography>
+
+        <ScrollAnimation animateIn="fadeIn" delay={500} duration={2}>
+          <div className={classes.images}>
+            {props.imgJsx}
+          </div>
+        </ScrollAnimation>
       </div>
-    </div>
+    </ScrollAnimation>
   );
 };
 

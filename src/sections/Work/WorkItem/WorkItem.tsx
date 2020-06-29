@@ -1,5 +1,8 @@
 import * as React from 'react';
 import { makeStyles, Typography, Divider, Hidden, useTheme } from '@material-ui/core';
+import {
+  ScrollAnimation,
+} from '../../../components/basic/animations/ScrollAnimation/ScrollAnimation';
 import { Keywords } from '../../../components/basic/Keywords/Keywords';
 
 interface IProps {
@@ -13,7 +16,7 @@ export const WorkItem = (props: IProps) => {
   const classes = useStyles();
   const theme = useTheme();
   return (
-    <>
+    <ScrollAnimation animateIn="fadeInRight" duration={2}>
       <div className={classes.workItem}>
         <div className={classes.logo}>
           {props.logo}
@@ -31,7 +34,7 @@ export const WorkItem = (props: IProps) => {
       <Hidden mdUp={true}>
         <Divider />
       </Hidden>
-    </>
+    </ScrollAnimation>
   );
 };
 
