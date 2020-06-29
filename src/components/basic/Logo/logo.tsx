@@ -3,6 +3,6 @@ import { Typography } from '@material-ui/core';
 
 export const Logo = () => (
   <Typography variant="h4">
-    Bea Esguerra
+    bea esguerra
   </Typography>
 );

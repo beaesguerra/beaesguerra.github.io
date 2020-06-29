@@ -26,7 +26,7 @@ export const Banner = () => {
           </Typography>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn" duration={1} delay={1500} animateOnce={true}>
-          <Typography className={classes.subtitle}>
+          <Typography className={classes.subtitle} variant="subtitle1">
             {subtitle}
           </Typography>
         </ScrollAnimation>
