@@ -17,7 +17,7 @@ export const Education = () => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <Typography variant="h1" color="secondary">education</Typography>
+      <Typography variant="h1" color="secondary">about</Typography>
       <div className={classes.content}>
         <ScrollAnimation animateIn="fadeInLeft" duration={2}>
           <div>
