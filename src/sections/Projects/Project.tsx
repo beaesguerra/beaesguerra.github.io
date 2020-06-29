@@ -34,7 +34,7 @@ export const Project = (props: IProps) => {
         <Typography variant="h6" align="center">
           {props.subtitle}
         </Typography>
-        <ScrollAnimation animateIn="fadeIn" delay={500}>
+        <ScrollAnimation animateIn="fadeIn" delay={500} className={classes.imgContainer}>
           <img src={props.img} alt={props.title} className={classes.img} />
         </ScrollAnimation>
         <Typography className={classes.description} align="center">
@@ -77,6 +77,11 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     flexWrap: 'wrap',
+    justifyContent: 'center',
+  },
+  imgContainer: {
+    display: 'flex',
+    alignItems: 'center',
     justifyContent: 'center',
   },
 }));

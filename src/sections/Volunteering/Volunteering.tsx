@@ -7,6 +7,9 @@ import ucraUnity2 from '../../assets/ucra2.png';
 import spreadTheLove1 from '../../assets/spreadthelove.jpg';
 import spreadTheLove2 from '../../assets/spreadthelove2.jpg';
 import spreadTheLove3 from '../../assets/spreadthelove3.jpg';
+import { SectionHeader } from '../../components/basic/text/SectionHeader/SectionHeader';
+
+const sectionHeading = 'Volunteering';
 
 export const Volunteering = () => {
   const classes = useStyles();
@@ -50,6 +53,7 @@ export const Volunteering = () => {
   ];
   return (
     <div className={classes.container}>
+      <SectionHeader text={sectionHeading} />
       {volunteeringItems.map(item => (
         <VolunteeringItem {...item} key={item.title} />
       ))}
@@ -70,5 +74,9 @@ const useStyles = makeStyles(theme => ({
   },
   container: {
     padding: '5vh 0',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
   },
 }));

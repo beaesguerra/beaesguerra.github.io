@@ -3,6 +3,9 @@ import { makeStyles } from '@material-ui/core';
 import pasonLogo from '../../assets/pason_logo.jpg';
 import openhouseLogo from '../../assets/openhouse-ai-logo.png';
 import { WorkItem } from './WorkItem/WorkItem';
+import { SectionHeader } from '../../components/basic/text/SectionHeader/SectionHeader';
+
+const sectionHeading = 'Work Experience';
 
 export const Work = () => {
   const classes = useStyles();
@@ -45,6 +48,7 @@ export const Work = () => {
   ];
   return (
     <div className={classes.container}>
+      <SectionHeader text={sectionHeading} />
       <div className={classes.workItems}>
         {workItems.map(item => (
           <WorkItem

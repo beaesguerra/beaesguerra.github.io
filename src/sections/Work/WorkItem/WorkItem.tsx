@@ -55,6 +55,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     margin: '40px 0px',
     flexGrow: 1,
+    padding: '5vh 0',
     [theme.breakpoints.down('md')]: {
       flexWrap: 'wrap',
       margin: '20px 0px',
