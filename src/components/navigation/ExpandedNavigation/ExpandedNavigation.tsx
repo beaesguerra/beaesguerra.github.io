@@ -35,10 +35,10 @@ export const ExpandedNavigation = (props: IBaseNavigationProps) => {
 const useStyles = makeStyles(theme => ({
   link: {
     color: 'white',
+    margin: '5px',
   },
   button: {
     color: 'inherit',
-    margin: '5px',
     padding: '5px',
   },
   text: {
