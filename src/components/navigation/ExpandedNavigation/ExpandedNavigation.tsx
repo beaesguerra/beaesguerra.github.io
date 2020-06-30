@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Typography, Button, makeStyles } from '@material-ui/core';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Button, makeStyles, Typography } from '@material-ui/core';
+import { Link } from 'react-scroll';
 import { IBaseNavigationProps } from '../types';
-import { Logo } from '../../basic/Logo/logo';
+import { Logo } from '../../basic/Logo/Logo';
 
 export const ExpandedNavigation = (props: IBaseNavigationProps) => {
   const classes = useStyles();
@@ -11,8 +11,16 @@ export const ExpandedNavigation = (props: IBaseNavigationProps) => {
       <Logo />
       <div>
         {props.links.map((link) => (
-          <Link key={link.label} smooth={true} to={`#${link.route}`}>
-            <Button>
+          <Link
+            key={link.label}
+            smooth={true}
+            to={link.route}
+            spy={true}
+            activeClass={classes.active}
+            className={classes.link}
+            offset={-window.innerHeight * 0.25}
+          >
+            <Button className={classes.button}>
               <Typography className={classes.text}>
                 {link.label}
               </Typography>
@@ -24,10 +32,19 @@ export const ExpandedNavigation = (props: IBaseNavigationProps) => {
   );
 };
 
-const useStyles = makeStyles({
-  text: {
+const useStyles = makeStyles(theme => ({
+  link: {
     color: 'white',
+    margin: '5px',
+  },
+  button: {
+    color: 'inherit',
+    padding: '5px',
+  },
+  text: {
     textTransform: 'capitalize',
+    color: 'inherit',
+    fontWeight: 'bold',
   },
   header: {
     height: '70px',
@@ -36,4 +53,9 @@ const useStyles = makeStyles({
     justifyContent: 'space-around',
     width: '100%',
   },
-});
+  active: {
+    color: `${theme.palette.secondary.main} !important`,
+    paddingBottom: '8px',
+    borderBottom: `2px solid ${theme.palette.secondary.main}`,
+  },
+}));

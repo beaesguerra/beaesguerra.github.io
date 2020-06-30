@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/core';
 import './index.css';
 import { App } from './App/App';
@@ -8,11 +7,9 @@ import * as serviceWorker from './serviceWorker';
 import { theme } from './App/theme';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
-  </BrowserRouter>,
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>,
   document.getElementById('root'),
 );
 

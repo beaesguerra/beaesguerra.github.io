@@ -20,12 +20,12 @@ export const Banner = () => {
       </div>
       <Bubbles />
       <div className={classes.content}>
-        <ScrollAnimation animateIn="fadeIn" duration={3} animateOnce={true} offset={undefined}>
+        <ScrollAnimation animateIn="fadeIn" duration={3} offset={undefined}>
           <Typography variant="h1">
             {title}
           </Typography>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn" duration={1} delay={1500} animateOnce={true}>
+        <ScrollAnimation animateIn="fadeIn" duration={1} delay={1500}>
           <Typography className={classes.subtitle} variant="subtitle1">
             {subtitle}
           </Typography>
@@ -34,7 +34,6 @@ export const Banner = () => {
           animateIn="bounce"
           duration={1}
           delay={3500}
-          animateOnce={true}
           offset={undefined}
         >
           <div className={classes.contact}>
