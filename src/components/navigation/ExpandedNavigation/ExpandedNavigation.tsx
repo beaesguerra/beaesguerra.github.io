@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Button, makeStyles, Typography } from '@material-ui/core';
 import { Link } from 'react-scroll';
 import { IBaseNavigationProps } from '../types';
-import { Logo } from '../../basic/Logo/logo';
+import { Logo } from '../../basic/Logo/logoa';
 
 export const ExpandedNavigation = (props: IBaseNavigationProps) => {
   const classes = useStyles();
@@ -18,7 +18,7 @@ export const ExpandedNavigation = (props: IBaseNavigationProps) => {
             spy={true}
             activeClass={classes.active}
             className={classes.link}
-            offset={-window.innerHeight * 0.2}
+            offset={-window.innerHeight * 0.25}
           >
             <Button className={classes.button}>
               <Typography className={classes.text}>
