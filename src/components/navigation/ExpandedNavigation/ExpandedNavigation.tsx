@@ -38,10 +38,13 @@ const useStyles = makeStyles(theme => ({
   },
   button: {
     color: 'inherit',
+    margin: '5px',
+    padding: '5px',
   },
   text: {
     textTransform: 'capitalize',
     color: 'inherit',
+    fontWeight: 'bold',
   },
   header: {
     height: '70px',
@@ -52,5 +55,7 @@ const useStyles = makeStyles(theme => ({
   },
   active: {
     color: `${theme.palette.secondary.main} !important`,
+    paddingBottom: '8px',
+    borderBottom: `2px solid ${theme.palette.secondary.main}`,
   },
 }));
