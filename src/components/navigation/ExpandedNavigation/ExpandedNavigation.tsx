@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Typography, Button, makeStyles } from '@material-ui/core';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
 import { IBaseNavigationProps } from '../types';
 import { Logo } from '../../basic/Logo/logo';
 
@@ -11,7 +11,13 @@ export const ExpandedNavigation = (props: IBaseNavigationProps) => {
       <Logo />
       <div>
         {props.links.map((link) => (
-          <Link key={link.label} smooth={true} to={`#${link.route}`}>
+          <Link
+            key={link.label}
+            smooth={true}
+            to={link.route}
+            spy={true}
+            activeClass={classes.active}
+          >
             <Button>
               <Typography className={classes.text}>
                 {link.label}
@@ -24,7 +30,7 @@ export const ExpandedNavigation = (props: IBaseNavigationProps) => {
   );
 };
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   text: {
     color: 'white',
     textTransform: 'capitalize',
@@ -36,4 +42,7 @@ const useStyles = makeStyles({
     justifyContent: 'space-around',
     width: '100%',
   },
-});
+  active: {
+    color: theme.palette.secondary.main,
+  },
+}));
