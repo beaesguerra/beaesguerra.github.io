@@ -119,6 +119,9 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     padding: '5vh 0',
+    [theme.breakpoints.down('sm')]: {
+      padding: '10vh 0',
+    },
   },
   intro: {
     display: 'flex',

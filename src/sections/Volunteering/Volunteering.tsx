@@ -78,5 +78,8 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
+    [theme.breakpoints.down('sm')]: {
+      padding: '10vh 0',
+    },
   },
 }));
