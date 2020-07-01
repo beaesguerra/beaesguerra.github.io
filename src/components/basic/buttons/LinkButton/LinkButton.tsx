@@ -35,6 +35,7 @@ const useStyles = makeStyles({
     color: colors.actionGray,
     textAlign: 'center',
     margin: '5px',
+    textDecoration: 'underline',
   },
   icon: {
     padding: '5px',
