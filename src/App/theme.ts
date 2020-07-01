@@ -59,5 +59,9 @@ export const theme: Theme = responsiveFontSizes(createMuiTheme({
     subtitle1: {
       fontFamily: fontFamilies.poppins,
     },
+    button: {
+      fontFamily: fontFamilies.poppins,
+      textTransform: 'none',
+    },
   },
 }));

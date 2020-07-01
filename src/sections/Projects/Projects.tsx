@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Typography, makeStyles } from '@material-ui/core';
 import {
   GithubContactInfo,
-} from '../../components/basic/ContactInformation/ContactInformationIcons';
+} from '../../components/context/ContactInformation/ContactInformationIcons';
 import { IProps as IProjectProps, Project } from './Project';
 import capstoneImg from '../../assets/capstone.png';
 import aut2Talk from '../../assets/Aut2Talk.png';

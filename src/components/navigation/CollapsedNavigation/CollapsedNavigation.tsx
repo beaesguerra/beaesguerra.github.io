@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-scroll';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { IBaseNavigationProps } from '../types';
-import { Logo } from '../../basic/Logo/Logo';
+import { Logo } from '../../context/Logo/Logo';
 
 export const CollapsedNavigation = (props: IBaseNavigationProps) => {
   const classes = useStyles();

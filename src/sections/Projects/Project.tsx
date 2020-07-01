@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
-import { Keywords } from '../../components/basic/Keywords/Keywords';
+import { Keywords } from '../../components/context/Keywords/Keywords';
 import {
   GithubProjectInfo,
-} from '../../components/basic/ContactInformation/ContactInformationIcons';
+} from '../../components/context/ContactInformation/ContactInformationIcons';
 import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
 
 export interface IProps {
