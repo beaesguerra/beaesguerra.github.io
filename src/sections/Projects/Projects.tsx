@@ -13,8 +13,10 @@ import { SectionHeader } from '../../components/basic/text/SectionHeader/Section
 import { colors } from '../../App/theme';
 
 const sectionHeading = 'Projects';
-const description = `
-  Here are some of the projects that I've worked on.
+const descriptionLine1 = `
+  Here are some of the projects that I've worked on in the past.
+`;
+const descriptionLine2 = `
   Feel free to check out my GitHub profile to view them!
 `;
 
@@ -110,7 +112,10 @@ export const Projects = () => {
       <SectionHeader text={sectionHeading} />
       <div className={classes.intro}>
         <Typography>
-          {description}
+          {descriptionLine1}
+        </Typography>
+        <Typography>
+          {descriptionLine2}
         </Typography>
         <GithubContactInfo color="#000000" />
       </div>
