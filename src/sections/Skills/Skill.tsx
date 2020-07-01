@@ -11,7 +11,7 @@ export const Skill = (props: IProps) => {
   return (
     <div className={classes.container}>
       <Typography className={classes.label}>
-        {/* {props.label} */}
+        {props.label}
       </Typography>
       <img src={props.img} alt={props.label} className={classes.image} />
     </div>
@@ -43,5 +43,14 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     width: '100%',
     height: '100%',
+    opacity: 0,
+    pointer: 'default',
+    color: 'white',
+    backgroundColor: theme.palette.secondary.main,
+    borderRadius: '10px',
+    textAlign: 'center',
+    '&:hover': {
+      opacity: 0.9,
+    },
   },
 }));
