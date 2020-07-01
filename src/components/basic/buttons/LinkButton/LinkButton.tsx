@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Button, makeStyles } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { colors } from '../../../../App/theme';
 
 interface IProps {
   href: string;
@@ -31,7 +32,7 @@ export const LinkButton = (props: IProps) => {
 
 const useStyles = makeStyles({
   button: {
-    color: '#828282',
+    color: colors.actionGray,
     textAlign: 'center',
     margin: '5px',
   },

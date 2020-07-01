@@ -15,6 +15,7 @@ export const colors = {
   pink: '#ca668e',
   peach: '#f58377',
   purple: '#7c68ab',
+  actionGray: '#828282',
 };
 
 export const theme: Theme = responsiveFontSizes(createMuiTheme({
