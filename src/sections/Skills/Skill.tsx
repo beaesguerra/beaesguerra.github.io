@@ -11,21 +11,30 @@ export const Skill = (props: IProps) => {
   return (
     <div className={classes.container}>
       <Typography className={classes.label}>
-        {props.label}
+        {/* {props.label} */}
       </Typography>
       <img src={props.img} alt={props.label} className={classes.image} />
     </div>
   );
 };
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   container: {
     position: 'relative',
   },
   image: {
-    width: '100px',
-    height: '100px',
-    objectFit: 'cover',
+    width: '7vw',
+    height: '7vw',
+    margin: '10px',
+    objectFit: 'contain',
+    [theme.breakpoints.down('md')]: {
+      width: '10vw',
+      height: '10vw',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '20vw',
+      height: '20vw',
+    },
   },
   label: {
     position: 'absolute',
@@ -35,4 +44,4 @@ const useStyles = makeStyles({
     width: '100%',
     height: '100%',
   },
-});
+}));

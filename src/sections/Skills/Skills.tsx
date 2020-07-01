@@ -6,12 +6,84 @@ import { skillsAssets } from '../../assets/skills/skillsAssets';
 
 const skills = [
   {
-    label: 'TypeScript',
-    img: skillsAssets.TypeScriptLogo,
+    label: 'BigQuery',
+    img: skillsAssets.BigQueryLogo,
+  },
+  {
+    label: 'CircleCI',
+    img: skillsAssets.CircleCILogo,
+  },
+  {
+    label: 'Css',
+    img: skillsAssets.CssLogo,
+  },
+  {
+    label: 'Cypress',
+    img: skillsAssets.CypressLogo,
+  },
+  {
+    label: 'Express',
+    img: skillsAssets.ExpressLogo,
+  },
+  {
+    label: 'Figma',
+    img: skillsAssets.FigmaLogo,
+  },
+  {
+    label: 'Flyway',
+    img: skillsAssets.FlywayLogo,
+  },
+  {
+    label: 'GCP',
+    img: skillsAssets.GcpLogo,
+  },
+  {
+    label: 'Git',
+    img: skillsAssets.GitLogo,
+  },
+  {
+    label: 'Html',
+    img: skillsAssets.HtmlLogo,
+  },
+  {
+    label: 'Java',
+    img: skillsAssets.JavaLogo,
   },
   {
     label: 'JavaScript',
     img: skillsAssets.JavaScriptLogo,
+  },
+  {
+    label: 'Jest',
+    img: skillsAssets.JestLogo,
+  },
+  {
+    label: 'Jmeter',
+    img: skillsAssets.JmeterLogo,
+  },
+  {
+    label: 'Kotlin',
+    img: skillsAssets.KotlinLogo,
+  },
+  {
+    label: 'NodeJs',
+    img: skillsAssets.NodejsLogo,
+  },
+  {
+    label: 'Postgres',
+    img: skillsAssets.PostgresLogo,
+  },
+  {
+    label: 'Postman',
+    img: skillsAssets.PostmanLogo,
+  },
+  {
+    label: 'PubSub',
+    img: skillsAssets.PubSubLogo,
+  },
+  {
+    label: 'Python',
+    img: skillsAssets.PythonLogo,
   },
   {
     label: 'React',
@@ -20,6 +92,26 @@ const skills = [
   {
     label: 'Redux',
     img: skillsAssets.ReduxLogo,
+  },
+  {
+    label: 'Spring Boot',
+    img: skillsAssets.SpringBootLogo,
+  },
+  {
+    label: 'Storybook',
+    img: skillsAssets.StorybookLogo,
+  },
+  {
+    label: 'Testing Library (React)',
+    img: skillsAssets.TestingLibraryLogo,
+  },
+  {
+    label: 'TypeScript',
+    img: skillsAssets.TypeScriptLogo,
+  },
+  {
+    label: 'Vue',
+    img: skillsAssets.VueLogo,
   },
 ];
 interface IProps {
