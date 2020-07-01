@@ -1,6 +1,11 @@
+// functionality of this hook is to write to the console
 /* eslint-disable no-console */
 import * as React from 'react';
+// need to import the module and types
+/* eslint-disable import/no-duplicates */
 import 'devtools-detect';
+import { DevToolsEvent } from 'devtools-detect';
+/* eslint-enable import/no-duplicates */
 
 // Based on https://codepen.io/b1nary/pen/IdKth :)
 let nyanTextIndex = 0;
@@ -18,8 +23,7 @@ const nyan = () => {
 
 export const useSurprise = () => {
   let timerId: undefined | number;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const onDevToolsChange = (e: any) => {
+  const onDevToolsChange = (e: DevToolsEvent) => {
     if (e.detail.isOpen) {
       timerId = window.setInterval(nyan, 300);
     } else {
@@ -29,7 +33,8 @@ export const useSurprise = () => {
   React.useEffect(() => {
     window.addEventListener('devtoolschange', onDevToolsChange);
     return () => {
-      window.removeEventListener('devtoolschange', onDevToolsChange);
+      // Type declaration currently does not have this defined
+      window.removeEventListener('devtoolschange', onDevToolsChange as never);
       if (timerId) {
         window.clearInterval(timerId);
       }
