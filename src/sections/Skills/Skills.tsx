@@ -10,110 +10,142 @@ const skills = {
   bigQuery: {
     label: 'BigQuery',
     img: skillsAssets.bigQueryLogo,
+    href: 'https://cloud.google.com/bigquery',
   },
   circleCI: {
     label: 'CircleCI',
     img: skillsAssets.circleCILogo,
+    href: 'https://circleci.com/',
   },
   css: {
     label: 'Css',
     img: skillsAssets.cssLogo,
+    href: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
   },
   cypress: {
     label: 'Cypress',
     img: skillsAssets.cypressLogo,
+    href: 'https://www.cypress.io/',
   },
   express: {
     label: 'Express',
     img: skillsAssets.expressLogo,
+    href: 'https://expressjs.com/',
   },
   figma: {
     label: 'Figma',
     img: skillsAssets.figmaLogo,
+    href: 'https://www.figma.com/',
   },
   flyway: {
     label: 'Flyway',
     img: skillsAssets.flywayLogo,
+    href: 'https://flywaydb.org/',
   },
   gcp: {
     label: 'GCP',
     img: skillsAssets.gcpLogo,
+    href: 'https://cloud.google.com/',
   },
   git: {
     label: 'Git',
     img: skillsAssets.gitLogo,
+    href: 'https://git-scm.com/',
   },
   html: {
     label: 'Html',
     img: skillsAssets.htmlLogo,
+    href: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
   },
   java: {
     label: 'Java',
     img: skillsAssets.javaLogo,
+    href: 'https://www.java.com/en/',
   },
   javaScript: {
     label: 'JavaScript',
     img: skillsAssets.javaScriptLogo,
+    href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   },
   jest: {
     label: 'Jest',
     img: skillsAssets.jestLogo,
+    href: 'https://jestjs.io/',
   },
   jmeter: {
     label: 'JMeter',
     img: skillsAssets.jmeterLogo,
+    href: 'https://jmeter.apache.org/',
   },
   kotlin: {
     label: 'Kotlin',
     img: skillsAssets.kotlinLogo,
+    href: 'https://kotlinlang.org/',
   },
   nodeJs: {
     label: 'NodeJs',
     img: skillsAssets.nodejsLogo,
+    href: 'https://nodejs.org/en/',
   },
   postgres: {
-    label: 'Postgres',
+    label: 'PostgreSQL',
     img: skillsAssets.postgresLogo,
+    href: 'https://www.postgresql.org/',
   },
   postman: {
     label: 'Postman',
     img: skillsAssets.postmanLogo,
+    href: 'https://www.postman.com/',
   },
   pubSub: {
     label: 'PubSub',
     img: skillsAssets.pubSubLogo,
+    href: 'https://cloud.google.com/pubsub',
   },
   python: {
     label: 'Python',
     img: skillsAssets.pythonLogo,
+    href: 'https://www.python.org/',
   },
   react: {
     label: 'React',
     img: skillsAssets.reactLogo,
+    href: 'https://reactjs.org/',
   },
   redux: {
     label: 'Redux',
     img: skillsAssets.reduxLogo,
+    href: 'https://redux.js.org/',
+  },
+  reduxSaga: {
+    label: 'Redux-Saga',
+    img: skillsAssets.reduxSagaLogo,
+    href: 'https://redux-saga.js.org/',
   },
   springBoot: {
     label: 'Spring Boot',
     img: skillsAssets.springBootLogo,
+    href: 'https://spring.io/projects/spring-boot',
   },
   storybook: {
     label: 'Storybook',
     img: skillsAssets.storybookLogo,
+    href: 'https://storybook.js.org/',
   },
   testingLibrary: {
-    label: 'Testing Library (React)',
+    label: 'React Testing Library',
     img: skillsAssets.testingLibraryLogo,
+    href: 'https://testing-library.com/docs/react-testing-library/intro',
   },
   typeScript: {
     label: 'TypeScript',
     img: skillsAssets.typeScriptLogo,
+    href: 'https://www.typescriptlang.org/',
   },
   vue: {
     label: 'Vue',
     img: skillsAssets.vueLogo,
+    href: 'https://vuejs.org/',
   },
 };
 const programmingLanguages = [
@@ -128,6 +160,7 @@ const programmingLanguages = [
 const frontendDevelopment = [
   skills.react,
   skills.redux,
+  skills.reduxSaga,
   skills.html,
   skills.css,
   skills.storybook,
