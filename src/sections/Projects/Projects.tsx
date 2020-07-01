@@ -13,8 +13,10 @@ import { SectionHeader } from '../../components/basic/text/SectionHeader/Section
 import { colors } from '../../App/theme';
 
 const sectionHeading = 'Projects';
-const description = `
-  Here are some of the projects that I've worked on.
+const descriptionLine1 = `
+  Here are some of the projects that I've worked on in the past.
+`;
+const descriptionLine2 = `
   Feel free to check out my GitHub profile to view them!
 `;
 
@@ -71,7 +73,7 @@ const projects: IProjectProps[] = [
     description: `
       Won second place in a hackathon to create a solution
       for an existing 'First World Problem'. Designed and
-      implemented the front end of the application to ensure a
+      implemented the frontend of the application to ensure a
       user friendly interface.
     `,
     keywords: ['C++', 'Qt Creator'],
@@ -85,10 +87,12 @@ const projects: IProjectProps[] = [
     img: uCook,
     description: `
       Followed a task centered system design methodology to
-      design and implement a vertical prototype for a cooking
+      design, test, and implement a vertical prototype for a cooking
       application that managed the instructions and timing of multiple recipes concurrently.
     `,
-    keywords: ['prototyping', 'UX', 'design', 'WPF', 'C#'],
+    keywords: [
+      'Prototyping', 'UX', 'Task Centered System Design', 'Usability Testing', 'WPF', 'C#',
+    ],
     bgColor: colors.peach,
   },
   {
@@ -110,7 +114,10 @@ export const Projects = () => {
       <SectionHeader text={sectionHeading} />
       <div className={classes.intro}>
         <Typography>
-          {description}
+          {descriptionLine1}
+        </Typography>
+        <Typography>
+          {descriptionLine2}
         </Typography>
         <GithubContactInfo color="#000000" />
       </div>

@@ -23,9 +23,11 @@ export const Work = () => {
       ),
       title: 'Full Stack Software Developer',
       description: `
-        Established frontend architecture for web applications &
-        an internal component library, implemented microservices with REST APIs,
-        integrated continuous integration workflows, and led scrum for a team of six.
+        Established frontend architecture for web applications,
+        implemented microservices with REST APIs,
+        setup continuous integration and automated deployment workflows,
+        led scrum for a team of six, and
+        mentored several team members during onboarding.
       `,
       keywords: [
         'TypeScript',
@@ -37,6 +39,7 @@ export const Work = () => {
         'Spring Boot',
         'Pub/Sub',
         'CircleCI',
+        'Scrum Master',
       ],
       links: [
         {

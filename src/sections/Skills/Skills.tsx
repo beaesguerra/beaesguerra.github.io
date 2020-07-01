@@ -3,6 +3,7 @@ import { makeStyles, Typography } from '@material-ui/core';
 import { Skill } from './Skill';
 import { SectionHeader } from '../../components/basic/text/SectionHeader/SectionHeader';
 import { skillsAssets } from '../../assets/skills/skillsAssets';
+import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
 
 const sectionHeading = 'Skills';
 
@@ -223,13 +224,15 @@ export const Skills = (props: IProps) => {
       <SectionHeader text={sectionHeading} />
       <div className={classes.content}>
         {skillSections.map((skillSection) => (
-          <div className={classes.skillSection}>
+          <div className={classes.skillSection} key={skillSection.label}>
             <Typography variant="h5" color="secondary">{skillSection.label}</Typography>
-            <div className={classes.skills}>
-              {skillSection.skills.map((skillProps) => (
-                <Skill {...skillProps} key={skillProps.label} />
-              ))}
-            </div>
+            <ScrollAnimation animateIn="fadeInLeft">
+              <div className={classes.skills}>
+                {skillSection.skills.map((skillProps) => (
+                  <Skill {...skillProps} key={skillProps.label} />
+                ))}
+              </div>
+            </ScrollAnimation>
           </div>
         ))}
       </div>
