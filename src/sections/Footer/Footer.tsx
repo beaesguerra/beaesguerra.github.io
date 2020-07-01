@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { makeStyles } from '@material-ui/core';
-import { ContactInformation } from '../../components/basic/ContactInformation/ContactInformation';
+import { ContactInformation } from '../../components/context/ContactInformation/ContactInformation';
 
 export const Footer = () => {
   const classes = useStyles();

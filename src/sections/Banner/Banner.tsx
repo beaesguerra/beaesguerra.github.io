@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 import { Bubbles } from '../../components/basic/particles/Bubbles/Bubbles';
-import { ContactInformation } from '../../components/basic/ContactInformation/ContactInformation';
+import { ContactInformation } from '../../components/context/ContactInformation/ContactInformation';
 import { Navigation } from '../../components/navigation/Navigation';
 import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
 

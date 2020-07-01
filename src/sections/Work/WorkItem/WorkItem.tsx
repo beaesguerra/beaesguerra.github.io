@@ -3,13 +3,15 @@ import { makeStyles, Typography, Divider, Hidden, useTheme } from '@material-ui/
 import {
   ScrollAnimation,
 } from '../../../components/basic/animations/ScrollAnimation/ScrollAnimation';
-import { Keywords } from '../../../components/basic/Keywords/Keywords';
+import { Keywords } from '../../../components/context/Keywords/Keywords';
+import { RelatedLinks, IRelatedLink } from '../../../components/context/RelatedLinks/RelatedLinks';
 
 interface IProps {
   logo: JSX.Element;
   title: string;
   description: string;
   keywords: string[];
+  relatedLinks?: IRelatedLink[];
 }
 
 export const WorkItem = (props: IProps) => {
@@ -29,6 +31,7 @@ export const WorkItem = (props: IProps) => {
             {props.description}
           </Typography>
           <Keywords keywords={props.keywords} color={theme.palette.primary.main} />
+          {props.relatedLinks && <RelatedLinks links={props.relatedLinks} />}
         </div>
       </div>
       <Hidden mdUp={true}>

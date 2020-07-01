@@ -32,6 +32,12 @@ export const Volunteering = () => {
         For the Discover Robotics Program, I helped them build and program
         LEGO robotics that would complete fun challenges.
       `,
+      relatedLinks: [
+        {
+          label: 'Schulich Community Robotics Program',
+          href: 'https://www.ucalgary.ca/robotics/',
+        },
+      ],
     },
     {
       title: 'Spread the Love',

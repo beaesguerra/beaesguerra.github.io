@@ -1,12 +1,14 @@
 import * as React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
+import { IRelatedLink, RelatedLinks } from '../../components/context/RelatedLinks/RelatedLinks';
 
 export interface IProps {
   title: string;
   subtitle: string;
   imgJsx: JSX.Element;
   description: string;
+  relatedLinks?: IRelatedLink[];
 }
 
 export const VolunteeringItem = (props: IProps) => {
@@ -29,6 +31,7 @@ export const VolunteeringItem = (props: IProps) => {
             {props.imgJsx}
           </div>
         </ScrollAnimation>
+        {props.relatedLinks && <RelatedLinks links={props.relatedLinks} />}
       </div>
     </ScrollAnimation>
   );

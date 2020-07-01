@@ -11,7 +11,16 @@ export const Work = () => {
   const classes = useStyles();
   const workItems = [
     {
-      logo: <img src={openhouseLogo} alt="openhouse-ai-logo" className={classes.openhouseLogo} />,
+      logo: (
+        <a
+          href="https://openhouse.ai/"
+          target="_blank"
+          className={classes.logoLink}
+          rel="noopener noreferrer"
+        >
+          <img src={openhouseLogo} alt="openhouse-ai-logo" className={classes.logoImg} />
+        </a>
+      ),
       title: 'Full Stack Software Developer',
       description: `
         Established frontend architecture for web applications &
@@ -28,14 +37,29 @@ export const Work = () => {
         'Pub/Sub',
         'CircleCI',
       ],
+      links: [
+        {
+          label: 'View Products',
+          href: 'https://openhouse.ai/',
+        },
+      ],
     },
     {
-      logo: <img src={pasonLogo} alt="pason-logo" className={classes.pasonLogo} />,
+      logo: (
+        <a
+          href="https://www.pason.com/"
+          target="_blank"
+          className={classes.logoLink}
+          rel="noopener noreferrer"
+        >
+          <img src={pasonLogo} alt="pason-logo" className={classes.logoImg} />
+        </a>
+      ),
       title: 'DataHub Software Developer Intern',
       description: `
-        Worked closely with UX to implement features for a drilling data web application,
-        implemented a backend service for running scheduled tasks for customers,
-        and integrated tools to improve the quality of microservices.
+        Worked closely with a UX team to implement features for a drilling data web application
+        called Pason Live. Also, implemented a backend service for running scheduled
+        tasks for customers, and integrated tools to improve the quality of microservices.
       `,
       keywords: [
         'JavaScript',
@@ -43,6 +67,12 @@ export const Work = () => {
         'Redux',
         'Java',
         'JMeter',
+      ],
+      links: [
+        {
+          label: 'Article: Pason Live Web App Release',
+          href: 'https://www.pason.com/technology/pason-live-launches-in-all-business-units',
+        },
       ],
     },
   ];
@@ -57,6 +87,7 @@ export const Work = () => {
             logo={item.logo}
             description={item.description}
             keywords={item.keywords}
+            relatedLinks={item.links}
           />
         ))}
       </div>
@@ -81,13 +112,18 @@ const useStyles = makeStyles(theme => ({
       width: '100%',
     },
   },
-  pasonLogo: {
-    height: '80px',
-    width: 'auto',
+  logoLink: {
+    height: 'auto',
+    width: '60%',
+    [theme.breakpoints.down('xs')]: {
+      width: '80%',
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      width: '30%',
+    },
   },
-  openhouseLogo: {
-    height: '50px',
-    padding: '15px',
+  logoImg: {
+    width: '100%',
   },
   workItem: {
     display: 'flex',
