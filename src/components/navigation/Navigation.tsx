@@ -7,8 +7,12 @@ import { hashRoutes } from '../../App/routes';
 
 const links: { label: string; route: string }[] = [
   {
-    label: 'About',
-    route: hashRoutes.ABOUT,
+    label: 'Education',
+    route: hashRoutes.EDUCATION,
+  },
+  {
+    label: 'Skills',
+    route: hashRoutes.SKILLS,
   },
   {
     label: 'Work',

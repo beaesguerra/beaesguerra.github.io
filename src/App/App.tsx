@@ -7,6 +7,7 @@ import { Education } from '../sections/Education/Education';
 import { Work } from '../sections/Work/Work';
 import { Projects } from '../sections/Projects/Projects';
 import { Volunteering } from '../sections/Volunteering/Volunteering';
+import { Skills } from '../sections/Skills/Skills';
 
 const useStyles = makeStyles(muiTheme => ({
   '@global': {
@@ -30,16 +31,16 @@ export const App = () => {
       <div className={classes.spacer} />
       <div
         className={classes.section}
-        id={hashRoutes.ABOUT}
+        id={hashRoutes.EDUCATION}
       >
         <Education />
       </div>
-      {/* <div
+      <div
         className={classes.section}
         id={hashRoutes.SKILLS}
       >
-        skills
-      </div> */}
+        <Skills />
+      </div>
       <div
         className={classes.section}
         id={hashRoutes.WORK}
