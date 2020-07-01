@@ -62,6 +62,7 @@ export const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     width: '50%',
     marginTop: '50px',
+    pointerEvents: 'none',
     [theme.breakpoints.down('sm')]: {
       width: '80%',
       marginTop: '40px',

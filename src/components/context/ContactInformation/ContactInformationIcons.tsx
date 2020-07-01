@@ -38,6 +38,7 @@ const ContactIcon = (props: IProps) => {
 const useStyles = makeStyles({
   link: {
     padding: '10px',
+    pointerEvents: 'auto',
   },
 });
 
