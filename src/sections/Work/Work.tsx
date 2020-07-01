@@ -11,7 +11,16 @@ export const Work = () => {
   const classes = useStyles();
   const workItems = [
     {
-      logo: <img src={openhouseLogo} alt="openhouse-ai-logo" className={classes.logo} />,
+      logo: (
+        <a
+          href="https://openhouse.ai/"
+          target="_blank"
+          className={classes.logo}
+          rel="noopener noreferrer"
+        >
+          <img src={openhouseLogo} alt="openhouse-ai-logo" />
+        </a>
+      ),
       title: 'Full Stack Software Developer',
       description: `
         Established frontend architecture for web applications &
@@ -30,7 +39,16 @@ export const Work = () => {
       ],
     },
     {
-      logo: <img src={pasonLogo} alt="pason-logo" className={classes.logo} />,
+      logo: (
+        <a
+          href="https://www.pason.com/"
+          target="_blank"
+          className={classes.logo}
+          rel="noopener noreferrer"
+        >
+          <img src={pasonLogo} alt="pason-logo" />
+        </a>
+      ),
       title: 'DataHub Software Developer Intern',
       description: `
         Worked closely with UX to implement features for a drilling data web application,
