@@ -1,57 +1,57 @@
-import BigQueryLogo from './bigquery-logo.png';
-import CircleCILogo from './circleci-logo.png';
-import CssLogo from './css-logo.png';
-import CypressLogo from './cypress-logo.png';
-import ExpressLogo from './express-logo.png';
-import FigmaLogo from './figma-logo.png';
-import FlywayLogo from './flyway-logo.png';
-import GcpLogo from './gcp-logo.png';
-import GitLogo from './git-logo.png';
-import HtmlLogo from './html-logo.png';
-import JavaLogo from './java-logo.png';
-import JavaScriptLogo from './javascript-logo.png';
-import JestLogo from './jest-logo.png';
-import JmeterLogo from './jmeter-logo.svg';
-import KotlinLogo from './kotlin-logo.png';
-import NodejsLogo from './nodejs-logo.svg';
-import PostgresLogo from './postgres-logo.png';
-import PostmanLogo from './postman-logo.png';
-import PubSubLogo from './pubsub-logo.png';
-import PythonLogo from './python-logo.png';
-import ReactLogo from './react-logo.png';
-import ReduxLogo from './redux-logo.svg';
-import SpringBootLogo from './spring-boot-logo.png';
-import StorybookLogo from './storybook-logo.png';
-import TestingLibraryLogo from './testing-library-logo.png';
-import TypeScriptLogo from './typescript-logo.png';
-import VueLogo from './vue-logo.png';
+import bigQueryLogo from './bigquery-logo.png';
+import circleCILogo from './circleci-logo.png';
+import cssLogo from './css-logo.png';
+import cypressLogo from './cypress-logo.png';
+import expressLogo from './express-logo.png';
+import figmaLogo from './figma-logo.png';
+import flywayLogo from './flyway-logo.png';
+import gcpLogo from './gcp-logo.png';
+import gitLogo from './git-logo.png';
+import htmlLogo from './html-logo.png';
+import javaLogo from './java-logo.png';
+import javaScriptLogo from './javascript-logo.png';
+import jestLogo from './jest-logo.png';
+import jmeterLogo from './jmeter-logo.svg';
+import kotlinLogo from './kotlin-logo.png';
+import nodejsLogo from './nodejs-logo.svg';
+import postgresLogo from './postgres-logo.png';
+import postmanLogo from './postman-logo.png';
+import pubSubLogo from './pubsub-logo.png';
+import pythonLogo from './python-logo.png';
+import reactLogo from './react-logo.png';
+import reduxLogo from './redux-logo.svg';
+import springBootLogo from './spring-boot-logo.png';
+import storybookLogo from './storybook-logo.png';
+import testingLibraryLogo from './testing-library-logo.png';
+import typeScriptLogo from './typescript-logo.png';
+import vueLogo from './vue-logo.png';
 
 export const skillsAssets = {
-  BigQueryLogo,
-  CircleCILogo,
-  CssLogo,
-  CypressLogo,
-  ExpressLogo,
-  FigmaLogo,
-  FlywayLogo,
-  GcpLogo,
-  GitLogo,
-  HtmlLogo,
-  JavaLogo,
-  JavaScriptLogo,
-  JestLogo,
-  JmeterLogo,
-  KotlinLogo,
-  NodejsLogo,
-  PostgresLogo,
-  PostmanLogo,
-  PubSubLogo,
-  PythonLogo,
-  ReactLogo,
-  ReduxLogo,
-  SpringBootLogo,
-  StorybookLogo,
-  TestingLibraryLogo,
-  TypeScriptLogo,
-  VueLogo,
+  bigQueryLogo,
+  circleCILogo,
+  cssLogo,
+  cypressLogo,
+  expressLogo,
+  figmaLogo,
+  flywayLogo,
+  gcpLogo,
+  gitLogo,
+  htmlLogo,
+  javaLogo,
+  javaScriptLogo,
+  jestLogo,
+  jmeterLogo,
+  kotlinLogo,
+  nodejsLogo,
+  postgresLogo,
+  postmanLogo,
+  pubSubLogo,
+  pythonLogo,
+  reactLogo,
+  reduxLogo,
+  springBootLogo,
+  storybookLogo,
+  testingLibraryLogo,
+  typeScriptLogo,
+  vueLogo,
 };

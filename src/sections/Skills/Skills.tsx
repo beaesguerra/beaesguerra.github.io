@@ -7,156 +7,155 @@ import { skillsAssets } from '../../assets/skills/skillsAssets';
 const sectionHeading = 'Skills';
 
 const skills = {
-  BigQuery: {
+  bigQuery: {
     label: 'BigQuery',
-    img: skillsAssets.BigQueryLogo,
+    img: skillsAssets.bigQueryLogo,
   },
-  CircleCI: {
+  circleCI: {
     label: 'CircleCI',
-    img: skillsAssets.CircleCILogo,
+    img: skillsAssets.circleCILogo,
   },
-  Css: {
+  css: {
     label: 'Css',
-    img: skillsAssets.CssLogo,
+    img: skillsAssets.cssLogo,
   },
-  Cypress: {
+  cypress: {
     label: 'Cypress',
-    img: skillsAssets.CypressLogo,
+    img: skillsAssets.cypressLogo,
   },
-  Express: {
+  express: {
     label: 'Express',
-    img: skillsAssets.ExpressLogo,
+    img: skillsAssets.expressLogo,
   },
-  Figma: {
+  figma: {
     label: 'Figma',
-    img: skillsAssets.FigmaLogo,
+    img: skillsAssets.figmaLogo,
   },
-  Flyway: {
+  flyway: {
     label: 'Flyway',
-    img: skillsAssets.FlywayLogo,
+    img: skillsAssets.flywayLogo,
   },
-  GCP: {
+  gcp: {
     label: 'GCP',
-    img: skillsAssets.GcpLogo,
+    img: skillsAssets.gcpLogo,
   },
-  Git: {
+  git: {
     label: 'Git',
-    img: skillsAssets.GitLogo,
+    img: skillsAssets.gitLogo,
   },
-  Html: {
+  html: {
     label: 'Html',
-    img: skillsAssets.HtmlLogo,
+    img: skillsAssets.htmlLogo,
   },
-  Java: {
+  java: {
     label: 'Java',
-    img: skillsAssets.JavaLogo,
+    img: skillsAssets.javaLogo,
   },
-  JavaScript: {
+  javaScript: {
     label: 'JavaScript',
-    img: skillsAssets.JavaScriptLogo,
+    img: skillsAssets.javaScriptLogo,
   },
-  Jest: {
+  jest: {
     label: 'Jest',
-    img: skillsAssets.JestLogo,
+    img: skillsAssets.jestLogo,
   },
-  Jmeter: {
-    label: 'Jmeter',
-    img: skillsAssets.JmeterLogo,
+  jmeter: {
+    label: 'JMeter',
+    img: skillsAssets.jmeterLogo,
   },
-  Kotlin: {
+  kotlin: {
     label: 'Kotlin',
-    img: skillsAssets.KotlinLogo,
+    img: skillsAssets.kotlinLogo,
   },
-  NodeJs: {
+  nodeJs: {
     label: 'NodeJs',
-    img: skillsAssets.NodejsLogo,
+    img: skillsAssets.nodejsLogo,
   },
-  Postgres: {
+  postgres: {
     label: 'Postgres',
-    img: skillsAssets.PostgresLogo,
+    img: skillsAssets.postgresLogo,
   },
-  Postman: {
+  postman: {
     label: 'Postman',
-    img: skillsAssets.PostmanLogo,
+    img: skillsAssets.postmanLogo,
   },
-  PubSub: {
+  pubSub: {
     label: 'PubSub',
-    img: skillsAssets.PubSubLogo,
+    img: skillsAssets.pubSubLogo,
   },
-  Python: {
+  python: {
     label: 'Python',
-    img: skillsAssets.PythonLogo,
+    img: skillsAssets.pythonLogo,
   },
-  React: {
+  react: {
     label: 'React',
-    img: skillsAssets.ReactLogo,
+    img: skillsAssets.reactLogo,
   },
-  Redux: {
+  redux: {
     label: 'Redux',
-    img: skillsAssets.ReduxLogo,
+    img: skillsAssets.reduxLogo,
   },
-  SpringBoot: {
+  springBoot: {
     label: 'Spring Boot',
-    img: skillsAssets.SpringBootLogo,
+    img: skillsAssets.springBootLogo,
   },
-  Storybook: {
+  storybook: {
     label: 'Storybook',
-    img: skillsAssets.StorybookLogo,
+    img: skillsAssets.storybookLogo,
   },
-  TestingLibrary: {
+  testingLibrary: {
     label: 'Testing Library (React)',
-    img: skillsAssets.TestingLibraryLogo,
+    img: skillsAssets.testingLibraryLogo,
   },
-  TypeScript: {
+  typeScript: {
     label: 'TypeScript',
-    img: skillsAssets.TypeScriptLogo,
+    img: skillsAssets.typeScriptLogo,
   },
-  Vue: {
+  vue: {
     label: 'Vue',
-    img: skillsAssets.VueLogo,
+    img: skillsAssets.vueLogo,
   },
 };
 const programmingLanguages = [
-  skills.TypeScript,
-  skills.JavaScript,
-  skills.Kotlin,
-  skills.Java,
-  skills.Python,
-  skills.NodeJs,
+  skills.typeScript,
+  skills.javaScript,
+  skills.kotlin,
+  skills.java,
+  skills.python,
+  skills.nodeJs,
 ];
 
 const frontendDevelopment = [
-  skills.React,
-  skills.Redux,
-  skills.Html,
-  skills.Css,
-  skills.Storybook,
-  // skills.Sass
-  skills.Vue,
+  skills.react,
+  skills.redux,
+  skills.html,
+  skills.css,
+  skills.storybook,
+  skills.vue,
 ];
 
 const backendDevelopment = [
-  skills.SpringBoot,
-  skills.Postgres,
-  skills.Flyway,
-  skills.Express,
+  skills.springBoot,
+  skills.postgres,
+  skills.flyway,
+  skills.express,
 ];
 
 const testing = [
-  skills.Jest,
-  skills.TestingLibrary,
-  skills.Cypress,
-  skills.Jmeter,
+  skills.jest,
+  skills.testingLibrary,
+  skills.cypress,
+  skills.jmeter,
 ];
 
 const tools = [
-  skills.Git,
-  skills.CircleCI,
-  skills.Postman,
-  skills.Figma,
-  skills.GCP,
-  skills.PubSub,
-  skills.BigQuery,
+  skills.git,
+  skills.circleCI,
+  skills.postman,
+  skills.figma,
+  skills.gcp,
+  skills.pubSub,
+  skills.bigQuery,
 ];
 
 const skillSections = [
