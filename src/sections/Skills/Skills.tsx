@@ -234,6 +234,6 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'space-around',
     flexWrap: 'wrap',
-    padding: '10px 0',
+    padding: '20px 0',
   },
 }));
