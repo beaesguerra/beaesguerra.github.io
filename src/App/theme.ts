@@ -1,46 +1,63 @@
 import { Theme, createMuiTheme, responsiveFontSizes } from '@material-ui/core';
 
+const fontFamilies = {
+  dancingScript: 'Dancing Script, cursive',
+  glegoo: 'Glegoo, serif',
+  poppins: 'Poppins, sans-serif',
+};
+
+export const colors = {
+  turquoise: '#7ebbbb',
+  white: '#ffffff',
+  teal: '#347c7c',
+  darkTurquoise: '#08adad',
+  lightPurple: '#959fc9',
+  pink: '#ca668e',
+  peach: '#f58377',
+  purple: '#7c68ab',
+};
+
 export const theme: Theme = responsiveFontSizes(createMuiTheme({
   palette: {
     primary: {
-      main: '#7ebbbb',
-      contrastText: '#ffffff',
+      main: colors.turquoise,
+      contrastText: colors.white,
     },
     secondary: {
-      main: '#347c7c',
+      main: colors.teal,
     },
   },
   typography: {
     h1: {
-      fontFamily: 'Dancing Script, cursive',
+      fontFamily: fontFamilies.dancingScript,
       fontWeight: 'bold',
     },
     h4: {
-      fontFamily: 'Glegoo, serif',
+      fontFamily: fontFamilies.glegoo,
       fontWeight: 'bold',
     },
     h5: {
-      fontFamily: 'Glegoo, serif',
+      fontFamily: fontFamilies.glegoo,
       letterSpacing: '4px',
       fontWeight: 'bold',
     },
     h6: {
-      fontFamily: '"Poppins", sans-serif',
+      fontFamily: fontFamilies.poppins,
       letterSpacing: '2px',
     },
     body1: {
-      fontFamily: '"Poppins", sans-serif',
+      fontFamily: fontFamilies.poppins,
     },
     body2: {
-      fontFamily: '"Poppins", sans-serif',
+      fontFamily: fontFamilies.poppins,
     },
     caption: {
-      fontFamily: '"Poppins", sans-serif',
+      fontFamily: fontFamilies.poppins,
       letterSpacing: '2px',
       textTransform: 'uppercase',
     },
     subtitle1: {
-      fontFamily: '"Poppins", sans-serif',
+      fontFamily: fontFamilies.poppins,
     },
   },
 }));
