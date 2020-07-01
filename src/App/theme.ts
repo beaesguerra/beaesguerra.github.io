@@ -16,30 +16,31 @@ export const theme: Theme = responsiveFontSizes(createMuiTheme({
       fontWeight: 'bold',
     },
     h4: {
-      fontFamily: '"Baloo Chettan 2", cursive',
+      fontFamily: 'Glegoo, serif',
       fontWeight: 'bold',
     },
     h5: {
-      fontFamily: 'Poiret One, cursive',
+      fontFamily: 'Glegoo, serif',
       letterSpacing: '4px',
       fontWeight: 'bold',
-      textTransform: 'uppercase',
     },
     h6: {
-      fontFamily: 'Poiret One, cursive',
+      fontFamily: '"Poppins", sans-serif',
       letterSpacing: '2px',
-      fontWeight: 'bold',
     },
     body1: {
-      fontFamily: '"Baloo Chettan 2", cursive',
+      fontFamily: '"Poppins", sans-serif',
     },
     body2: {
-      fontFamily: '"Baloo Chettan 2", cursive',
+      fontFamily: '"Poppins", sans-serif',
     },
     caption: {
-      fontFamily: '"Baloo Chettan 2", cursive',
+      fontFamily: '"Poppins", sans-serif',
       letterSpacing: '2px',
       textTransform: 'uppercase',
+    },
+    subtitle1: {
+      fontFamily: '"Poppins", sans-serif',
     },
   },
 }));
