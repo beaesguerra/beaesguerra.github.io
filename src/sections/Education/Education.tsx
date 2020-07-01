@@ -82,11 +82,6 @@ const useStyles = makeStyles(theme => ({
       justifyContent: 'center',
     },
   },
-  schulich: {
-    height: '180px',
-    padding: '10px',
-    width: 'auto',
-  },
   logo: {
     [theme.breakpoints.down('sm')]: {
       display: 'flex',
