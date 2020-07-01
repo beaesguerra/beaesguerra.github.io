@@ -4,7 +4,7 @@ import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimati
 import { SectionHeader } from '../../components/basic/text/SectionHeader/SectionHeader';
 import uOfCLogo from '../../assets/uofc_logo.jpg';
 
-const sectionHeading = 'About';
+const sectionHeading = 'Education';
 const title = 'Bachelor of Science';
 const subtitle = 'in Software Engineering';
 
@@ -81,11 +81,6 @@ const useStyles = makeStyles(theme => ({
       width: '90%',
       justifyContent: 'center',
     },
-  },
-  schulich: {
-    height: '180px',
-    padding: '10px',
-    width: 'auto',
   },
   logo: {
     [theme.breakpoints.down('sm')]: {
