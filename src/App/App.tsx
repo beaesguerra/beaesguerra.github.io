@@ -8,6 +8,7 @@ import { Work } from '../sections/Work/Work';
 import { Projects } from '../sections/Projects/Projects';
 import { Volunteering } from '../sections/Volunteering/Volunteering';
 import { Skills } from '../sections/Skills/Skills';
+import { useSurprise } from '../hooks/useSurprise';
 
 const useStyles = makeStyles(muiTheme => ({
   '@global': {
@@ -25,6 +26,8 @@ const useStyles = makeStyles(muiTheme => ({
 
 export const App = () => {
   const classes = useStyles();
+  useSurprise();
+
   return (
     <>
       <Banner />
