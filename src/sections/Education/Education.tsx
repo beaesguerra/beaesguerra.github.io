@@ -45,14 +45,14 @@ export const Education = () => {
             </div>
           </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInRight" duration={2}>
-          <div className={classes.logo}>
+        <div className={classes.logo}>
+          <ScrollAnimation animateIn="fadeInRight" duration={2}>
             <img
               src={uOfCLogo}
               alt="university-of-calgary-logo"
             />
-          </div>
-        </ScrollAnimation>
+          </ScrollAnimation>
+        </div>
       </div>
     </div>
   );
