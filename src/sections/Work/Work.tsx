@@ -31,6 +31,7 @@ export const Work = () => {
         'TypeScript',
         'React',
         'Redux',
+        'Redux-Saga',
         'Storybook',
         'Kotlin',
         'Spring Boot',
