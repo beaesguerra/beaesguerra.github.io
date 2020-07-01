@@ -11,7 +11,7 @@ export const Work = () => {
   const classes = useStyles();
   const workItems = [
     {
-      logo: <img src={openhouseLogo} alt="openhouse-ai-logo" className={classes.openhouseLogo} />,
+      logo: <img src={openhouseLogo} alt="openhouse-ai-logo" className={classes.logo} />,
       title: 'Full Stack Software Developer',
       description: `
         Established frontend architecture for web applications &
@@ -30,7 +30,7 @@ export const Work = () => {
       ],
     },
     {
-      logo: <img src={pasonLogo} alt="pason-logo" className={classes.pasonLogo} />,
+      logo: <img src={pasonLogo} alt="pason-logo" className={classes.logo} />,
       title: 'DataHub Software Developer Intern',
       description: `
         Worked closely with UX to implement features for a drilling data web application,
@@ -81,12 +81,12 @@ const useStyles = makeStyles(theme => ({
       width: '100%',
     },
   },
-  pasonLogo: {
-    height: '80px',
-    width: 'auto',
-  },
-  openhouseLogo: {
-    padding: '15px',
+  logo: {
+    height: 'auto',
+    width: '60%',
+    [theme.breakpoints.down('sm')]: {
+      width: '80%',
+    },
   },
   workItem: {
     display: 'flex',
