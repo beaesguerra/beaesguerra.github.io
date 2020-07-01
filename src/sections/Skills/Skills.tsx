@@ -224,7 +224,7 @@ export const Skills = (props: IProps) => {
       <SectionHeader text={sectionHeading} />
       <div className={classes.content}>
         {skillSections.map((skillSection) => (
-          <div className={classes.skillSection}>
+          <div className={classes.skillSection} key={skillSection.label}>
             <Typography variant="h5" color="secondary">{skillSection.label}</Typography>
             <ScrollAnimation animateIn="fadeInLeft">
               <div className={classes.skills}>
