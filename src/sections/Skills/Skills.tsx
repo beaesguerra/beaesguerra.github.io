@@ -261,6 +261,9 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     padding: '5px 0',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+    },
   },
   skills: {
     display: 'flex',
