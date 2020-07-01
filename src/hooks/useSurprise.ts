@@ -13,6 +13,7 @@ const nyan = () => {
   console.clear();
   console.log('SURPRISE! You have found the Easter egg!');
   console.log(nyanText[nyanTextIndex].join('\n'));
+  console.log('Did you know you can also click the banner background to create bubbles?');
   if (nyanTextIndex === 0) { nyanTextIndex = 1; } else { nyanTextIndex = 0; }
 };
 
