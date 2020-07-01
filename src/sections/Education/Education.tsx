@@ -4,7 +4,7 @@ import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimati
 import { SectionHeader } from '../../components/basic/text/SectionHeader/SectionHeader';
 import uOfCLogo from '../../assets/uofc_logo.jpg';
 
-const sectionHeading = 'About';
+const sectionHeading = 'Education';
 const title = 'Bachelor of Science';
 const subtitle = 'in Software Engineering';
 
