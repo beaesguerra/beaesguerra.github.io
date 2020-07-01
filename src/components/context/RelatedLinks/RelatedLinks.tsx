@@ -9,15 +9,18 @@ export type IRelatedLink = ILinkButtonProps;
 
 interface IProps {
   links: IRelatedLink[];
+  color?: string;
 }
 
 export const RelatedLinks = (props: IProps) => {
   const classes = useStyles();
   return (
-    <div className={classes.container}>
+    <div
+      className={classes.container}
+    >
       {
         props.links.map((linkProps) => (
-          <LinkButton {...linkProps} key={linkProps.href} />
+          <LinkButton {...linkProps} key={linkProps.href} color={props.color} />
         ))
       }
     </div>
@@ -29,5 +32,6 @@ const useStyles = makeStyles({
     display: 'flex',
     padding: '10px 0',
     justifyContent: 'center',
+    flexWrap: 'wrap',
   },
 });

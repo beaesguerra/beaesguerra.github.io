@@ -11,7 +11,7 @@ interface IProps {
   title: string;
   description: string;
   keywords: string[];
-  links?: IRelatedLink[];
+  relatedLinks?: IRelatedLink[];
 }
 
 export const WorkItem = (props: IProps) => {
@@ -31,7 +31,7 @@ export const WorkItem = (props: IProps) => {
             {props.description}
           </Typography>
           <Keywords keywords={props.keywords} color={theme.palette.primary.main} />
-          {props.links && <RelatedLinks links={props.links} />}
+          {props.relatedLinks && <RelatedLinks links={props.relatedLinks} />}
         </div>
       </div>
       <Hidden mdUp={true}>

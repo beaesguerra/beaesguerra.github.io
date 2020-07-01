@@ -5,6 +5,7 @@ import {
   GithubProjectInfo,
 } from '../../components/context/ContactInformation/ContactInformationIcons';
 import { ScrollAnimation } from '../../components/basic/animations/ScrollAnimation/ScrollAnimation';
+import { RelatedLinks, IRelatedLink } from '../../components/context/RelatedLinks/RelatedLinks';
 
 export interface IProps {
   caption?: string;
@@ -14,7 +15,8 @@ export interface IProps {
   description: string;
   keywords: string[];
   bgColor: string;
-  link?: string;
+  githubLink?: string;
+  relatedLinks?: IRelatedLink[];
 }
 
 export const Project = (props: IProps) => {
@@ -29,7 +31,7 @@ export const Project = (props: IProps) => {
         )}
         <Typography variant="h5" align="center" className={classes.title}>
           {props.title}
-          {props.link && <GithubProjectInfo link={props.link} />}
+          {props.githubLink && <GithubProjectInfo link={props.githubLink} />}
         </Typography>
         <Typography variant="h6" align="center">
           {props.subtitle}
@@ -41,6 +43,7 @@ export const Project = (props: IProps) => {
           {props.description}
         </Typography>
         <Keywords keywords={props.keywords} color="#ffffff" />
+        {props.relatedLinks && <RelatedLinks links={props.relatedLinks} color="#ffffff" />}
       </ScrollAnimation>
     </div>
   );

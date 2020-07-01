@@ -87,7 +87,7 @@ export const Work = () => {
             logo={item.logo}
             description={item.description}
             keywords={item.keywords}
-            links={item.links}
+            relatedLinks={item.links}
           />
         ))}
       </div>

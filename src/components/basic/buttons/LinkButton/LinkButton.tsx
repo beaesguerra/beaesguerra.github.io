@@ -6,6 +6,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 interface IProps {
   href: string;
   label: string;
+  color?: string;
 }
 
 export type ILinkButtonProps = IProps;
@@ -18,6 +19,9 @@ export const LinkButton = (props: IProps) => {
       target="_blank"
       component="a"
       className={classes.button}
+      style={{
+        color: props.color,
+      }}
     >
       <FontAwesomeIcon icon={faLink} size="lg" className={classes.icon} />
       {props.label}
@@ -29,6 +33,7 @@ const useStyles = makeStyles({
   button: {
     color: '#828282',
     textAlign: 'center',
+    margin: '5px',
   },
   icon: {
     padding: '5px',

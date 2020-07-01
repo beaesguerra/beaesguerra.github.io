@@ -37,7 +37,7 @@ const projects: IProjectProps[] = [
       'REST API',
     ],
     bgColor: colors.darkTurquoise,
-    link: 'https://github.com/agriculture-capstone',
+    githubLink: 'https://github.com/agriculture-capstone',
   },
   {
     caption: '2017 Tikkun Olam Makers Makeathon',
@@ -51,7 +51,17 @@ const projects: IProjectProps[] = [
     `,
     keywords: ['JavaScript', 'React Native'],
     bgColor: colors.lightPurple,
-    link: 'https://github.com/beaesguerra/Aut2Talk',
+    githubLink: 'https://github.com/beaesguerra/Aut2Talk',
+    relatedLinks: [
+      {
+        label: 'Project Information',
+        href: 'https://kadimadynamics.com/media/projects/',
+      },
+      {
+        label: 'Featured in Humans of TOM',
+        href: 'https://www.instagram.com/p/BYR3VjnBjS6/',
+      },
+    ],
   },
   {
     caption: '2016 CSUS Coding Hackathon - 2nd Place',
@@ -66,7 +76,7 @@ const projects: IProjectProps[] = [
     `,
     keywords: ['C++', 'Qt Creator'],
     bgColor: colors.pink,
-    link: 'https://github.com/beaesguerra/dressr',
+    githubLink: 'https://github.com/beaesguerra/dressr',
   },
   {
     caption: 'Human Computer Interaction Final Project',
