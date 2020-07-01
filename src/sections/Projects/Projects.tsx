@@ -10,6 +10,7 @@ import dressr from '../../assets/dressr.png';
 import uCook from '../../assets/uCook.png';
 import terminalFighter from '../../assets/TerminalFighter.png';
 import { SectionHeader } from '../../components/basic/text/SectionHeader/SectionHeader';
+import { colors } from '../../App/theme';
 
 const sectionHeading = 'Projects';
 const description = `
@@ -35,7 +36,7 @@ const projects: IProjectProps[] = [
       'Express',
       'REST API',
     ],
-    bgColor: '#08adad',
+    bgColor: colors.darkTurquoise,
     link: 'https://github.com/agriculture-capstone',
   },
   {
@@ -49,7 +50,7 @@ const projects: IProjectProps[] = [
       communicate their needs and feelings with others.
     `,
     keywords: ['JavaScript', 'React Native'],
-    bgColor: '#959fc9',
+    bgColor: colors.lightPurple,
     link: 'https://github.com/beaesguerra/Aut2Talk',
   },
   {
@@ -64,7 +65,7 @@ const projects: IProjectProps[] = [
       user friendly interface.
     `,
     keywords: ['C++', 'Qt Creator'],
-    bgColor: '#ca668e',
+    bgColor: colors.pink,
     link: 'https://github.com/beaesguerra/dressr',
   },
   {
@@ -78,7 +79,7 @@ const projects: IProjectProps[] = [
       application that managed the instructions and timing of multiple recipes concurrently.
     `,
     keywords: ['prototyping', 'UX', 'design', 'WPF', 'C#'],
-    bgColor: '#f58377',
+    bgColor: colors.peach,
   },
   {
     title: 'Terminal Fighter',
@@ -88,7 +89,7 @@ const projects: IProjectProps[] = [
       Implemented features for a functional prototype of a typing game.
     `,
     keywords: ['Python'],
-    bgColor: '#7c68ab',
+    bgColor: colors.purple,
   },
 ];
 
