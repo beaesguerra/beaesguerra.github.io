@@ -113,10 +113,10 @@ export const Projects = () => {
     <div className={classes.container}>
       <SectionHeader text={sectionHeading} />
       <div className={classes.intro}>
-        <Typography>
+        <Typography align="center">
           {descriptionLine1}
         </Typography>
-        <Typography>
+        <Typography align="center">
           {descriptionLine2}
         </Typography>
         <GithubContactInfo color="#000000" />
