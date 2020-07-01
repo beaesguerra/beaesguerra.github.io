@@ -86,7 +86,6 @@ const useStyles = makeStyles(theme => ({
     width: 'auto',
   },
   openhouseLogo: {
-    height: '50px',
     padding: '15px',
   },
   workItem: {
