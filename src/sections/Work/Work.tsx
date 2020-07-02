@@ -26,8 +26,9 @@ export const Work = () => {
         Established frontend architecture for web applications,
         implemented microservices with REST APIs,
         setup continuous integration and automated deployment workflows,
-        led scrum for a team of six, and
-        mentored several team members during onboarding.
+        led scrum for a team of six,
+        contributed to the company's hiring process for frontend developers,
+        and mentored several team members.
       `,
       keywords: [
         'TypeScript',
@@ -35,8 +36,12 @@ export const Work = () => {
         'Redux',
         'Redux-Saga',
         'Storybook',
+        'Jest',
+        'React Testing Library',
+        'Cypress',
         'Kotlin',
         'Spring Boot',
+        'Postgres',
         'Pub/Sub',
         'CircleCI',
         'Scrum Master',

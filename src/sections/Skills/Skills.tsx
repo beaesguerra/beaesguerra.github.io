@@ -99,7 +99,7 @@ const skills = {
     href: 'https://www.postman.com/',
   },
   pubSub: {
-    label: 'PubSub',
+    label: 'Pub/Sub',
     img: skillsAssets.pubSubLogo,
     href: 'https://cloud.google.com/pubsub',
   },
