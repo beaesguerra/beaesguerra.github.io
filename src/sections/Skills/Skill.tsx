@@ -10,7 +10,7 @@ interface IProps {
 export const Skill = (props: IProps) => {
   const classes = useStyles();
   return (
-    <a href={props.href}>
+    <a href={props.href} target="_blank" rel="noopener noreferrer">
       <div className={classes.container}>
         <Typography className={classes.label}>
           {props.label}
