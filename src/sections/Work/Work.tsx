@@ -2,6 +2,7 @@ import * as React from 'react';
 import { makeStyles } from '@material-ui/core';
 import pasonLogo from '../../assets/pason_logo.jpg';
 import openhouseLogo from '../../assets/openhouse-ai-logo.png';
+import benevityLogo from '../../assets/benevity-logo.png';
 import { WorkItem } from './WorkItem/WorkItem';
 import { SectionHeader } from '../../components/basic/text/SectionHeader/SectionHeader';
 
@@ -10,6 +11,21 @@ const sectionHeading = 'Work Experience';
 export const Work = () => {
   const classes = useStyles();
   const workItems = [
+    {
+      logo: (
+        <a
+          href="https://benevity.com/"
+          target="_blank"
+          className={classes.logoLink}
+          rel="noopener noreferrer"
+        >
+          <img src={benevityLogo} alt="benevity-logo" className={classes.logoImg} />
+        </a>
+      ),
+      title: 'Software Developer II',
+      description: 'More details coming soon!',
+      keywords: [],
+    },
     {
       logo: (
         <a
