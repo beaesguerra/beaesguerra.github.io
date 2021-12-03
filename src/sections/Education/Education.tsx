@@ -49,7 +49,7 @@ export const Education = () => {
           <ScrollAnimation animateIn="fadeInRight" duration={2}>
             <img
               src={uOfCLogo}
-              alt="university-of-calgary-logo"
+              alt="University of Calgary Logo"
             />
           </ScrollAnimation>
         </div>

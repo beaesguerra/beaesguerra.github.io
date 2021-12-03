@@ -120,12 +120,13 @@ const params: IParticlesParams = {
 export const Bubbles = (props: IProps) => {
   const classes = useStyles();
   return (
-    <Particles
-      height="100%"
-      width="100%"
-      params={params}
-      className={classes.container}
-    />
+    <div className={classes.container} aria-hidden="true">
+      <Particles
+        height="100%"
+        width="100%"
+        params={params}
+      />
+    </div>
   );
 };
 

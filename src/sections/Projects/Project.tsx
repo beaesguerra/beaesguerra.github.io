@@ -12,6 +12,7 @@ export interface IProps {
   title: string;
   subtitle: string;
   img: string;
+  imgAltText: string;
   description: string;
   keywords: string[];
   bgColor: string;
@@ -31,13 +32,13 @@ export const Project = (props: IProps) => {
         )}
         <Typography variant="h5" align="center" className={classes.title}>
           {props.title}
-          {props.githubLink && <GithubProjectInfo link={props.githubLink} />}
         </Typography>
         <Typography variant="h6" align="center">
           {props.subtitle}
         </Typography>
+        {props.githubLink && <GithubProjectInfo link={props.githubLink} />}
         <ScrollAnimation animateIn="fadeIn" delay={500} className={classes.imgContainer}>
-          <img src={props.img} alt={props.title} className={classes.img} />
+          <img src={props.img} alt={props.imgAltText} className={classes.img} />
         </ScrollAnimation>
         <Typography className={classes.description} align="center">
           {props.description}

@@ -13,6 +13,7 @@ import javaScriptLogo from './javascript-logo.png';
 import jestLogo from './jest-logo.png';
 import jmeterLogo from './jmeter-logo.svg';
 import kotlinLogo from './kotlin-logo.png';
+import materialUiLogo from './material-ui-logo.png';
 import nodejsLogo from './nodejs-logo.svg';
 import postgresLogo from './postgres-logo.png';
 import postmanLogo from './postman-logo.png';
@@ -42,6 +43,7 @@ export const skillsAssets = {
   javaScriptLogo,
   jestLogo,
   jmeterLogo,
+  materialUiLogo,
   kotlinLogo,
   nodejsLogo,
   postgresLogo,

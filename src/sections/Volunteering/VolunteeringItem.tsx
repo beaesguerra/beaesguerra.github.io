@@ -14,7 +14,7 @@ export interface IProps {
 export const VolunteeringItem = (props: IProps) => {
   const classes = useStyles();
   return (
-    <ScrollAnimation animateIn="fadeIn">
+    <ScrollAnimation animateIn="fadeIn" className={classes.full}>
       <div className={classes.container}>
         <Typography variant="h5" align="center" color="secondary">
           {props.title}
@@ -43,7 +43,8 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '5vh 10px',
+    padding: '5vh 0',
+    width: '100%',
   },
   description: {
     width: '60%',
@@ -57,10 +58,13 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       flexWrap: 'wrap',
       width: '100%',
       flexDirection: 'column',
     },
+  },
+  full: {
+    width: '100%',
   },
 }));

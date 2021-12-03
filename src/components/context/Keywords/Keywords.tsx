@@ -14,6 +14,7 @@ export const Keywords = (props: IProps) => {
       style={{
         color: props.color,
       }}
+      aria-label="Keywords"
     >
       {props.keywords.map((keyword) => (
         <Typography

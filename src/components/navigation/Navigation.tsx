@@ -29,12 +29,14 @@ const links: { label: string; route: string }[] = [
 ];
 
 export const Navigation = () => (
-  <>
+  // TODO navigation could be more accessible. For now it has been disabled
+  // for screen readers since it is not functional at this time.
+  <div aria-hidden="true">
     <Hidden xsDown={true}>
       <ExpandedNavigation links={links} />
     </Hidden>
     <Hidden smUp={true}>
       <CollapsedNavigation links={links} />
     </Hidden>
-  </>
+  </div>
 );
