@@ -48,7 +48,7 @@ const projects: IProjectProps[] = [
     img: aut2Talk,
     description: `
       Participated in a 72-hour makeathon to create a mobile 
-      application that would help people with autism 
+      application that would help people with non-verbal autism 
       communicate their needs and feelings with others.
     `,
     keywords: ['JavaScript', 'React Native'],
@@ -71,10 +71,10 @@ const projects: IProjectProps[] = [
     subtitle: 'Mobile Development (Android)',
     img: dressr,
     description: `
-      Won second place in a hackathon to create a solution
-      for an existing 'First World Problem'. Designed and
-      implemented the frontend of the application to ensure a
-      user friendly interface.
+      Won second place in a fun hackathon to create a solution
+      for an existing 'First World Problem'. The application would
+      randomly pick outfits for you based on clothing articles you input
+      into the application.
     `,
     keywords: ['C++', 'Qt Creator'],
     bgColor: colors.pink,

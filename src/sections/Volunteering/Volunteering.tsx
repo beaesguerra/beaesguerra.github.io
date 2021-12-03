@@ -7,6 +7,8 @@ import ucraUnity2 from '../../assets/ucra2.png';
 import spreadTheLove1 from '../../assets/spreadthelove.jpg';
 import spreadTheLove2 from '../../assets/spreadthelove2.jpg';
 import spreadTheLove3 from '../../assets/spreadthelove3.jpg';
+import adoptAFamily1 from '../../assets/adopt-a-family-2020.jpeg';
+import adoptAFamily2 from '../../assets/adopt-a-family-2021.jpeg';
 import { SectionHeader } from '../../components/basic/text/SectionHeader/SectionHeader';
 
 const sectionHeading = 'Volunteering';
@@ -14,6 +16,20 @@ const sectionHeading = 'Volunteering';
 export const Volunteering = () => {
   const classes = useStyles();
   const volunteeringItems: IVolunteeringItemProps[] = [
+    {
+      title: 'Kinette Club of Calgary: Adopt-a-Family',
+      subtitle: 'Volunteer Shopper',
+      imgJsx: (
+        <>
+          <img src={adoptAFamily1} alt="adopt-a-family" className={classes.image} />
+          <img src={adoptAFamily2} alt="adopt-a-family" className={classes.image} />
+        </>
+      ),
+      description: `
+        During the holiday season, I shopped for items from a wishlist
+        and gift wrapped the items for low-income families.
+      `,
+    },
     {
       title: 'University of Calgary Robotics Association (UCRA)',
       subtitle: 'Mentor Volunteer',
@@ -70,9 +86,9 @@ export const Volunteering = () => {
 const useStyles = makeStyles(theme => ({
   image: {
     width: 'auto',
-    height: '30vh',
+    height: '35vh',
     padding: '10px',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       width: '90%',
       height: 'auto',
       padding: '10px 0',

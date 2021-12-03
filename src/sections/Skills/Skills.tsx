@@ -83,6 +83,11 @@ const skills = {
     img: skillsAssets.kotlinLogo,
     href: 'https://kotlinlang.org/',
   },
+  materialUi: {
+    label: 'Material-UI',
+    img: skillsAssets.materialUiLogo,
+    href: 'https://mui.com/',
+  },
   nodeJs: {
     label: 'NodeJs',
     img: skillsAssets.nodejsLogo,
@@ -166,6 +171,7 @@ const frontendDevelopment = [
   skills.css,
   skills.storybook,
   skills.vue,
+  skills.materialUi,
 ];
 
 const backendDevelopment = [

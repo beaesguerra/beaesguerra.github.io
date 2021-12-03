@@ -23,8 +23,23 @@ export const Work = () => {
         </a>
       ),
       title: 'Software Developer II',
-      description: 'More details coming soon!',
-      keywords: [],
+      description: `
+        Developed features for a white-label web application for workplace giving with
+        responsiveness, accessibility, localization, and browser compatibility in mind.
+        Created reusable and modular components covered by thorough automated unit tests.
+        Improved accessibility on numerous parts of the product by applying appropriate
+        tags/attributes and ensuring that the navigational flow for screen readers is intuitive.
+      `,
+      keywords: [
+        'JavaScript',
+        'Vue',
+        'Vuex',
+        'Jest',
+        'Vue Test Utils',
+        'Storybook',
+        'Chromatic',
+        'Figma',
+      ],
     },
     {
       logo: (
@@ -39,18 +54,24 @@ export const Work = () => {
       ),
       title: 'Full Stack Software Developer',
       description: `
-        Established frontend architecture for web applications,
-        implemented microservices with REST APIs,
-        setup continuous integration and automated deployment workflows,
-        led scrum for a team of six,
-        contributed to the company's hiring process for frontend developers,
-        and mentored several team members.
+        Established frontend architecture for multiple web applications:
+        a white-label product for home builders, a content management system,
+        and a custom analytics dashboard.
+        Developed an internal React component package to support customization in
+        the white-label application.
+        Implemented microservices with REST APIs,
+        setup continuous integration for automated testing and deployment workflows.
+        Created mockups in Figma to communicate ideas to the team about product feature designs,
+        user workflows, and data visualizations.
+        Led scrum for a team of six, and
+        contributed to the company's hiring process for frontend developers.
       `,
       keywords: [
         'TypeScript',
         'React',
         'Redux',
         'Redux-Saga',
+        'Material-UI',
         'Storybook',
         'Jest',
         'React Testing Library',
@@ -60,6 +81,7 @@ export const Work = () => {
         'Postgres',
         'Pub/Sub',
         'CircleCI',
+        'Figma',
         'Scrum Master',
       ],
       links: [
