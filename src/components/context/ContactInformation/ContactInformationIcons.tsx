@@ -13,6 +13,7 @@ import { makeStyles, IconButton } from '@material-ui/core';
 interface IProps extends IExternalProps {
   href: string;
   icon: IconDefinition;
+  ariaLabel: string;
 }
 
 interface IExternalProps {
@@ -29,6 +30,7 @@ const ContactIcon = (props: IProps) => {
       target="_blank"
       rel="noopener noreferrer"
       key={props.href}
+      aria-label={props.ariaLabel}
     >
       <FontAwesomeIcon icon={props.icon} size="1x" color={props.color || '#ffffff'} />
     </IconButton>
@@ -46,6 +48,7 @@ export const EmailContactInfo = (props: IExternalProps) => (
   <ContactIcon
     icon={faEnvelope}
     href="mailto:bea.esguerra@outlook.com"
+    ariaLabel="Email me!"
     {...props}
   />
 );
@@ -54,6 +57,7 @@ export const GithubContactInfo = (props: IExternalProps) => (
   <ContactIcon
     icon={faGithub}
     href="https://github.com/beaesguerra"
+    ariaLabel="GitHub Profile"
     {...props}
   />
 );
@@ -62,6 +66,7 @@ export const LinkedInContactInfo = (props: IExternalProps) => (
   <ContactIcon
     icon={faLinkedin}
     href="https://www.linkedin.com/in/beaesguerra"
+    ariaLabel="LinkedIn Profile"
     {...props}
   />
 );
@@ -70,6 +75,7 @@ export const GithubProjectInfo = (props: IExternalProps & { link: string }) => (
   <ContactIcon
     icon={faGithub}
     href={props.link}
+    ariaLabel="GitHub Project"
     {...props}
   />
 );

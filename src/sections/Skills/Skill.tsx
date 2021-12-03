@@ -12,10 +12,10 @@ export const Skill = (props: IProps) => {
   return (
     <a href={props.href} target="_blank" rel="noopener noreferrer">
       <div className={classes.container}>
-        <Typography className={classes.label}>
+        <Typography className={classes.label} aria-hidden={true}>
           {props.label}
         </Typography>
-        <img src={props.img} alt={`${props.label} Logo`} className={classes.image} />
+        <img src={props.img} alt={props.label} className={classes.image} />
       </div>
     </a>
   );

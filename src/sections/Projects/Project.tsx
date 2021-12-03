@@ -32,11 +32,11 @@ export const Project = (props: IProps) => {
         )}
         <Typography variant="h5" align="center" className={classes.title}>
           {props.title}
-          {props.githubLink && <GithubProjectInfo link={props.githubLink} />}
         </Typography>
         <Typography variant="h6" align="center">
           {props.subtitle}
         </Typography>
+        {props.githubLink && <GithubProjectInfo link={props.githubLink} />}
         <ScrollAnimation animateIn="fadeIn" delay={500} className={classes.imgContainer}>
           <img src={props.img} alt={props.imgAltText} className={classes.img} />
         </ScrollAnimation>
