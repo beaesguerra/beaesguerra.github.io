@@ -12,6 +12,7 @@ export interface IProps {
   title: string;
   subtitle: string;
   img: string;
+  imgAltText: string;
   description: string;
   keywords: string[];
   bgColor: string;
@@ -37,7 +38,7 @@ export const Project = (props: IProps) => {
           {props.subtitle}
         </Typography>
         <ScrollAnimation animateIn="fadeIn" delay={500} className={classes.imgContainer}>
-          <img src={props.img} alt={props.title} className={classes.img} />
+          <img src={props.img} alt={props.imgAltText} className={classes.img} />
         </ScrollAnimation>
         <Typography className={classes.description} align="center">
           {props.description}

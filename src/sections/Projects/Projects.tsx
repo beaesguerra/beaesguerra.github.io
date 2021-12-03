@@ -26,6 +26,11 @@ const projects: IProjectProps[] = [
     title: 'Agricultural Supply Chain Platform',
     subtitle: 'Mobile, Web, and Backend Application',
     img: capstoneImg,
+    imgAltText: `
+      A screenshot of a web dashboard that shows admin management capabilities and
+      a screenshot of a mobile application that shows information about keeping track
+      of milk inventory.
+    `,
     description: `
       Developed a mobile application, web dashboard,
       and REST APIs on a backend core service for tracking
@@ -46,10 +51,26 @@ const projects: IProjectProps[] = [
     title: 'Aut2Talk',
     subtitle: 'Mobile Development (iOS & Android)',
     img: aut2Talk,
+    imgAltText: `
+      A collection of screenshots of the mobile application.
+      The first screenshot shows a form for setting up a button to
+      represent an emotion/activity and video recording. The second
+      screenshot shows a collection of these buttons with emojis that
+      represent the emotions/activities. The third screenshot shows
+      that when a button is pressed, a video is played that shows what
+      the emotion/activity looks like.
+    `,
     description: `
       Participated in a 72-hour makeathon to create a mobile 
       application that would help people with non-verbal autism 
-      communicate their needs and feelings with others.
+      communicate their needs and feelings with others. Users
+      can use the application to set up buttons representing an emotion or activity.
+      When an emotion or activity button is pressed, a short video
+      (that was previously recorded during the button set up) is played that
+      shows the emotion/activity along with sound. Ideally when the video is first recorded,
+      the person recording says aloud what the emotion/activity is so that sound would
+      be played during the video when the button is pressed. The intention of this is
+      to associate the emotion/activity with the word(s) to encourage communication.
     `,
     keywords: ['JavaScript', 'React Native'],
     bgColor: colors.lightPurple,
@@ -70,6 +91,13 @@ const projects: IProjectProps[] = [
     title: 'Dressr',
     subtitle: 'Mobile Development (Android)',
     img: dressr,
+    imgAltText: `
+      A collection of screenshots of the mobile application.
+      The first screenshot shows images of individual clothing articles.
+      The second screenshot shows a shirt randomly paired with pants.
+      The third screenshot shows a photo of a shirt with a setting
+      to configure it as a top.
+    `,
     description: `
       Won second place in a fun hackathon to create a solution
       for an existing 'First World Problem'. The application would
@@ -85,6 +113,15 @@ const projects: IProjectProps[] = [
     title: 'uCook',
     subtitle: 'UX Design, Implementation, and Usability Testing',
     img: uCook,
+    imgAltText: `
+      A collection of screenshots of the mobile application.
+      The first screenshot shows a recipe for garlic bread.
+      The second screenshot shows a collection of recipes.
+      The third screenshot shows a step for a recipe with a video
+      demonstrating the instruction. The fourth screenshot shows
+      an overview of multiple recipes that have been selected to
+      be prepared together.
+    `,
     description: `
       Followed a task centered system design methodology to
       design, test, and implement a vertical prototype for a cooking
@@ -99,8 +136,13 @@ const projects: IProjectProps[] = [
     title: 'Terminal Fighter',
     subtitle: 'Game Development',
     img: terminalFighter,
+    imgAltText: `
+      A screenshot of a typing game that shows a player and enemies with words attached to them
+    `,
     description: `
       Implemented features for a functional prototype of a typing game.
+      As the player types the words attached to enemies, the enemies are
+      targeted by different kinds of projectiles.
     `,
     keywords: ['Python'],
     bgColor: colors.purple,

@@ -15,7 +15,7 @@ export const Skill = (props: IProps) => {
         <Typography className={classes.label}>
           {props.label}
         </Typography>
-        <img src={props.img} alt={props.label} className={classes.image} />
+        <img src={props.img} alt={`${props.label} Logo`} className={classes.image} />
       </div>
     </a>
   );

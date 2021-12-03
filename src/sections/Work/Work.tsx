@@ -19,7 +19,7 @@ export const Work = () => {
           className={classes.logoLink}
           rel="noopener noreferrer"
         >
-          <img src={benevityLogo} alt="benevity-logo" className={classes.logoImg} />
+          <img src={benevityLogo} alt="Benevity Logo" className={classes.logoImg} />
         </a>
       ),
       title: 'Software Developer II',
@@ -49,7 +49,7 @@ export const Work = () => {
           className={classes.logoLink}
           rel="noopener noreferrer"
         >
-          <img src={openhouseLogo} alt="openhouse-ai-logo" className={classes.logoImg} />
+          <img src={openhouseLogo} alt="OpenHouse.Ai Logo" className={classes.logoImg} />
         </a>
       ),
       title: 'Full Stack Software Developer',
@@ -99,7 +99,7 @@ export const Work = () => {
           className={classes.logoLink}
           rel="noopener noreferrer"
         >
-          <img src={pasonLogo} alt="pason-logo" className={classes.logoImg} />
+          <img src={pasonLogo} alt="Pason Logo" className={classes.logoImg} />
         </a>
       ),
       title: 'DataHub Software Developer Intern',

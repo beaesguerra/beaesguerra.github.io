@@ -21,8 +21,16 @@ export const Volunteering = () => {
       subtitle: 'Volunteer Shopper',
       imgJsx: (
         <>
-          <img src={adoptAFamily1} alt="adopt-a-family" className={classes.image} />
-          <img src={adoptAFamily2} alt="adopt-a-family" className={classes.image} />
+          <img
+            src={adoptAFamily1}
+            alt="Lots of holiday wrapped gifts"
+            className={classes.image}
+          />
+          <img
+            src={adoptAFamily2}
+            alt="More holiday wrapped gifts"
+            className={classes.image}
+          />
         </>
       ),
       description: `
@@ -35,9 +43,21 @@ export const Volunteering = () => {
       subtitle: 'Mentor Volunteer',
       imgJsx: (
         <>
-          <img src={ucraUnity2} alt="ucra" className={classes.image} />
-          <img src={ucraRobot} alt="ucra" className={classes.image} />
-          <img src={ucraUnity1} alt="ucra" className={classes.image} />
+          <img
+            src={ucraUnity2}
+            alt="A screenshot of a 3D game with player cubes in a world with palm trees"
+            className={classes.image}
+          />
+          <img
+            src={ucraUnity1}
+            alt="A screenshot of the 3D game world that shows trees and mountains"
+            className={classes.image}
+          />
+          <img
+            src={ucraRobot}
+            alt="A small LEGO robot with sensors"
+            className={classes.image}
+          />
         </>
       ),
       description: `
@@ -60,16 +80,29 @@ export const Volunteering = () => {
       subtitle: 'Volunteer',
       imgJsx: (
         <>
-          <img src={spreadTheLove1} alt="spread-the-love" className={classes.image} />
-          <img src={spreadTheLove2} alt="spread-the-love" className={classes.image} />
-          <img src={spreadTheLove3} alt="spread-the-love" className={classes.image} />
+          <img
+            src={spreadTheLove1}
+            alt="Volunteers preparing sandwiches"
+            className={classes.image}
+          />
+          <img
+            src={spreadTheLove2}
+            alt="A sandwich mascot standing beside a bake sale for 'Spread the Love'"
+            className={classes.image}
+          />
+          <img
+            src={spreadTheLove3}
+            alt="Volunteers preparing more sandwiches"
+            className={classes.image}
+          />
         </>
       ),
       description: `
         Spread the Love is a non-profit organization that raises social awareness 
         about hunger and homelessness.
         I helped prepare sandwiches that are brought to a homeless shelter.
-        I would also bring baked goods to seasonal bake sales to help raise money.
+        I would also bring baked goods to seasonal bake sales to help raise money
+        used for buying ingredients for the sandwiches.
       `,
     },
   ];
