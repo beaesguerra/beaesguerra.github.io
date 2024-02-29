@@ -21,6 +21,9 @@ const IndexPage: React.FC<PageProps> = () => {
       <WorkExperienceSection />
       <ProjectsSection />
       <VolunteeringSection />
+      <div className="text-3xl font-bold underline">
+        Hello world!
+      </div>
     </main>
   )
 }
