@@ -1,10 +1,11 @@
 import * as React from 'react'
+import Section from '../components/section'
 
 const SkillsSection = () => {
   return (
-    <div>
+    <Section>
       SkillsSection
-    </div>
+    </Section>
   )
 }
 

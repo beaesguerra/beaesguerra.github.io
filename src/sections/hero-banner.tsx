@@ -1,12 +1,12 @@
 import * as React from 'react'
 import Section from '../components/section'
 
-const WorkExperienceSection = () => {
+const HeroBanner = () => {
   return (
     <Section>
-      WorkExperienceSection
+      Hero banner
     </Section>
   )
 }
 
-export default WorkExperienceSection
+export default HeroBanner

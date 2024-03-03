@@ -7,24 +7,20 @@ import {
   WorkExperienceSection,
   VolunteeringSection,
   ProjectsSection,
+  HeroBanner,
 } from "../sections"
-
-const pageStyles = {
-}
+import Layout from "../components/layout"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main style={pageStyles}>
-      <PortfolioHeader />
+    <Layout>
+      <HeroBanner />
       <EducationSection />
       <SkillsSection />
       <WorkExperienceSection />
       <ProjectsSection />
       <VolunteeringSection />
-      <div className="text-3xl font-bold underline">
-        Hello world!
-      </div>
-    </main>
+    </Layout>
   )
 }
 
