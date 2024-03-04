@@ -2,6 +2,7 @@ import * as React from 'react'
 import { RelatedLink } from '../../types';
 import Keywords from '../context/keywords';
 import RelatedLinks from '../context/related-links';
+import Display from '../design-system/display';
 
 export type WorkRole = {
   title: string;
@@ -19,11 +20,11 @@ export type WorkBlockProps = {
 const WorkBlock = (props: WorkBlockProps) => {
   return (
     <div>
-      <h3>{props.company}</h3>
+      <Display tag="h2" variant="md">{props.company}</Display>
       {props.logo}
       {props.roles.map((role) => (
         <div>
-          <h4>{role.title}</h4>
+          <Display tag="h3" variant="sm">{role.title}</Display>
           <p>{role.description}</p>
           <Keywords keywords={role.keywords} />
           { role.links && <RelatedLinks links={role.links} />}

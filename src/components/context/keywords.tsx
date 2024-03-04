@@ -6,7 +6,7 @@ type KeywordsProps = {
 
 const Keywords = (props: KeywordsProps) => {
   return (
-    <ul>
+    <ul className="list-disc">
       {props.keywords && props.keywords.map((link) => {
         return (
           <li>{link}</li>

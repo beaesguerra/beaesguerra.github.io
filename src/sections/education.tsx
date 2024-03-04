@@ -1,12 +1,17 @@
 import * as React from 'react'
 import Section from '../components/application/section'
+import Display from '../components/design-system/display'
 
 const EducationSection = () => {
   return (
     <Section>
-      <h2>Education</h2>
-      <h3>Bachelor of Science in Software Engineering</h3>
-      <h4>Schulich School of Engineering at the University of Calgary </h4>
+      <Display variant="lg" tag="h1">Education</Display>
+      <Display variant="md" tag="h2">
+        University of Calgary (Schulich School of Engineering)
+      </Display>
+      <Display variant="sm" tag="h3">
+        Bachelor of Science in Software Engineering
+      </Display>
       <p>
         Graduated with distinction and successfully completed the Engineering Internship Program.
       </p>

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Section from '../components/application/section'
 import WorkBlock, { WorkBlockProps } from '../components/blocks/work-block';
+import Display from '../components/design-system/display';
 
 const WorkExperienceSection = () => {
   const workBlocks: WorkBlockProps[] = [
@@ -130,7 +131,7 @@ const WorkExperienceSection = () => {
   ];
   return (
     <Section>
-      <h2>Work Experience</h2>
+      <Display tag="h1" variant="lg">Work Experience</Display>
       {workBlocks.map((block) => (
         <WorkBlock {...block} />
       ))}

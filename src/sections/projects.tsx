@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Section from '../components/application/section'
 import ProjectBlock, { ProjectBlockProps } from '../components/blocks/project-block'
+import Display from '../components/design-system/display';
 
 const ProjectsSection = () => {
   const projects: ProjectBlockProps[] = [
@@ -119,6 +120,7 @@ const ProjectsSection = () => {
     },
     {
       name: 'Terminal Fighter',
+      context: 'Side project',
       type: 'Game Development',
       img: {
         src: '',
@@ -136,8 +138,7 @@ const ProjectsSection = () => {
   ];
   return (
     <Section>
-      <h2>Projects</h2>
-      <p>Here are some of the projects that I've worked on in the past. Feel free to check out my GitHub profile to view them!</p>
+      <Display tag="h1" variant="lg">Projects</Display>
       { projects.map((project) => (<ProjectBlock {...project} />)) }
     </Section>
   )

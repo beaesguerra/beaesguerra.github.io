@@ -7,7 +7,7 @@ type RelatedLinksProps = {
 
 const RelatedLinks = (props: RelatedLinksProps) => {
   return (
-    <ul>
+    <ul className="list-disc">
       {props.links && props.links.map((link) => {
         return (
           <li><a href={link.href}>{ link.label }</a></li>

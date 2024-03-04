@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Image, RelatedLink } from '../../types';
 import Keywords from '../context/keywords';
 import RelatedLinks from '../context/related-links';
+import Display from '../design-system/display';
 
 export type ProjectBlockProps = {
   name: string;
@@ -16,9 +17,9 @@ export type ProjectBlockProps = {
 const ProjectBlock = (props: ProjectBlockProps) => {
   return (
     <div>
-      <h3>{ props.name }</h3>
-      {props.context && <h4>{ props.context }</h4>}
-      <h5>{ props.type }</h5>
+      <Display tag="h2" variant="md">{props.name}</Display>
+      {props.context && <Display tag="h3" variant="sm">{props.context}</Display>}
+      <Display tag="h4" variant="xs">{props.type}</Display>
       {props.githubLink && <a href={props.githubLink}>GitHub</a>}
       <img src={props.img.src} alt={props.img.alt} />
       <p>{ props.description }</p>
