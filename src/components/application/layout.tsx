@@ -5,7 +5,7 @@ const Layout = ({ children }: React.PropsWithChildren) => {
   return (
     <div>
       <PortfolioHeader />
-      <main className="px-56">
+      <main className="px-64">
         { children }
       </main>
     </div>

@@ -5,7 +5,7 @@ import Logo from '../context/logo'
 
 const PortfolioHeader = () => {
   return (
-    <nav className="w-screen h-16 sticky top-0 px-56 flex justify-between items-center bg-white">
+    <nav className="w-screen h-16 sticky top-0 px-64 flex justify-between items-center bg-white">
       <Logo />
       <ContactInfo />
     </nav>
