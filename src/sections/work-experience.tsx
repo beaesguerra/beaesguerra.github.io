@@ -3,6 +3,9 @@ import Section from '../components/application/section'
 import WorkBlock, { WorkBlockProps } from '../components/blocks/work-block';
 import Display from '../components/design-system/display';
 import StackList from '../components/design-system/stack-list';
+import BenevityLogo from '../images/benevity-logo.png';
+import OpenhouseAiLogo from '../images/openhouse-ai-logo.png'
+import PasonLogo from '../images/pason-logo.jpg'
 
 const WorkExperienceSection = () => {
   const workBlocks: WorkBlockProps[] = [
@@ -13,7 +16,7 @@ const WorkExperienceSection = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {/* <img src={benevityLogo} alt="Benevity Logo" className={classes.logoImg} /> */}
+          <img src={BenevityLogo} alt="Benevity Logo" className="w-1/3 py-4"/>
         </a>
       ),
       company: 'Benevity',
@@ -48,7 +51,7 @@ const WorkExperienceSection = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {/* <img src={openhouseLogo} alt="OpenHouse.Ai Logo" className={classes.logoImg} /> */}
+          <img src={OpenhouseAiLogo} alt="OpenHouse.Ai Logo" className="w-1/3 py-4"/>
         </a>
       ),
       roles: [
@@ -102,7 +105,7 @@ const WorkExperienceSection = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {/* <img src={pasonLogo} alt="Pason Logo" className={classes.logoImg} /> */}
+          <img src={PasonLogo} alt="Pason Logo" className="w-1/3 py-4" />
         </a>
       ),
       roles: [
