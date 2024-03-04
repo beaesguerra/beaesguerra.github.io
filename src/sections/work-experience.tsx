@@ -2,6 +2,7 @@ import * as React from 'react'
 import Section from '../components/application/section'
 import WorkBlock, { WorkBlockProps } from '../components/blocks/work-block';
 import Display from '../components/design-system/display';
+import StackList from '../components/design-system/stack-list';
 
 const WorkExperienceSection = () => {
   const workBlocks: WorkBlockProps[] = [
@@ -132,13 +133,13 @@ const WorkExperienceSection = () => {
   return (
     <Section>
       <Display tag="h1" variant="lg">Work Experience</Display>
-      <ul>
+      <StackList>
         {workBlocks.map((block) => (
           <li>
             <WorkBlock {...block} />
           </li>
         ))}
-      </ul>
+      </StackList>
     </Section>  
   )
 }

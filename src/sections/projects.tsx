@@ -2,6 +2,7 @@ import * as React from 'react'
 import Section from '../components/application/section'
 import ProjectBlock, { ProjectBlockProps } from '../components/blocks/project-block'
 import Display from '../components/design-system/display';
+import StackList from '../components/design-system/stack-list';
 
 const ProjectsSection = () => {
   const projects: ProjectBlockProps[] = [
@@ -139,12 +140,14 @@ const ProjectsSection = () => {
   return (
     <Section>
       <Display tag="h1" variant="lg">Projects</Display>
-      <ul>
-      { projects.map((project) => (
-        <li>
-          <ProjectBlock {...project} />
-        </li>)) }
-      </ul>
+      <StackList>
+        {
+          projects.map((project) => (
+          <li>
+            <ProjectBlock {...project} />
+          </li>))
+        }
+      </StackList>
     </Section>
   )
 }
