@@ -24,7 +24,9 @@ const EducationSection = () => {
           </>
         )}
         sidebar={(
-          <Illustration icon={faGraduationCap} />
+          <div className="flex justify-center">
+            <Illustration icon={faGraduationCap} />
+          </div>
         )}
       />
     </Section>

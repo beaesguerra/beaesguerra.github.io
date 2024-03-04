@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Tag from '../design-system/tag'
 
 type KeywordsProps = {
   keywords: string[]
@@ -6,10 +7,10 @@ type KeywordsProps = {
 
 const Keywords = (props: KeywordsProps) => {
   return (
-    <ul className="list-disc">
+    <ul className="flex gap-3 flex-wrap">
       {props.keywords && props.keywords.map((link) => {
         return (
-          <li>{link}</li>
+          <li><Tag label={link} /></li>
         )
       })}
     </ul>

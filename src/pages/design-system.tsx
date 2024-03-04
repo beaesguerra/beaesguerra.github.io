@@ -8,6 +8,8 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import Illustration from "../components/design-system/illustration"
 import LayoutTwoThirds from "../components/design-system/layout-sidebar"
 import Placeholder from "../components/design-system/placeholder"
+import LayoutSidebar from "../components/design-system/layout-sidebar"
+import Tag from "../components/design-system/tag"
 
 const DesignSystem: React.FC<PageProps> = () => {
   const displayVariants: DisplayVariant[] = ['xs', 'sm', 'md', 'lg', 'xl']
@@ -46,7 +48,12 @@ const DesignSystem: React.FC<PageProps> = () => {
 
         <div>
           <h2 className={sectionClassName}>Layout - Two Thirds</h2>
-          <LayoutTwoThirds main={(<Placeholder />)} sidebar={(<Placeholder />)} />
+          <LayoutSidebar main={(<Placeholder />)} sidebar={(<Placeholder />)} />
+        </div>
+
+        <div>
+          <h2 className={sectionClassName}>Tag</h2>
+          <Tag label="Tag label" />
         </div>
       </StackList>
     </Layout>
