@@ -13,11 +13,15 @@ const DesignSystem: React.FC<PageProps> = () => {
       <h2>
         Typography
       </h2>
+      <ul>
       { displayVariants.map((variant) => (
-        <Display variant={variant}>
-          Display {variant}
-        </Display>
+        <li>
+          <Display variant={variant}>
+            Display {variant}
+          </Display>
+        </li>
       ))}
+      </ul>
     </Layout>
   )
 }

@@ -139,7 +139,12 @@ const ProjectsSection = () => {
   return (
     <Section>
       <Display tag="h1" variant="lg">Projects</Display>
-      { projects.map((project) => (<ProjectBlock {...project} />)) }
+      <ul>
+      { projects.map((project) => (
+        <li>
+          <ProjectBlock {...project} />
+        </li>)) }
+      </ul>
     </Section>
   )
 }

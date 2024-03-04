@@ -132,9 +132,13 @@ const WorkExperienceSection = () => {
   return (
     <Section>
       <Display tag="h1" variant="lg">Work Experience</Display>
-      {workBlocks.map((block) => (
-        <WorkBlock {...block} />
-      ))}
+      <ul>
+        {workBlocks.map((block) => (
+          <li>
+            <WorkBlock {...block} />
+          </li>
+        ))}
+      </ul>
     </Section>  
   )
 }

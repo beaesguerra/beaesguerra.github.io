@@ -22,14 +22,16 @@ const WorkBlock = (props: WorkBlockProps) => {
     <div>
       <Display tag="h2" variant="md">{props.company}</Display>
       {props.logo}
+      <ul>
       {props.roles.map((role) => (
-        <div>
+        <li>
           <Display tag="h3" variant="sm">{role.title}</Display>
           <p>{role.description}</p>
           <Keywords keywords={role.keywords} />
           { role.links && <RelatedLinks links={role.links} />}
-        </div>
+        </li>
       ))}
+      </ul>
     </div>
   )
 }
