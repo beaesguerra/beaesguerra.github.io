@@ -8,11 +8,11 @@ type DisplayProps = {
 }
 
 const variantStyles: { [key in DisplayVariant]: string} = {
-  'xs': 'text-lg font-cute leading-relaxed',
-  'sm': 'text-xl font-cute font-semibold leading-relaxed',
-  'md': 'text-3xl font-cute font-bold leading-relaxed',
-  'lg': 'text-6xl font-cursive lowercase leading-loose',
-  'xl': 'text-7xl font-cursive lowercase leading-loose',
+  'xs': 'text-lg font-cute pb-2',
+  'sm': 'text-xl font-cute font-semibold pb-3',
+  'md': 'text-3xl font-cute font-bold pb-4',
+  'lg': 'text-6xl font-cursive lowercase pb-8',
+  'xl': 'text-7xl font-cursive lowercase py-10',
 }
 
 const Display = (props: React.PropsWithChildren<DisplayProps>) => {
