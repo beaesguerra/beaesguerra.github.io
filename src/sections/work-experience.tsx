@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Section from '../components/section'
+import Section from '../components/application/section'
 import WorkBlock, { WorkBlockProps } from '../components/blocks/work-block';
 
 const WorkExperienceSection = () => {

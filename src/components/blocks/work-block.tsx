@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { RelatedLink } from '../../types';
-import Keywords from '../keywords';
-import RelatedLinks from '../related-links';
+import Keywords from '../context/keywords';
+import RelatedLinks from '../context/related-links';
 
 export type WorkRole = {
   title: string;

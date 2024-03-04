@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { RelatedLink } from '../types'
+import { RelatedLink } from '../../types'
 
 type RelatedLinksProps = {
   links: RelatedLink[]

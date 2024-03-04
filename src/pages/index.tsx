@@ -9,7 +9,7 @@ import {
   ProjectsSection,
   HeroBanner,
 } from "../sections"
-import Layout from "../components/layout"
+import Layout from "../components/application/layout"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
