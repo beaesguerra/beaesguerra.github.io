@@ -22,6 +22,11 @@ const WorkExperienceSection = () => {
       company: 'Benevity',
       roles: [
         {
+          title: 'Frontend Developer, Design Systems (Software Developer III)',
+          description: ``,
+          keywords: [],
+        },
+        {
           title: 'Software Developer II',
           description: `
             Developed features for a white-label web application for workplace giving with
