@@ -8,9 +8,9 @@ type KeywordsProps = {
 const Keywords = (props: KeywordsProps) => {
   return (
     <ul className="flex gap-3 flex-wrap">
-      {props.keywords && props.keywords.map((link) => {
+      {props.keywords && props.keywords.map((keyword) => {
         return (
-          <li><Tag label={link} /></li>
+          <li key={keyword}><Tag label={keyword} /></li>
         )
       })}
     </ul>

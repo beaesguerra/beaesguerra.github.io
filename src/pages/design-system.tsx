@@ -24,7 +24,7 @@ const DesignSystem: React.FC<PageProps> = () => {
           <h2 className={sectionClassName}>Typography - Display</h2>
           <ul>
           { displayVariants.map((variant) => (
-            <li>
+            <li key={variant}>
               <Display variant={variant}>
                 Display {variant}
               </Display>
@@ -34,7 +34,7 @@ const DesignSystem: React.FC<PageProps> = () => {
           <h2 className={sectionClassName}>Typography - Text</h2>
           <ul>
           { textVariants.map((variant) => (
-            <li>
+            <li key={variant}>
               <Text variant={variant}>
                 Text {variant}
               </Text>
@@ -46,7 +46,7 @@ const DesignSystem: React.FC<PageProps> = () => {
           <h2 className={sectionClassName}>Icons</h2>
           <ul>
             {iconSizes.map((size) => (
-              <li>
+              <li key={size}>
                 <Icon size={size} icon={faHeart} />
               </li>
             ))}

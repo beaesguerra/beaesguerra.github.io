@@ -138,7 +138,7 @@ const WorkExperienceSection = () => {
       <Display tag="h1" variant="lg">Work Experience</Display>
       <StackList>
         {workBlocks.map((block) => (
-          <li>
+          <li key={block.company}>
             <WorkBlock {...block} />
           </li>
         ))}

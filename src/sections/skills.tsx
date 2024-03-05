@@ -224,11 +224,11 @@ const SkillsSection = () => {
       <Display tag="h1" variant="lg">Skills</Display>
       <ul className="flex flex-col gap-5">
       {skillSections.map((section) => (
-        <li>
+        <li key={section.label}>
         <Display tag="h2" variant="md">{section.label}</Display>
         <ul className="grid grid-cols-2 md:grid-cols-8 gap-10 py-4">
           {section.skills.map((skill) => (
-            <li>
+            <li key={skill.label}>
               <Skill {...skill} />
             </li>
           ))}

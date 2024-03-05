@@ -26,7 +26,7 @@ const contactInfoItems = [
 const ContactInfo = (props: ContactInfoProps) => (
   <ul className="flex gap-1">
     {contactInfoItems.map((item) => (
-      <li>
+      <li key={item.ariaLabel}>
         <IconLink href={item.href} ariaLabel={item.ariaLabel} icon={item.icon} />
       </li>
     ))}

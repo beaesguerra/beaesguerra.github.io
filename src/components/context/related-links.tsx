@@ -10,7 +10,7 @@ const RelatedLinks = (props: RelatedLinksProps) => {
     <ul className="list-disc">
       {props.links && props.links.map((link) => {
         return (
-          <li><a href={link.href}>{ link.label }</a></li>
+          <li key={link.label}><a href={link.href}>{ link.label }</a></li>
         )
       })}
     </ul>

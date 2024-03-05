@@ -143,7 +143,7 @@ const ProjectsSection = () => {
       <StackList>
         {
           projects.map((project) => (
-          <li>
+          <li key={project.name}>
             <ProjectBlock {...project} />
           </li>))
         }
