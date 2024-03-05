@@ -21,22 +21,28 @@ export type WorkBlockProps = {
 const WorkBlock = (props: WorkBlockProps) => {
   return (
     <div>
-      <LayoutSidebar
-        main={
-          <Display tag="h2" variant="md">{props.company}</Display>  
-        }
-        sidebar={
-          <div className="flex justify-end">
-            {props.logo}
-          </div>
-        }
-      />
+      <div>
+        <LayoutSidebar
+          main={
+            <Display tag="h2" variant="md">{props.company}</Display>  
+          }
+          sidebar={
+            <div className="flex justify-end mb-4">
+              {props.logo}
+            </div>
+          }
+        />
+      </div>
       <ul>
         {props.roles.map((role) => (
-          <li>
+          <li className="pb-6">
             <Display tag="h3" variant="sm">{role.title}</Display>
             { role.description }
-            { role.keywords.length > 0 && <Keywords keywords={role.keywords} /> }
+            { role.keywords.length > 0 && (
+              <div className="pt-8">
+                <Keywords keywords={role.keywords} />
+              </div>
+            )}
             { role.links && <RelatedLinks links={role.links} />}
           </li>
         ))}

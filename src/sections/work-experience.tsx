@@ -23,7 +23,7 @@ const WorkExperienceSection = () => {
       roles: [
         {
           title: 'Frontend Developer, Design Systems (Software Developer III)',
-          description: (<></>),
+          description: (<>Lorem ipsum</>),
           keywords: [],
         },
         {
@@ -51,7 +51,7 @@ const WorkExperienceSection = () => {
       ]
     },
     {
-      company: 'OpenHouse.AI',
+      company: 'OpenHouse.ai',
       logo: (
         <a
           href="https://openhouse.ai/"

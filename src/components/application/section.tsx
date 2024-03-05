@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const Section = ({ children }: React.PropsWithChildren) => {
   return (
-    <div className="min-h-96 flex flex-col">
+    <div className="flex flex-col pb-16">
       { children }
     </div>
   )
