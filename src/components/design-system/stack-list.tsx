@@ -1,8 +1,13 @@
 import * as React from 'react'
+import { classes } from '../../utils/css';
 
-const StackList = (props: React.PropsWithChildren) => {
+type StackListProps = {
+  className?: string;
+}
+
+const StackList = (props: React.PropsWithChildren<StackListProps>) => {
   return (
-    <ul className="flex gap-y-16 flex-col">
+    <ul className={classes([props.className, "flex gap-y-16 flex-col"])}>
       {props.children}
     </ul>
   )
