@@ -4,6 +4,7 @@ import Display from '../components/design-system/display'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import Illustration from '../components/design-system/illustration'
 import LayoutSidebar from '../components/design-system/layout-sidebar'
+import Text from '../components/design-system/text'
 
 const EducationSection = () => {
   return (
@@ -18,9 +19,9 @@ const EducationSection = () => {
             <Display variant="sm" tag="h3">
               University of Calgary (Schulich School of Engineering)
             </Display>
-            <p>
+            <Text tag="p">
               Graduated with distinction and completed the Engineering Internship Program.
-            </p>
+            </Text>
           </>
         )}
         sidebar={(

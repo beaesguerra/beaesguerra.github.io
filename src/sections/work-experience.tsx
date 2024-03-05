@@ -6,6 +6,7 @@ import StackList from '../components/design-system/stack-list';
 import BenevityLogo from '../images/benevity-logo.png';
 import OpenhouseAiLogo from '../images/openhouse-ai-logo.png'
 import PasonLogo from '../images/pason-logo.jpg'
+import Text from '../components/design-system/text';
 
 const WorkExperienceSection = () => {
   const workBlocks: WorkBlockProps[] = [
@@ -29,13 +30,13 @@ const WorkExperienceSection = () => {
         {
           title: 'Software Developer II',
           description: (
-            <p>
+            <Text tag="p">
               Developed features for a white-label web application for workplace giving with
               responsiveness, accessibility, localization, and browser compatibility in mind.
               Created reusable and modular components covered by thorough automated unit tests.
               Improved accessibility on numerous parts of the product by applying appropriate
               tags/attributes and ensuring that the navigational flow for screen readers is intuitive.
-            </p>
+            </Text>
           ),
           keywords: [
             'JavaScript',
@@ -65,7 +66,7 @@ const WorkExperienceSection = () => {
         {
           title: 'Full Stack Software Developer',
           description: (
-            <p>
+            <Text tag="p">
               Established frontend architecture for multiple web applications:
               a white-label product for home builders, a content management system,
               and a custom analytics dashboard.
@@ -77,7 +78,7 @@ const WorkExperienceSection = () => {
               user workflows, and data visualizations.
               Led scrum for a team of six, and
               contributed to the company's hiring process for frontend developers.
-            </p>
+            </Text>
           ),
           keywords: [
             'TypeScript',
@@ -115,11 +116,11 @@ const WorkExperienceSection = () => {
         {
           title: 'DataHub Software Developer Intern',
           description: (
-            <p>
+            <Text tag="p">
               Worked closely with a UX team to implement features for a drilling data web application
               called <a href="https://www.pason.com/products/datahub-with-pason-live" className="underline">Pason Live</a>. Also, implemented a backend service for running scheduled
               tasks for customers, and integrated tools to improve the quality of microservices.
-            </p>
+            </Text>
           ),
           keywords: [
             'JavaScript',

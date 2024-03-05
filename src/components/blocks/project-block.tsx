@@ -3,6 +3,7 @@ import { Image, RelatedLink } from '../../types';
 import Keywords from '../context/keywords';
 import RelatedLinks from '../context/related-links';
 import Display from '../design-system/display';
+import Text from '../design-system/text';
 
 export type ProjectBlockProps = {
   name: string;
@@ -22,7 +23,7 @@ const ProjectBlock = (props: ProjectBlockProps) => {
       <Display tag="h4" variant="xs">{props.type}</Display>
       {props.githubLink && <a href={props.githubLink}>GitHub</a>}
       <img src={props.img.src} alt={props.img.alt} />
-      <p>{ props.description }</p>
+      <Text tag="p">{ props.description }</Text>
       <Keywords keywords={props.keywords} />
       { props.links && <RelatedLinks links={props.links} />}
     </div>
