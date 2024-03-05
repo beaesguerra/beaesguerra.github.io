@@ -11,6 +11,7 @@ import LayoutSidebar from "../components/design-system/layout-sidebar"
 import Tag from "../components/design-system/tag"
 import Text, { TextVariant } from "../components/design-system/text"
 import GlobalHead from "../components/application/global-head"
+import Button from "../components/design-system/button"
 
 const DesignSystem: React.FC<PageProps> = () => {
   const displayVariants: DisplayVariant[] = ['xs', 'sm', 'md', 'lg', 'xl']
@@ -20,7 +21,7 @@ const DesignSystem: React.FC<PageProps> = () => {
   return (
     <Layout>
       <h1 className="py-6 text-6xl">Design System </h1>
-      <StackList>
+      <StackList className="pb-10">
         <li>
           <h2 className={sectionClassName}>Typography - Display</h2>
           <ul>
@@ -66,6 +67,10 @@ const DesignSystem: React.FC<PageProps> = () => {
         <li>
           <h2 className={sectionClassName}>Tag</h2>
           <Tag label="Tag label" />
+        </li>
+        <li>
+          <h2 className={sectionClassName}>Button</h2>
+          <Button>Button</Button>
         </li>
       </StackList>
     </Layout>
