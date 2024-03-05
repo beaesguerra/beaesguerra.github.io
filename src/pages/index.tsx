@@ -1,7 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import {
-  PortfolioHeader,
   EducationSection,
   SkillsSection,
   WorkExperienceSection,
@@ -18,8 +17,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <EducationSection />
       <SkillsSection />
       <WorkExperienceSection />
-      <ProjectsSection />
-      <VolunteeringSection />
+      {/* <ProjectsSection />
+      <VolunteeringSection /> */}
     </Layout>
   )
 }
