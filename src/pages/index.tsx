@@ -9,6 +9,7 @@ import {
   HeroBanner,
 } from "../sections"
 import Layout from "../components/application/layout"
+import GlobalHead from "../components/application/global-head"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -25,4 +26,8 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Bea Esguerra</title>
+export const Head: HeadFC = () => (
+  <GlobalHead>
+    <title>Bea Esguerra</title>
+  </GlobalHead>
+)

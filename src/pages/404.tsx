@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, HeadFC, PageProps } from "gatsby"
+import GlobalHead from "../components/application/global-head"
 
 const pageStyles = {
   color: "#232129",
@@ -46,4 +47,8 @@ const NotFoundPage: React.FC<PageProps> = () => {
 
 export default NotFoundPage
 
-export const Head: HeadFC = () => <title>Not found</title>
+export const Head: HeadFC = () => (
+  <GlobalHead>
+    <title>Not found</title>
+  </GlobalHead>
+)

@@ -10,6 +10,7 @@ import Placeholder from "../components/design-system/placeholder"
 import LayoutSidebar from "../components/design-system/layout-sidebar"
 import Tag from "../components/design-system/tag"
 import Text, { TextVariant } from "../components/design-system/text"
+import GlobalHead from "../components/application/global-head"
 
 const DesignSystem: React.FC<PageProps> = () => {
   const displayVariants: DisplayVariant[] = ['xs', 'sm', 'md', 'lg', 'xl']
@@ -20,7 +21,7 @@ const DesignSystem: React.FC<PageProps> = () => {
     <Layout>
       <h1 className="py-6 text-6xl">Design System </h1>
       <StackList>
-        <div>
+        <li>
           <h2 className={sectionClassName}>Typography - Display</h2>
           <ul>
           { displayVariants.map((variant) => (
@@ -41,8 +42,8 @@ const DesignSystem: React.FC<PageProps> = () => {
             </li>
           ))}
           </ul>
-        </div>
-        <div>
+        </li>
+        <li>
           <h2 className={sectionClassName}>Icons</h2>
           <ul>
             {iconSizes.map((size) => (
@@ -51,21 +52,21 @@ const DesignSystem: React.FC<PageProps> = () => {
               </li>
             ))}
           </ul>
-        </div>
-        <div>
+        </li>
+        <li>
           <h2 className={sectionClassName}>Illustration</h2>
           <Illustration icon={faHeart} />
-        </div>
+        </li>
 
-        <div>
+        <li>
           <h2 className={sectionClassName}>Layout - Two Thirds</h2>
           <LayoutSidebar main={(<Placeholder />)} sidebar={(<Placeholder />)} />
-        </div>
+        </li>
 
-        <div>
+        <li>
           <h2 className={sectionClassName}>Tag</h2>
           <Tag label="Tag label" />
-        </div>
+        </li>
       </StackList>
     </Layout>
   )
@@ -73,4 +74,8 @@ const DesignSystem: React.FC<PageProps> = () => {
 
 export default DesignSystem
 
-export const Head: HeadFC = () => <title>Design System</title>
+export const Head: HeadFC = () => (
+  <GlobalHead>
+    <title>Design System</title>
+  </GlobalHead>
+)
