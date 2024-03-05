@@ -5,7 +5,7 @@ import Text from '../components/design-system/text'
 
 const HeroBanner = () => {
   return (
-    <Section className="h-[75vh] mb-40 text-center justify-center">
+    <Section className="h-[75vh] mb-40 text-center justify-center w-3/4 m-auto">
       <Display variant="xl" tag="h1">Hello world!</Display> 
       <Text tag="p">
         My name is Bea and I am a software developer passionate about frontend development, design systems, accessibility, and learning! I enjoy using technology to create innovative solutions that help people!

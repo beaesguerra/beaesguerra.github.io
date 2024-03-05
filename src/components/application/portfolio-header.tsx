@@ -5,9 +5,11 @@ import Logo from '../context/logo'
 
 const PortfolioHeader = () => {
   return (
-    <nav className="w-screen h-16 sticky top-0 px-64 flex justify-between items-center bg-white">
-      <Logo />
-      <ContactInfo />
+    <nav className="w-full sticky top-0 py-4 bg-white flex items-center justify-center">
+      <div className="lg:w-3/4 max-w-screen-lg flex flex-col gap-4 lg:flex-row lg:justify-between items-center">
+        <Logo />
+        <ContactInfo />
+      </div>
     </nav>
   )
 }

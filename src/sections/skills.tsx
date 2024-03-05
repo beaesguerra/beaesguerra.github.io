@@ -226,7 +226,7 @@ const SkillsSection = () => {
       {skillSections.map((section) => (
         <li>
         <Display tag="h2" variant="md">{section.label}</Display>
-        <ul className="grid grid-cols-8 gap-10 py-4">
+        <ul className="grid grid-cols-2 md:grid-cols-8 gap-10 py-4">
           {section.skills.map((skill) => (
             <li>
               <Skill {...skill} />

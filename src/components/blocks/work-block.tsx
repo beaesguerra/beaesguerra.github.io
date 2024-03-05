@@ -27,7 +27,7 @@ const WorkBlock = (props: WorkBlockProps) => {
             <Display tag="h2" variant="md">{props.company}</Display>  
           }
           sidebar={
-            <div className="flex justify-end mb-4">
+            <div className="flex justify-center md:justify-end mb-8 m:mb-4">
               {props.logo}
             </div>
           }

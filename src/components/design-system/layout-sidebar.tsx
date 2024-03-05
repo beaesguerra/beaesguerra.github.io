@@ -6,7 +6,7 @@ type LayoutSidebarProps = {
 }
 
 const LayoutSidebar = (props: LayoutSidebarProps) => (
-  <div className="flex space-between gap-8 md:flex-nowrap flex-wrap items-center">
+  <div className="flex space-between gap-4 md:gap-8 md:flex-nowrap flex-wrap items-center">
     <div className="md:basis-2/3 basis-full">
       {props.main}
     </div>
