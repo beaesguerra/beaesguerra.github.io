@@ -5,6 +5,7 @@ export type DisplayVariant = 'xl' | 'lg' | 'md' | 'sm' | 'xs'
 type DisplayProps = {
   variant: DisplayVariant;
   tag?: React.ElementType;
+  className?: string;
 }
 
 const variantStyles: { [key in DisplayVariant]: string} = {
@@ -17,8 +18,12 @@ const variantStyles: { [key in DisplayVariant]: string} = {
 
 const Display = (props: React.PropsWithChildren<DisplayProps>) => {
   const Tag = props.tag || 'div'
+  const className = [
+    props.className,
+    variantStyles[props.variant],
+  ].join(' ')
   return (
-    <Tag className={variantStyles[props.variant]}>
+    <Tag className={className}>
       { props.children }
     </Tag>
   )
