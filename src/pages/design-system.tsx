@@ -6,13 +6,14 @@ import StackList from "../components/design-system/stack-list"
 import Icon, { IconSize } from "../components/design-system/icon"
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import Illustration from "../components/design-system/illustration"
-import LayoutTwoThirds from "../components/design-system/layout-sidebar"
 import Placeholder from "../components/design-system/placeholder"
 import LayoutSidebar from "../components/design-system/layout-sidebar"
 import Tag from "../components/design-system/tag"
+import Text, { TextVariant } from "../components/design-system/text"
 
 const DesignSystem: React.FC<PageProps> = () => {
   const displayVariants: DisplayVariant[] = ['xs', 'sm', 'md', 'lg', 'xl']
+  const textVariants: TextVariant[] = ['xs', 'sm', 'base']
   const iconSizes: IconSize[] = ['sm', 'md', 'lg']
   const sectionClassName = 'uppercase font-bold text-xl py-4'
   return (
@@ -20,13 +21,23 @@ const DesignSystem: React.FC<PageProps> = () => {
       <h1 className="py-6 text-6xl">Design System </h1>
       <StackList>
         <div>
-          <h2 className={sectionClassName}>Typography</h2>
+          <h2 className={sectionClassName}>Typography - Display</h2>
           <ul>
           { displayVariants.map((variant) => (
             <li>
               <Display variant={variant}>
                 Display {variant}
               </Display>
+            </li>
+          ))}
+          </ul>
+          <h2 className={sectionClassName}>Typography - Text</h2>
+          <ul>
+          { textVariants.map((variant) => (
+            <li>
+              <Text variant={variant}>
+                Text {variant}
+              </Text>
             </li>
           ))}
           </ul>
