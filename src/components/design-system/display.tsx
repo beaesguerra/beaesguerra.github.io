@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { classes } from '../../utils/css';
 
 export type DisplayVariant = 'xl' | 'lg' | 'md' | 'sm' | 'xs'
 
@@ -18,12 +19,13 @@ const variantStyles: { [key in DisplayVariant]: string} = {
 
 const Display = (props: React.PropsWithChildren<DisplayProps>) => {
   const Tag = props.tag || 'div'
-  const className = [
-    props.className,
-    variantStyles[props.variant],
-  ].join(' ')
   return (
-    <Tag className={className}>
+    <Tag
+      className={classes([
+        props.className,
+        variantStyles[props.variant],
+      ])}
+    >
       { props.children }
     </Tag>
   )

@@ -1,16 +1,18 @@
 import * as React from 'react'
+import { classes } from '../../utils/css';
 
 type SectionProps = {
   className?: string;
 }
 
 const Section = (props: React.PropsWithChildren<SectionProps>) => {
-  const className = [
-    props.className,
-    'flex flex-col pb-32',
-  ].join(' ')
   return (
-    <div className={className}>
+    <div
+      className={classes([
+        props.className,
+        'flex flex-col pb-32',
+      ])}
+    >
       { props.children }
     </div>
   )

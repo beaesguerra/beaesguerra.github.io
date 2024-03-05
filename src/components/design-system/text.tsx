@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { classes } from '../../utils/css';
 
 export type TextVariant = 'base' | 'sm' | 'xs';
 
@@ -16,13 +17,12 @@ const variantStyles: { [key in TextVariant]: string} = {
 
 const Text = (props: React.PropsWithChildren<TextProps>) => {
   const Tag = props.tag || 'span'
-  const className = [
-    props.variant ? variantStyles[props.variant] : variantStyles.base,
-    props.className
-  ].join(' ')
   return (
     <Tag
-      className={className}
+      className={classes([
+        props.variant ? variantStyles[props.variant] : variantStyles.base,
+        props.className,
+      ])}
     >
       { props.children }
     </Tag>
