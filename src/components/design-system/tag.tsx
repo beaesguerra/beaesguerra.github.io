@@ -5,7 +5,7 @@ type TagProps = {
 }
 
 const Tag = (props: TagProps) => (
-  <div className="border-solid border-2 inline-block py-1 px-2 rounded-xl">
+  <div className="border-solid border-2 border-teal-500/30 inline-block py-1 px-2 rounded-xl">
     {props.label}
   </div>
 );

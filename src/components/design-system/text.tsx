@@ -23,6 +23,7 @@ const Text = (props: React.PropsWithChildren<TextProps>) => {
         props.variant ? variantStyles[props.variant] : variantStyles.base,
         props.className,
         props.tag === 'p' ? 'py-2': '',
+        'text-neutral-900',
       ])}
     >
       { props.children }

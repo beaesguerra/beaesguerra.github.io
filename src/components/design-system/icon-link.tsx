@@ -14,7 +14,7 @@ const IconLink = (props: IconLinkProps) => (
     aria-label={props.ariaLabel}
     target="_blank"
     rel="noopener noreferrer"
-    className="hover:opacity-75 p-3 text-pink-900"
+    className="hover:opacity-70 p-3 text-neutral-700"
   >
     <Icon icon={props.icon} size="md" />
   </a>
