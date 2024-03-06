@@ -13,6 +13,7 @@ import Text, { TextVariant } from "../components/design-system/text"
 import GlobalHead from "../components/application/global-head"
 import Button from "../components/design-system/button"
 import ExternalLink from "../components/design-system/external-link"
+import Section from "../components/application/section"
 
 const DesignSystem: React.FC<PageProps> = () => {
   const displayVariants: DisplayVariant[] = ['xs', 'sm', 'md', 'lg', 'xl']
@@ -21,61 +22,63 @@ const DesignSystem: React.FC<PageProps> = () => {
   const sectionClassName = 'uppercase font-bold text-xl py-4'
   return (
     <Layout>
-      <h1 className="py-6 text-6xl">Design System </h1>
-      <StackList className="pb-10">
-        <li>
-          <h2 className={sectionClassName}>Typography - Display</h2>
-          <ul>
-          { displayVariants.map((variant) => (
-            <li key={variant}>
-              <Display variant={variant}>
-                Display {variant}
-              </Display>
-            </li>
-          ))}
-          </ul>
-          <h2 className={sectionClassName}>Typography - Text</h2>
-          <ul>
-          { textVariants.map((variant) => (
-            <li key={variant}>
-              <Text variant={variant}>
-                Text {variant}
-              </Text>
-            </li>
-          ))}
-          </ul>
-          <h2 className={sectionClassName}>Typography - External Link</h2>
-          <ExternalLink href="#">External link</ExternalLink>
-        </li>
-        <li>
-          <h2 className={sectionClassName}>Icons</h2>
-          <ul>
-            {iconSizes.map((size) => (
-              <li key={size}>
-                <Icon size={size} icon={faHeart} />
+      <Section>
+        <h1 className="py-6 text-6xl">Design System </h1>
+        <StackList className="pb-10">
+          <li>
+            <h2 className={sectionClassName}>Typography - Display</h2>
+            <ul>
+            { displayVariants.map((variant) => (
+              <li key={variant}>
+                <Display variant={variant}>
+                  Display {variant}
+                </Display>
               </li>
             ))}
-          </ul>
-        </li>
-        <li>
-          <h2 className={sectionClassName}>Illustration</h2>
-          <Illustration icon={faHeart} />
-        </li>
+            </ul>
+            <h2 className={sectionClassName}>Typography - Text</h2>
+            <ul>
+            { textVariants.map((variant) => (
+              <li key={variant}>
+                <Text variant={variant}>
+                  Text {variant}
+                </Text>
+              </li>
+            ))}
+            </ul>
+            <h2 className={sectionClassName}>Typography - External Link</h2>
+            <ExternalLink href="#">External link</ExternalLink>
+          </li>
+          <li>
+            <h2 className={sectionClassName}>Icons</h2>
+            <ul>
+              {iconSizes.map((size) => (
+                <li key={size}>
+                  <Icon size={size} icon={faHeart} />
+                </li>
+              ))}
+            </ul>
+          </li>
+          <li>
+            <h2 className={sectionClassName}>Illustration</h2>
+            <Illustration icon={faHeart} />
+          </li>
 
-        <li>
-          <h2 className={sectionClassName}>Layout - Two Thirds</h2>
-          <LayoutSidebar main={(<Placeholder />)} sidebar={(<Placeholder />)} />
-        </li>
+          <li>
+            <h2 className={sectionClassName}>Layout - Two Thirds</h2>
+            <LayoutSidebar main={(<Placeholder />)} sidebar={(<Placeholder />)} />
+          </li>
 
-        <li>
-          <h2 className={sectionClassName}>Tag</h2>
-          <Tag label="Tag label" />
-        </li>
-        <li>
-          <h2 className={sectionClassName}>Button</h2>
-          <Button>Button</Button>
-        </li>
-      </StackList>
+          <li>
+            <h2 className={sectionClassName}>Tag</h2>
+            <Tag label="Tag label" />
+          </li>
+          <li>
+            <h2 className={sectionClassName}>Button</h2>
+            <Button>Button</Button>
+          </li>
+        </StackList>
+      </Section>
     </Layout>
   )
 }
