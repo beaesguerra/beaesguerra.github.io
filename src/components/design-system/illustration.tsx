@@ -4,11 +4,12 @@ import * as React from 'react'
 
 type IllustrationProps = {
   icon: IconProp;
+  className?: string;
 }
 
 const Illustration = (props: IllustrationProps) => {
   return (
-    <FontAwesomeIcon icon={props.icon} size='7x' />
+    <FontAwesomeIcon icon={props.icon} size='7x' className={props.className} />
   )
 }
 
