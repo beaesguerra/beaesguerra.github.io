@@ -12,6 +12,7 @@ import Tag from "../components/design-system/tag"
 import Text, { TextVariant } from "../components/design-system/text"
 import GlobalHead from "../components/application/global-head"
 import Button from "../components/design-system/button"
+import ExternalLink from "../components/design-system/external-link"
 
 const DesignSystem: React.FC<PageProps> = () => {
   const displayVariants: DisplayVariant[] = ['xs', 'sm', 'md', 'lg', 'xl']
@@ -43,6 +44,8 @@ const DesignSystem: React.FC<PageProps> = () => {
             </li>
           ))}
           </ul>
+          <h2 className={sectionClassName}>Typography - External Link</h2>
+          <ExternalLink href="#">External link</ExternalLink>
         </li>
         <li>
           <h2 className={sectionClassName}>Icons</h2>
