@@ -35,11 +35,11 @@ const WorkBlock = (props: WorkBlockProps) => {
       </div>
       <ul>
         {props.roles.map((role) => (
-          <li className="pb-6" key={role.title}>
+          <li className="pb-12" key={role.title}>
             <Display tag="h3" variant="sm">{role.title}</Display>
             { role.description }
             { role.keywords.length > 0 && (
-              <div className="pt-8">
+              <div className="pt-2">
                 <Keywords keywords={role.keywords} />
               </div>
             )}
