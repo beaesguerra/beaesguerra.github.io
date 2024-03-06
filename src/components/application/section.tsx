@@ -10,7 +10,8 @@ const Section = (props: React.PropsWithChildren<SectionProps>) => {
     <div
       className={classes([
         props.className,
-        'flex flex-col pb-32',
+        'flex flex-col pb-32 px-8 md:px-0',
+        'lg:w-3/4 max-w-screen-lg m-auto',
       ])}
     >
       { props.children }

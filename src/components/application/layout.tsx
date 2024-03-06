@@ -3,9 +3,9 @@ import PortfolioHeader from './portfolio-header'
 
 const Layout = ({ children }: React.PropsWithChildren) => {
   return (
-    <div className="px-8 flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full">
       <PortfolioHeader />
-      <main className="lg:w-3/4 max-w-screen-lg">
+      <main className="w-full">
         { children }
       </main>
     </div>
