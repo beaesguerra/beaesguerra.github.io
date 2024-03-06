@@ -1,4 +1,8 @@
+import accessibilityIcon from './accessibility-icon.png'
+import axeLogo from './axe-logo.jpeg';
+import backstopJsLogo from './backstop-js-logo.png';
 import bigQueryLogo from './bigquery-logo.png';
+import chromaticLogo from './chromatic-logo.png';
 import circleCILogo from './circleci-logo.png';
 import cssLogo from './css-logo.png';
 import cypressLogo from './cypress-logo.png';
@@ -22,14 +26,21 @@ import pythonLogo from './python-logo.png';
 import reactLogo from './react-logo.png';
 import reduxLogo from './redux-logo.svg';
 import reduxSagaLogo from './redux-saga-logo.png';
+import sassLogo from './sass-logo.png';
 import springBootLogo from './spring-boot-logo.png';
 import storybookLogo from './storybook-logo.png';
+import styleDictionaryLogo from './style-dictionary-logo.png';
 import testingLibraryLogo from './testing-library-logo.png';
 import typeScriptLogo from './typescript-logo.png';
 import vueLogo from './vue-logo.png';
+import voiceOverLogo from './voice-over-logo.png';
 
 export const skillsAssets = {
+  accessibilityIcon,
+  axeLogo,
+  backstopJsLogo,
   bigQueryLogo,
+  chromaticLogo,
   circleCILogo,
   cssLogo,
   cypressLogo,
@@ -53,9 +64,12 @@ export const skillsAssets = {
   reactLogo,
   reduxLogo,
   reduxSagaLogo,
+  sassLogo,
   springBootLogo,
   storybookLogo,
+  styleDictionaryLogo,
   testingLibraryLogo,
   typeScriptLogo,
+  voiceOverLogo,
   vueLogo,
 };
