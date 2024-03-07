@@ -114,13 +114,13 @@ const WorkExperienceSection = () => {
               <Text tag="p">
                 Established frontend architecture for multiple web applications:
                 a white-label product for home builders, a content management system,
-                and a custom analytics dashboard.
-                Developed an internal React component package to support customization in
-                the white-label application. Created mockups in Figma to communicate ideas to the team about product feature designs,
+                and a custom analytics dashboard. Developed an internal React component package.
+                Created mockups in Figma to communicate ideas to the team about product feature designs,
                 user workflows, and data visualizations.
               </Text>
               <Text tag="p">
-                Integrated CircleCI workflows to run automated tests, versioning, and deployments. Implemented microservices with REST APIs and event driven architecture,
+                Integrated CircleCI workflows to run automated tests, versioning, and deployments.
+                Implemented microservices with REST APIs and event driven architecture.
               </Text>
               <Text tag="p">
                 Led Scrum for a team of six, mentored entry-level developers on software development best practices and processes, and
