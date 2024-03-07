@@ -1,6 +1,0 @@
-import './src/styles/global.css'
-import '@fontsource/pacifico'
-import '@fontsource/comfortaa'
-import '@fontsource/comfortaa/600.css'
-import '@fontsource/comfortaa/700.css'
-import '@fontsource/poppins'
